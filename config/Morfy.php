@@ -10,8 +10,9 @@
         'email' => 'awilum@msn.com',
         'plugins' => array(
             'markdown',
-            'sitemap',
+            'parsedown',
         ),
+        
         /**
          * https://github.com/fenom-template/fenom/blob/master/docs/ru/configuration.md
          */
