@@ -17,4 +17,6 @@ Also, Morfy [Official Forum](http://forum.morfy.org/) was redesigned :)
 
 BTW: Morfy Official Site already powered by Morfy 1.1.0
 
-***Morfy 1.1.0 - comming soon!***
+Morfy 1.1.0 - comming soon!
+
+[Discuss this article on the forum]()
