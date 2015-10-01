@@ -33,7 +33,7 @@ class Morfy
      *
      * @var string
      */
-    const SEPARATOR = '----';    
+    const SEPARATOR = '----';
 
     /**
      * Config array.
@@ -171,13 +171,13 @@ class Morfy
         }
 
         // Start the session
-        !session_id() and @session_start();        
+        !session_id() and @session_start();
 
         // Load Plugins
         $this->loadPlugins();
         $this->runAction('plugins_loaded');
-        
-        // Load Fenom Template Engine 
+
+        // Load Fenom Template Engine
         include LIBRARIES_PATH . '/Fenom/Fenom.php';
         Fenom::registerAutoload();
 
@@ -191,14 +191,14 @@ class Morfy
 
         $page   = $page;
         $config = self::$config;
-    
-        
+
+
         // Load template
         $this->runAction('before_render');
         $this->loadTemplate($page, $config);
         $this->runAction('after_render');
     }
-    
+
     /**
      * Load template
      *
@@ -276,7 +276,7 @@ class Morfy
      * @access  public
      * @return array
      */
-    public function getUriSegments() 
+    public function getUriSegments()
     {
         return explode('/', $this->getUrl());
     }
@@ -291,7 +291,7 @@ class Morfy
      * @access  public
      * @return string
      */
-    public function getUriSegment($segment) 
+    public function getUriSegment($segment)
     {
         $segments = $this->getUriSegments();
         return isset($segments[$segment]) ? $segments[$segment] : null;
@@ -356,7 +356,7 @@ class Morfy
      * @param  int     $limit      Limit of pages
      * @return array
      */
-    public function getPages($url, $order_by = 'date', $order_type = 'DESC', $ignore = array('404'), $limit = null)
+    public function getPages($url = '', $order_by = 'date', $order_type = 'DESC', $ignore = array('404'), $limit = null)
     {
 
         // Page headers
@@ -365,8 +365,8 @@ class Morfy
         $pages = $this->getFiles(CONTENT_PATH . $url);
 
         foreach($pages as $key => $page) {
-            
-            if (!in_array(basename($page, '.md'), $ignore)) {            
+
+            if (!in_array(basename($page, '.md'), $ignore)) {
 
                 $content = file_get_contents($page);
 
@@ -380,14 +380,14 @@ class Morfy
                     }
                 }
 
-                //$url = str_replace(CONTENT_PATH, Morfy::$config['site_url'], $page);
+                $url = $page;
                 $url = str_replace('index.md', '', $url);
                 $url = str_replace('.md', '', $url);
                 $url = str_replace('\\', '/', $url);
                 $url = rtrim($url, '/');
                 $_pages[$key]['url'] = $url;
 
-                $_content = $this->parseContent($content);        
+                $_content = $this->parseContent($content);
                 if(is_array($_content)) {
                     $_pages[$key]['content_short'] = $_content['content_short'];
                     $_pages[$key]['content'] = $_content['content_full'];
@@ -444,7 +444,7 @@ class Morfy
                 $page[ $field ] = trim($match[1]);
             } else {
                 $page[ $field ] = '';
-            }            
+            }
         }
 
         $url = str_replace(CONTENT_PATH, Morfy::$config['site_url'], $file);
@@ -454,7 +454,7 @@ class Morfy
         $url = rtrim($url, '/');
         $pages['url'] = $url;
 
-        $_content = $this->parseContent($content);        
+        $_content = $this->parseContent($content);
         if(is_array($_content)) {
             $page['content_short'] = $_content['content_short'];
             $page['content'] = $_content['content_full'];
@@ -520,7 +520,7 @@ class Morfy
      * @return string $content Formatted content
      */
     protected function parseContent($content)
-    {       
+    {
         // Parse Content after Headers
         $_content = '';
         $i = 0;
@@ -546,7 +546,7 @@ class Morfy
         } else {
             $content = explode("{cut}", $content);
             $content['content_short'] = $this->applyFilter('content', $content[0]);
-            $content['content_full']  = $this->applyFilter('content', $content[0].$content[1]);                    
+            $content['content_full']  = $this->applyFilter('content', $content[0].$content[1]);
         }
 
         // Parse PHP
@@ -815,7 +815,7 @@ class Morfy
      *  </code>
      *
      * @param  string $str String
-     * @return string 
+     * @return string
      */
     public function cleanString($str) {
         return htmlspecialchars($str, ENT_QUOTES, 'utf-8');
@@ -864,11 +864,11 @@ class Morfy
 
         return $mathes;
     }
-    
+
     /**
      * evalPHP
      */
-    protected static function evalPHP($str) { 
-        return preg_replace_callback('/\{php\}(.*?)\{\/php\}/ms','Morfy::obEval', $str); 
+    protected static function evalPHP($str) {
+        return preg_replace_callback('/\{php\}(.*?)\{\/php\}/ms','Morfy::obEval', $str);
     }
 }
