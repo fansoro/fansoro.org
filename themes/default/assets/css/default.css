@@ -33,12 +33,12 @@ body {
 /* Not required for template or sticky footer method. */
 
 a {
-    color: #000;
+    color: #C75C5C;
     text-decoration: none;
 }
 
 a:hover {
-    color: #C75C5C;
+    color: #B72626;
     text-decoration: none;
 }
 
