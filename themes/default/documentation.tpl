@@ -65,7 +65,7 @@
 									<li {if Morfy::factory()->getUriSegment(2) == 'theme-installation'}class="active"{/if}>
 		                                <a href="{$.config.site_url}/documentation/themes/theme-installation">Themes Installation</a>
 		                            </li {if Morfy::factory()->getUriSegment(2) == 'theme-basics'}class="active"{/if}>
-		                            <li>
+		                            <li {if Morfy::factory()->getUriSegment(2) == 'theme-basics'}class="active"{/if}>
 		                                <a href="{$.config.site_url}/documentation/themes/theme-basics">Theme Basics</a>
 		                            </li>
 		                            <li {if Morfy::factory()->getUriSegment(2) == 'theme-variables'}class="active"{/if}>

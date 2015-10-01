@@ -106,6 +106,10 @@ a:hover {
     font-weight: 400;
 }
 
+.nav-list.nav > li > a {
+    color: #000;
+}
+
 .dropdown-menu > li > a {
     font-size: 16px;
 }
