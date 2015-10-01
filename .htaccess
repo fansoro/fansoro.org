@@ -1,0 +1,41 @@
+#
+# Morfy CMS :: php & apache settings
+#
+
+# Set default charset utf-8
+AddDefaultCharset UTF-8
+
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# PHP 5, Apache 1 and 2.
+<IfModule mod_php5.c>
+	php_flag magic_quotes_gpc                 off
+	php_flag magic_quotes_sybase              off
+	php_flag register_globals                 off
+</IfModule>
+
+
+# Setting rewrite rules.
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+
+	# Update code bellow for SEO improvements
+	# RewriteCond %{HTTP_HOST} ^www.example.org [NC]
+ 	# RewriteRule ^(.*)$ http://example.org/$1 [R=301,L]
+
+	RewriteBase /
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php [QSA,L]
+
+	# Update code bellow for SEO improvements
+	# Redirect 301 /index http://example.org/
+</IfModule>
+
+# Prevent visitors from viewing our MD, TXT, HTML and MD files directly.
+<FilesMatch "(^#.*#|\.(md|txt|html|tpl)|~)$">
+	Order allow,deny
+	Deny from all
+	Satisfy All
+</FilesMatch>
