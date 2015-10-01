@@ -93,13 +93,14 @@ a:hover {
 }
 .nav.nav-list > li.active {
     background: #EAEAEA;
+    color: #000;
 }
 
 .nav.nav-list > li.active a {
     color: #000;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
     color: #000;
     font-size: 16px;
     font-weight: 400;
@@ -353,6 +354,7 @@ a:hover {
     width: 100%;
     display: block;
     padding: 10px 15px;
+    color: #000;
 }
 
 /* Footer */
