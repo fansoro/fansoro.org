@@ -5,4 +5,4 @@ Template: documentation
 ----
 
 1. Unzip plugin to the folder ```/plugins/```
-2. Go to ```/config/Morfy.php``` and add plugin name to plugin array.
+2. Go to ```/config/Morfy.php``` and add plugin name to plugins array.
