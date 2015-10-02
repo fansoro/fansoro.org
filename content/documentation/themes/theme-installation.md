@@ -5,4 +5,4 @@ Template: documentation
 ----
 
 1. Unzip theme to the folder ```/themes/```
-2. Go to ```/config/Morfy.php``` and add plugin name to themes array.
+2. Go to ```/config/Morfy.php``` and update ```site_theme``` item with your theme name.
