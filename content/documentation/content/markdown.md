@@ -132,7 +132,7 @@ Renders to:
 | ext    | extension to be used for dest files. |
 ```
 
-Renders to:  
+Renders to:   
 | Option | Description |  
 | ------ | ----------- |  
 | data   | path to data files to supply the data that will be passed into templates. |  
