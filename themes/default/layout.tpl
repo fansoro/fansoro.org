@@ -67,6 +67,7 @@
                     <span class="pull-right">
                         Stay in touch:
                         <a rel="nofollow" href="https://twitter.com/morfy_cms">@monstra_cms</a> /
+                        <a rel="nofollow" href="https://gitter.im/morfy-cms/morfy">Gitter</a> /
                         <a rel="nofollow" href="https://www.facebook.com/MorfyCMS">Facebook</a> /
                         <a rel="nofollow" href="https://vk.com/morfy_cms">VK</a>
                     </span>
