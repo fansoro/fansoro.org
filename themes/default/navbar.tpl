@@ -18,7 +18,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="{$.config.site_url}/download">Morfy</a></li>
                         <li><a href="{$.config.site_url}/download/plugins">Plugins</a></li>
-                        <li><a href="http://forum.morfy.org/forum/3/themes/">Themes</a></li>
+                        <li><a href="http://forum.morfy.org/categories/themes">Themes</a></li>
                     </ul>
                 </li>
                 <li class="dropdown{if $slug == 'documentation'} active{/if}">

@@ -504,6 +504,9 @@ a:hover {
     padding-top: 20px;
 }
 
+#footer .social-link-del {
+    color: #ccc;
+}
 
 /* Util */
 .no-padding {
