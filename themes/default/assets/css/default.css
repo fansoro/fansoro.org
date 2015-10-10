@@ -398,7 +398,7 @@ a:hover {
     padding-left: 10px;
 
     border: 2px solid #000;
-    border-radius: 0;
+    border-radius: 4px;
     background: #f5f5f5;
 }
 
