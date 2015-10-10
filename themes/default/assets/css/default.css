@@ -149,6 +149,24 @@ a:hover {
     border-color: transparent;
 }
 
+.light-theme .navbar-default .navbar-toggle {
+    color: #000;
+    border-color: transparent;
+}
+
+.light-theme .navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #000;
+}
+
+.light-theme .navbar-default .navbar-toggle:focus,
+.light-theme .navbar-default .navbar-toggle:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
 .navbar {
     margin: 0;
     padding: 0;
