@@ -1,7 +1,8 @@
-Title: Logos and Graphics
-Description: Logos to promote Morfy CMS around the web
-Template: about
-----
+---
+title: Logos and Graphics
+description: Logos to promote Morfy CMS around the web
+template: about
+---
 
 ## Morfy Icon
 ![Morfy Icon]({site_url}/public/assets/img/morfy-icon.png){.img-responsive}

@@ -1,8 +1,9 @@
-Title: Morfy 1.0.6
-Date: 2015-09-10 00:10
-Template: blog_post
-Author: Sergey Romanenko
-----
+---
+title: Morfy 1.0.6
+date: 2015-09-10 00:10
+template: blog_post
+author: Sergey Romanenko
+---
 
 
 
@@ -13,5 +14,5 @@ Changes:
 * Default Theme - update Twitter Bootstrap to v3.3.5  
 * Default Theme - remove IE9 Support   
 * Date format for blog posts and pages - Fixed  
-     
-Download: [Morfy 1.0.6](https://github.com/Awilum/morfy-cms/archive/v1.0.6.zip) 
+
+Download: [Morfy 1.0.6](https://github.com/Awilum/morfy-cms/archive/v1.0.6.zip)

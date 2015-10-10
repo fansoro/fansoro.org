@@ -1,8 +1,9 @@
-Title: Morfy website redesign and other updates
-Date: 2015-10-01 22:40
-Template: blog_post
-Author: Sergey Romanenko
-----
+---
+title: Morfy website redesign and other updates
+date: 2015-10-01 22:40
+template: blog_post
+author: Sergey Romanenko
+---
 
 Hello!
 

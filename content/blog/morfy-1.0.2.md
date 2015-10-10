@@ -1,8 +1,9 @@
-Title: Morfy 1.0.2
-Date: 2014-01-21 20:00
-Template: blog_post
-Author: Sergey Romanenko
-----
+---
+title: Morfy 1.0.2
+date: 2014-01-21 20:00
+template: blog_post
+author: Sergey Romanenko
+---
 
 Changes:  
 * Morfy Filters - Closure support added.  

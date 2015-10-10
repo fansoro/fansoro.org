@@ -1,8 +1,9 @@
-Title: Morfy 1.0.0
-Date: 2014-01-18 16:00
-Template: blog_post
-Author: Sergey Romanenko
-----
+---
+title: Morfy 1.0.0
+date: 2014-01-18 16:00
+template: blog_post
+author: Sergey Romanenko
+---
 
 Hello Everyone :)  
 I am happy to introduce Morfy CMS 1.0.0 :)  

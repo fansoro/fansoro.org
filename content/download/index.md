@@ -1,9 +1,10 @@
-Title: Download Morfy
-Date: 16/01/2014 16:08
-Template: download
-Description: Download simple and light-weighted Content Management System written in PHP
-Keywords: download, morfy, simple, cms, free, open-source
-----
+---
+title: Download Morfy
+date: 16/01/2014 16:08
+template: download
+description: Download simple and light-weighted Content Management System written in PHP
+keywords: download, morfy, simple, cms, free, open-source
+---
 
 
 ##Latest release  

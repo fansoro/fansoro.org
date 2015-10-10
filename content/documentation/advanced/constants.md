@@ -1,8 +1,9 @@
-Title: Constants
-Description: Documentation for Morfy Developers and Morfy Users.
-Keywords: documentation, development, lessons, faq, cms, questions
-Template: documentation
-----
+---
+title: Constants
+description: Documentation for Morfy Developers and Morfy Users.
+keywords: documentation, development, lessons, faq, cms, questions
+template: documentation
+---
 
 <table class="table table-striped table-bordered">
     <thead>

@@ -1,11 +1,12 @@
-Title: Documentation
-Description: Documentation for Morfy Developers and Morfy Users.
-Keywords: documentation, development, lessons, faq, cms, questions
-Template: index
-----
+---
+title: Documentation
+description: Documentation for Morfy Developers and Morfy Users.
+keywords: documentation, development, lessons, faq, cms, questions
+template: index
+---
 
 
-<h3 id="Requirements">Requirements</h3> 
+<h3 id="Requirements">Requirements</h3>
 
 Operation system: Unix, Linux, Windows, Mac OS  
 Middleware: PHP 5.3.0 or higher with PHP's Multibyte String module  
@@ -13,7 +14,7 @@ Webserver: Apache with Mod Rewrite or Ngnix with Rewrite Module
 
 <br>
 
-<h3 id="Installation">Installation</h3> 
+<h3 id="Installation">Installation</h3>
 
 * Download the latest version.
 * Unzip the contents to a new folder on your local computer.
@@ -24,11 +25,11 @@ Webserver: Apache with Mod Rewrite or Ngnix with Rewrite Module
 
 <br>
 
-<h3 id="Content">Content</h3> 
+<h3 id="Content">Content</h3>
 
 
 Morfy is a flat file CMS, this means there is no administration backend and database to deal with.  
-You simply create .md files in the "content" folder and that becomes a page. 
+You simply create .md files in the "content" folder and that becomes a page.
 
 <br>
 
@@ -61,7 +62,7 @@ Text files are marked up using Markdown Plugin. They can also contain regular HT
 At the top of text files you can place a block comment and specify certain attributes of the page.
 
 Example:
-    
+
     Title: Welcome  
     Description: Some description here   
     Keywords: key, words
@@ -90,12 +91,12 @@ Write text file vars inside `{}` e.g. `{var}`
     </tbody>
 </table>
 
-<h3 id="Themes">Themes</h3> 
+<h3 id="Themes">Themes</h3>
 
 You can create themes for your Morfy installation and in the "themes" folder.  
 To setup your theme just update `theme` setting in config.php
 
-All themes must include an index.html file to define the HTML structure of the theme. 
+All themes must include an index.html file to define the HTML structure of the theme.
 You can seperate index.html to header.html and footer.html on your wish and easy include theme:
 `<?php include 'header.html' ?>` and `<?php include 'footer.html' ?>`
 
@@ -134,7 +135,7 @@ Example how to output variable: `<?php echo $page['title']; ?>`
 <br>
 
 <h3 id="Confing">Config</h3>
-You can set your own site title, keywords, description and etc.. by editing config.php in the root Morfy directory. 
+You can set your own site title, keywords, description and etc.. by editing config.php in the root Morfy directory.
 
 Default config.php
 
@@ -157,13 +158,13 @@ Default config.php
 
 
 <br>
-<h3 id="Plugins">Plugins</h3> 
+<h3 id="Plugins">Plugins</h3>
 
 You can create plugins in the "plugins" folder.   
 To setup your plugin just update `plugins` setting in config.php  
- 
+
 Morfy provides simple API to develope plugins.  
-Available public methods: 
+Available public methods:
 
         /**
          * Factory method making method chaining possible right off the bat.

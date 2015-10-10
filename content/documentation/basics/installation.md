@@ -1,8 +1,9 @@
-Title: Installation
-Description: Documentation for Morfy Developers and Morfy Users.
-Keywords: documentation, development, lessons, faq, cms, questions
-Template: documentation
-----
+---
+title: Installation
+description: Documentation for Morfy Developers and Morfy Users.
+keywords: documentation, development, lessons, faq, cms, questions
+template: documentation
+---
 
 1. [Download the latest version.](http://morfy.org/download)
 2. Unzip the contents to a new folder on your local computer.

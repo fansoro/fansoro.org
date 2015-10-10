@@ -1,7 +1,8 @@
-Title: Upgrading to the Latest Version
-Description: Documentation for Morfy Developers and Morfy Users.
-Keywords: documentation, development, lessons, faq, cms, questions
-Template: documentation
-----
+---
+title: Upgrading to the Latest Version
+description: Documentation for Morfy Developers and Morfy Users.
+keywords: documentation, development, lessons, faq, cms, questions
+template: documentation
+---
 
 This page is under construction.

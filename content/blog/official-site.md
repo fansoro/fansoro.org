@@ -1,8 +1,9 @@
-Title: Official Site launched
-Date: 2015-09-08 23:00
-Template: blog_post
-Author: Sergey Romanenko
-----
+---
+title: Official Site launched
+date: 2015-09-08 23:00
+template: blog_post
+author: Sergey Romanenko
+---
 
 Hello Everyone!
 

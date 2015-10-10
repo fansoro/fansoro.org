@@ -1,7 +1,8 @@
-Title: The Morfy License
-Description: Morfy CMS LICENSE
-Template: about
-----
+---
+title: The Morfy License
+description: Morfy CMS LICENSE
+template: about
+---
 
 GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007

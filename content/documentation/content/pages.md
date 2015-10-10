@@ -1,7 +1,8 @@
-Title: Pages
-Description: Documentation for Morfy Developers and Morfy Users.
-Keywords: documentation, development, lessons, faq, cms, questions
-Template: documentation
-----
+---
+title: Pages
+description: Documentation for Morfy Developers and Morfy Users.
+keywords: documentation, development, lessons, faq, cms, questions
+template: documentation
+---
 
 This page is under construction.

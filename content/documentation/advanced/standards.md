@@ -1,8 +1,9 @@
-Title: Coding standards
-Description: Documentation for Morfy Developers and Morfy Users.
-Keywords: documentation, development, lessons, faq, cms, questions
-Template: documentation
-----
+---
+title: Coding standards
+description: Documentation for Morfy Developers and Morfy Users.
+keywords: documentation, development, lessons, faq, cms, questions
+template: documentation
+---
 
 
 These standards for code formatting and documentation must be followed by anyone contributing to Morfy.  

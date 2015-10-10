@@ -1,8 +1,9 @@
-Title: Markdown
-Description: Documentation for Morfy Developers and Morfy Users.
-Keywords: documentation, development, lessons, faq, cms, questions
-Template: documentation
-----
+---
+title: Markdown
+description: Documentation for Morfy Developers and Morfy Users.
+keywords: documentation, development, lessons, faq, cms, questions
+template: documentation
+---
 
 Markdown is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images. etc... with specific symbols like ```#``` or ```*```  
 
@@ -146,7 +147,7 @@ Renders to:
 [Morfy site](http://morfy.org)
 ```
 
-Renders to: 
+Renders to:
 
 [Morfy site](http://morfy.org)
 
@@ -158,7 +159,6 @@ Renders to:
 ![Morfy Logo](http://morfy.org/public/assets/img/morfy-logo.png)
 ```
 
-Renders to: 
+Renders to:
 
 ![Morfy Logo](http://morfy.org/public/assets/img/morfy-logo.png)
-
