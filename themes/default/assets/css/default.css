@@ -135,6 +135,15 @@ a:hover {
     padding-left: 20px;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+    color: #fff;
+    border-color: transparent;
+}
+
 .navbar {
     margin: 0;
     padding: 0;
@@ -521,11 +530,34 @@ a:hover {
 @media (max-width: 600px) {
     .navbar-brand > img {
         width: 76px;
+        margin-top: -6px;
     }
 
     .navbar-nav {
         float: none!important;
 
         padding: 0;
+    }
+
+    .navbar-default .navbar-collapse {
+        border-color: transparent;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+    }
+
+    .mega-header h1 {
+        font-size: 48px;
+    }
+
+    .btn-download-morfy {
+        margin-bottom: 20px;
+    }
+
+    .btn-download-morfy,
+    .btn-github-morfy {
+        width: 80%;
+        margin: 0;
     }
 }
