@@ -4,7 +4,7 @@ Template: about
 ----
 
 ## Morfy Icon
-![Morfy Icon]({site_url}/public/assets/img/morfy-icon.png)
+![Morfy Icon]({site_url}/public/assets/img/morfy-icon.png){.img-responsive}
 
 ## Morfy Logo
-![Morfy Logo]({site_url}/public/assets/img/morfy-logo.png)
+![Morfy Logo]({site_url}/public/assets/img/morfy-logo.png){.img-responsive}
