@@ -343,8 +343,7 @@
         // Parse {site_url}
         $content = str_replace('{site_url}', static::$site['url'], $content);
 
-        $ParsedownExtra = new ParsedownExtra();
-        $content = $ParsedownExtra->text($content);
+        $content = $this->parsedown($content);
 
         // Parse page for summary <!--more-->
         if (($pos = strpos($content, "<!--more-->")) === false) {
@@ -358,6 +357,12 @@
         // Return content
         return $content;
     }
+
+     public function parsedown($content)
+     {
+         $ParsedownExtra = new ParsedownExtra();
+         return $ParsedownExtra->text($content);
+     }
 
     /**
      * Load Config

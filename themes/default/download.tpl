@@ -5,7 +5,7 @@
 	        <div class="col-md-9">
                 {if Url::getUriSegment(1) == 'plugins'}
                     <div class="plugins-table">
-                        {parsedown(file_get_contents('https://raw.githubusercontent.com/morfy-cms/plugins/master/plugins-list-en.md'))}
+                        {Morfy::factory()->parsedown(file_get_contents('https://raw.githubusercontent.com/morfy-cms/plugins/master/plugins-list-en.md'))}
                     </div>
                 {else}
                     {$content}
