@@ -1,27 +1,30 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 @font-face {
-  font-family: 'MORFY_300';
-  src: url('http://morfy.org/public/assets/fonts/MORFY_300.eot?#iefix') format('embedded-opentype'),  url('http://morfy.org/public/assets/fonts/MORFY_300.otf')  format('opentype'),
-	     url('http://morfy.org/public/assets/fonts/MORFY_300.woff') format('woff'), url('MORFY_300.ttf')  format('truetype'), url('http://morfy.org/public/assets/fonts/MORFY_300.svg#MORFY_300') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'MORFY_300';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('http://morfy.org/public/assets/fonts/MORFY_300.eot?#iefix') format('embedded-opentype'),  url('http://morfy.org/public/assets/fonts/MORFY_300.otf')  format('opentype'),
+    url('http://morfy.org/public/assets/fonts/MORFY_300.woff') format('woff'), url('MORFY_300.ttf')  format('truetype'), url('http://morfy.org/public/assets/fonts/MORFY_300.svg#MORFY_300') format('svg');
 }
 
 @font-face {
-  font-family: 'MORFY_400';
-  src: url('http://morfy.org/public/assets/fonts/MORFY_400?#iefix') format('embedded-opentype'),  url('http://morfy.org/public/assets/fonts/MORFY_400.otf')  format('opentype'),
-	     url('http://morfy.org/public/assets/fonts/MORFY_400.woff') format('woff'), url('http://morfy.org/public/assets/fonts/MORFY_400.ttf')  format('truetype'), url('http://morfy.org/public/assets/fonts/MORFY_400.svg#MORFY_400') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'MORFY_400';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('http://morfy.org/public/assets/fonts/MORFY_400?#iefix') format('embedded-opentype'),  url('http://morfy.org/public/assets/fonts/MORFY_400.otf')  format('opentype'),
+    url('http://morfy.org/public/assets/fonts/MORFY_400.woff') format('woff'), url('http://morfy.org/public/assets/fonts/MORFY_400.ttf')  format('truetype'), url('http://morfy.org/public/assets/fonts/MORFY_400.svg#MORFY_400') format('svg');
 }
 
 @font-face {
-  font-family: 'MORFY_700';
-  src: url('http://morfy.org/public/assets/fonts/MORFY_700.eot?#iefix') format('embedded-opentype'),  url('http://morfy.org/public/assets/fonts/MORFY_700.otf')  format('opentype'),
-	     url('http://morfy.org/public/assets/fonts/MORFY_700.woff') format('woff'), url('http://morfy.org/public/assets/fonts/MORFY_700.ttf')  format('truetype'), url('http://morfy.org/public/assets/fonts/MORFY_700.svg#MORFY_700') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'MORFY_700';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('http://morfy.org/public/assets/fonts/MORFY_700.eot?#iefix') format('embedded-opentype'),  url('http://morfy.org/public/assets/fonts/MORFY_700.otf')  format('opentype'),
+    url('http://morfy.org/public/assets/fonts/MORFY_700.woff') format('woff'), url('http://morfy.org/public/assets/fonts/MORFY_700.ttf')  format('truetype'), url('http://morfy.org/public/assets/fonts/MORFY_700.svg#MORFY_700') format('svg');
 }
 
 body,
@@ -30,43 +33,52 @@ input,
 select,
 textarea,
 p {
-	font-family: 'MORFY_400', "Helvetica Neue", Helvetica, arial, sans-serif;
-	color: #000;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.7; 
+    font-family: 'MORFY_400', "Helvetica Neue", Helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    color: #000;
 }
 
-h1,h2,h3,h4,h5 {
-	font-family: 'MORFY_400', "Helvetica Neue", Helvetica, arial, sans-serif;
-	color: #000;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'MORFY_400', "Helvetica Neue", Helvetica, arial, sans-serif;
+
+    color: #000;
 }
 
 
 html,
 body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-  font-family: 'Source Sans Pro', sans-serif;
-    color: #000;
+    /* The html and body elements cannot have any padding or margin. */
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
+
+    height: 100%;
+
+    color: #000;
     background: #fff;
 }
 
 /* Wrapper for page content to push down footer */
 #wrap {
-  min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
+    height: auto;
+    min-height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
 }
 
 /* Set the fixed height of the footer here */
 #footer {
-  height: 60px;
-  background-color: #fff;
+    height: 60px;
+
+    background-color: #fff;
 }
 
 
@@ -75,13 +87,15 @@ body {
 /* Not required for template or sticky footer method. */
 
 a {
-    color: #C75C5C;
     text-decoration: none;
+
+    color: #c75c5c;
 }
 
 a:hover {
-    color: #B72626;
     text-decoration: none;
+
+    color: #b72626;
 }
 
 .mega-header {
@@ -90,42 +104,47 @@ a:hover {
 }
 
 .mega-header h1 {
+    font-size: 68px;
+
     margin: 0;
     padding: 0;
-    font-size: 68px;
+
     color: #000;
 }
 
 
 .morfy-promo-block {
-    color: #000;
-    text-align: center;
     padding: 150px 0 180px;
+
+    text-align: center;
+
+    color: #000;
 }
 
 .morfy-promo-block p.lead {
     padding-top: 20px;
     padding-bottom: 20px;
+
     color: #000;
 }
 
 .nav {
     padding-top: 25px;
+    padding-right: 20px;
     padding-bottom: 25px;
     padding-left: 20px;
-    padding-right: 20px;
 }
 
 .navbar {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-.navbar-brand>img {
+.navbar-brand > img {
     margin-top: -4px;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -134,8 +153,8 @@ a:hover {
     text-align: left;
 }
 .nav.nav-list > li.active {
-    background: #EAEAEA;
     color: #000;
+    background: #eaeaea;
 }
 
 .nav.nav-list > li.active a {
@@ -143,9 +162,10 @@ a:hover {
 }
 
 .navbar-nav > li > a {
-    color: #000;
     font-size: 16px;
     font-weight: 400;
+
+    color: #000;
 }
 
 .nav-list.nav > li > a {
@@ -157,38 +177,38 @@ a:hover {
 }
 
 .dropdown-menu {
-    box-shadow: none;
-    border-radius: 0;
     border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
-    background: #000;
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
     color: #fff;
+    background: #000;
 }
 
 .navbar-default {
-    background-color: rgba(255,255,255,1.0);
     border-color: transparent;
+    background-color: rgba(255,255,255,1.0);
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
     color: #000;
 }
 
 .btn-black {
-    background: transparent;
-    border: 2px solid #000;
     color: #000;
+    border: 2px solid #000;
     border-radius: 0;
+    background: transparent;
 }
 
 .btn-black:hover {
-    background: #000;
-    border: 2px solid #000;
     color: #fff;
+    border: 2px solid #000;
+    background: #000;
 }
 
 .btn-github-morfy {
@@ -205,12 +225,14 @@ a:hover {
 
 .h2-reason {
     font-size: 38px;
-    margin-bottom: 70px;
+
     margin-top: 60px;
+    margin-bottom: 70px;
 }
 
 .mega-header h1.page-header-h1 {
     font-size: 46px;
+
     padding-top: 25px;
     padding-bottom: 25px;
 }
@@ -226,40 +248,48 @@ a:hover {
 
 /* Features Content */
 .features-columns {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
+
     text-align: center;
 }
 
 .features-columns h4 {
     font-weight: 700;
-    color: #C75C5C;
+
+    color: #c75c5c;
 }
 
 .features-columns img {
-  display: block;
-  width: 90px;
-  height: auto;
-  margin: 0 auto 30px;
+    display: block;
+
+    width: 90px;
+    height: auto;
+    margin: 0 auto 30px;
 }
 
 
 /* Tesimonial */
 .testimonial {
     position: relative;
-    width: 100%;
-    color: #000;
-    text-align: center;
-    padding: 80px 0;
+
     overflow: hidden;
+
+    width: 100%;
+    padding: 80px 0;
+
+    text-align: center;
+
+    color: #000;
     background: url('../img/bg-2.jpg');
     background-repeat: no-repeat;
 }
 
 .testimonial .carousel-caption {
     position: relative;
-    left: 0;
     right: 0;
     bottom: 0;
+    left: 0;
+
     margin: 0 auto;
 }
 
@@ -269,7 +299,9 @@ a:hover {
 
 .testimonial .carousel-caption h4 {
     font-size: 24px;
+
     margin-bottom: 20px;
+
     color: #000;
     text-shadow: none;
 }
@@ -277,6 +309,7 @@ a:hover {
 .testimonial .carousel-caption h5 {
     font-size: 16px;
     font-style: italic;
+
     text-shadow: none;
 }
 
@@ -295,45 +328,52 @@ a:hover {
 
 /* Plugins Table */
 .plugins-table thead {
-	display:none;
+    display: none;
 }
 
 .plugins-table tr {
-	display: block;
-	background: #F5F5F5;
-    border-radius: 0;
-	color: #000;
-	padding: 20px;
-	width: 328px;
-	height: 170px;
-	float: left;
-	text-align: left;
-	margin-left: 0;
+    position: relative;
+
+    display: block;
+    float: left;
+    overflow: hidden;
+
+    width: 328px;
+    height: 170px;
     margin-right: 20px;
     margin-bottom: 20px;
-	position: relative;
-	overflow:hidden;
+    margin-left: 0;
+    padding: 20px;
+
+    text-align: left;
+
+    color: #000;
+    border-radius: 0;
+    background: #f5f5f5;
 }
 
 .plugins-table tr td:nth-child(1) {
-	display: block;
-	font-size: 24px;
+    font-size: 24px;
+
+    display: block;
 }
 
 .plugins-table tr td:nth-child(2) {
-	color:#000;
+    color: #000;
 }
 
 .plugins-table tr td:nth-child(3) {
     display: block;
     float: left;
-    background: #F5F5F5;
-    padding-left: 10px;
-    padding-right: 10px;
+
     padding-top: 2px;
+    padding-right: 10px;
     padding-bottom: 3px;
-    border-radius: 0;
+    padding-left: 10px;
+
     border: 2px solid #000;
+    border-radius: 0;
+    background: #f5f5f5;
 }
 
 .plugins-table tr td:nth-child(3):hover {
@@ -345,36 +385,44 @@ a:hover {
 }
 
 .plugins-table tr td:nth-child(4) {
-	display: block;
-	left: 120px;
-	padding-left:10px;
-	padding-right:10px;
+    left: 120px;
+
+    display: block;
+
     padding-top: 2px;
+    padding-right: 10px;
     padding-bottom: 5px;
+    padding-left: 10px;
 }
 
 .plugins-table tr td:nth-child(3) a {
-	color:#000;
-	text-decoration:none;
+    text-decoration: none;
+
+    color: #000;
 }
 
 .plugins-table tr td:nth-child(4) a {
-	color:#000;
-	text-decoration:none;
+    text-decoration: none;
+
+    color: #000;
 }
 
 .plugins-table tr td:nth-child(3) {
-	color:#000;
-	margin-right:10px;
-	position: absolute;
-	bottom:15px;
+    position: absolute;
+    bottom: 15px;
+
+    margin-right: 10px;
+
+    color: #000;
 }
 
 .plugins-table tr td:nth-child(4) {
-	color:#000;
-	margin-right:10px;
-	position: absolute;
-	bottom:15px;
+    position: absolute;
+    bottom: 15px;
+
+    margin-right: 10px;
+
+    color: #000;
 }
 
 /* Docs */
@@ -397,9 +445,11 @@ a:hover {
 }
 
 .navigation-docs .panel-title > a {
-    width: 100%;
     display: block;
+
+    width: 100%;
     padding: 10px 15px;
+
     color: #000;
 }
 
@@ -426,6 +476,7 @@ a:hover {
 
     .navbar-nav {
         float: none!important;
+
         padding: 0;
     }
 }

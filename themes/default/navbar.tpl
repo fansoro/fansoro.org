@@ -7,7 +7,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{$.config.site_url}"><img src="{$.config.site_url}/public/assets/img/morfy-logo.png" height="" width="132" alt="Morfy CMS"></a>
+			<a class="navbar-brand" href="{$.config.site_url}"><img src="{$.config.site_url}/public/assets/img/morfy-logo-white.png" height="" width="132" alt="Morfy CMS"></a>
 		</div>
 		<div class="collapse navbar-collapse">
             {set $slug = Morfy::factory()->getUriSegment(0)}
