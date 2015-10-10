@@ -26,7 +26,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="http://forum.morfy.org">Forum</a></li>
                         <li><a href="{$.config.site_url}/documentation">Documentation</a></li>
-                        <li><a href="https://github.com/Awilum/morfy-cms/issues">Bugtracker</a></li>
+                        <li><a href="https://github.com/morfy-cms/morfy/issues">Bugtracker</a></li>
                     </ul>
                 </li>
                 <li class="dropdown{if $slug == 'about'} active{/if}">

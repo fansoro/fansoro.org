@@ -37,8 +37,8 @@
                 <div class="morfy-promo-block">
                     <h1>Introducing Morfy</h1>
                     <p class="lead">Morfy is a simple, fast and light-weighted file-based Content<br> Management System. Making the Web easy.</p>
-                    <a class="btn btn-white btn-lg btn-download-morfy" href="https://github.com/Awilum/morfy-cms/releases/download/v1.0.6/morfy-cms-1.0.6.zip"><i class="fa fa-download"></i> Download Morfy 1.0.6</a>
-                    <a class="btn btn-white btn-lg btn-github-morfy" href="https://github.com/Awilum/morfy-cms"><i class="fa fa-github"></i> View Project on GitHub</a>
+                    <a class="btn btn-white btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v1.0.6/morfy-cms-1.0.6.zip"><i class="fa fa-download"></i> Download Morfy 1.0.6</a>
+                    <a class="btn btn-white btn-lg btn-github-morfy" href="https://github.com/morfy-cms/morfy"><i class="fa fa-github"></i> View Project on GitHub</a>
                 </div>
                 {else}
                     <div class="container">
