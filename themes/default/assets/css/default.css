@@ -189,6 +189,13 @@ a:hover {
     background: #000;
 }
 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #fff;
+    background: #000;
+}
+
 .navbar-default {
     border-color: transparent;
     background-color: transparent;
