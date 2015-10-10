@@ -139,6 +139,11 @@ a:hover {
     background-color: #fff;
 }
 
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+
 .navbar-default .navbar-toggle {
     color: #fff;
     border-color: transparent;
@@ -548,7 +553,11 @@ a:hover {
     }
 
     .morfy-promo-block {
-        padding: 50px 0 100px;
+        padding: 70px 0 100px;
+    }
+
+    .morfy-promo-block p.lead {
+        font-size: 18px;
     }
 
     .mega-header h1 {
@@ -563,5 +572,12 @@ a:hover {
     .btn-github-morfy {
         width: 80%;
         margin: 0;
+    }
+
+    .testimonial .carousel-caption h4 {
+        font-size: 22px;
+
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
