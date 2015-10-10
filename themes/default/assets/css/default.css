@@ -479,6 +479,22 @@ a:hover {
     color: #000;
 }
 
+.light-theme .navbar-default {
+    background-color: #fff;
+}
+
+.light-theme .navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+
+.light-theme .navbar-default .navbar-nav > .open > a,
+.light-theme .navbar-default .navbar-nav > .open > a:focus,
+.light-theme .navbar-default .navbar-nav > .open > a:hover {
+    color: #000;
+    background: #fff;
+}
+
+
 /* Footer */
 #footer p {
     padding-top: 20px;

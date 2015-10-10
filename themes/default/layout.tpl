@@ -28,7 +28,7 @@
 		</script>
 		{/ignore}
 	</head>
-	<body>
+	<body {if Morfy::factory()->getUriSegment(0) != ''}class="light-theme"{/if}>
 		<div id="wrap">
 		    <div class="mega-header">
 			    {include 'navbar.tpl'}
