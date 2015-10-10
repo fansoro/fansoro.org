@@ -136,7 +136,7 @@ a:hover {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    color: #fff;
+    background-color: #fff;
 }
 
 .navbar-default .navbar-toggle {
@@ -552,7 +552,7 @@ a:hover {
     }
 
     .btn-download-morfy {
-        margin-bottom: 20px;
+        margin-bottom: 20px!important;
     }
 
     .btn-download-morfy,
