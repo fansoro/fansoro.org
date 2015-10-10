@@ -1,27 +1,19 @@
 <?php
 
-/**
- * Morfy Engine
- *
- *  Morfy - Content Management System.
- *  Site: www.morfy.org
- *  Copyright (C) 2014 - 2015 Romanenko Sergey / Awilum <awilum@msn.com>
- *
- * This source file is part of the Morfy Engine. More information,
- * documentation and tutorials can be found at http://morfy.org
- *
- * @package     Morfy
- *
- * @author      Romanenko Sergey / Awilum <awilum@msn.com>
- * @copyright   2014 - 2015 Romanenko Sergey / Awilum <awilum@msn.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
+ /**
+  * Morfy
+  *
+  * @package Morfy
+  * @author Romanenko Sergey / Awilum <awilum@msn.com>
+  * @link http://morfy.org
+  *
+  * For the full copyright and license information, please view the LICENSE
+  * file that was distributed with this source code.
+  */
 
-class Morfy
-{
-    /**
+ class Morfy
+ {
+     /**
      * The version of Morfy
      *
      * @var string
@@ -29,18 +21,18 @@ class Morfy
     const VERSION = '1.0.6';
 
     /**
-     * The separator of Morfy
-     *
-     * @var string
-     */
-    const SEPARATOR = '----';
-
-    /**
-     * Config array.
+     * Site Config array.
      *
      * @var array
      */
-    public static $config;
+    public static $site;
+
+    /**
+     * Fenom Config array.
+     *
+     * @var array
+     */
+    public static $fenom;
 
     /**
      * Plugins
@@ -62,30 +54,6 @@ class Morfy
      * @var array
      */
     private static $filters = array();
-
-    /**
-     * Key name for security token storage
-     *
-     * @var  string
-     */
-    protected static $security_token_name = 'security_token';
-
-    /**
-     * Page headers
-     *
-     * @var array
-     */
-    private $page_headers = array(
-                                    'title'         => 'Title',
-                                    'description'   => 'Description',
-                                    'keywords'      => 'Keywords',
-                                    'author'        => 'Author',
-                                    'date'          => 'Date',
-                                    'robots'        => 'Robots',
-                                    'tags'          => 'Tags',
-                                    'template'      => 'Template',
-                                );
-
 
     /**
      * Protected clone method to enforce singleton behavior.
@@ -125,45 +93,65 @@ class Morfy
      * Run Morfy Application
      *
      *  <code>
-     *      Morfy::factory()->run($path);
+     *      Morfy::factory()->run();
      *  </code>
      *
-     * @param string $path Config path
      * @access  public
      */
-    public function run($path)
+    public function run()
     {
 
+        // Use the Force...
+        include LIBRARIES_PATH . '/Force/ClassLoader/ClassLoader.php';
+        ClassLoader::mapClasses(array(
+            // Yaml Parser/Dumper
+            'Spyc'     => LIBRARIES_PATH . '/Spyc/Spyc.php',
+
+            // Force Components
+            'Arr'      => LIBRARIES_PATH . '/Force/Arr/Arr.php',
+            'Session'  => LIBRARIES_PATH . '/Force/Session/Session.php',
+            'Token'    => LIBRARIES_PATH . '/Force/Token/Token.php',
+            'Request'  => LIBRARIES_PATH . '/Force/Http/Request.php',
+            'Response' => LIBRARIES_PATH . '/Force/Http/Response.php',
+            'Url'      => LIBRARIES_PATH . '/Force/Url/Url.php',
+            'File'     => LIBRARIES_PATH . '/Force/FileSystem/File.php',
+            'Dir'      => LIBRARIES_PATH . '/Force/FileSystem/Dir.php',
+
+            // Parsedown
+            'Parsedown'      => LIBRARIES_PATH . '/Parsedown/Parsedown.php',
+            'ParsedownExtra' => LIBRARIES_PATH . '/Parsedown/ParsedownExtra.php',
+
+            // Fenom Template Engine
+            'Fenom'          => LIBRARIES_PATH . '/Fenom/Fenom.php',
+        ));
+        ClassLoader::register();
+
         // Load config file
-        $this->loadConfig($path);
+        $this->loadConfig();
 
         // Set default timezone
-        @ini_set('date.timezone', static::$config['site_timezone']);
+        @ini_set('date.timezone', static::$site['timezone']);
         if (function_exists('date_default_timezone_set')) {
-            date_default_timezone_set(static::$config['site_timezone']);
+            date_default_timezone_set(static::$site['timezone']);
         } else {
-            putenv('TZ='.static::$config['site_timezone']);
+            putenv('TZ='.static::$site['timezone']);
         }
 
-        /**
-         * Sanitize URL to prevent XSS - Cross-site scripting
-         */
-        $this->runSanitizeURL();
+        // Sanitize URL to prevent XSS - Cross-site scripting
+        Url::runSanitizeURL();
 
-        /**
-         * Send default header and set internal encoding
-         */
-        header('Content-Type: text/html; charset='.static::$config['site_charset']);
+        // Send default header and set internal encoding
+        header('Content-Type: text/html; charset='.static::$site['charset']);
         function_exists('mb_language') and mb_language('uni');
-        function_exists('mb_regex_encoding') and mb_regex_encoding(static::$config['site_charset']);
-        function_exists('mb_internal_encoding') and mb_internal_encoding(static::$config['site_charset']);
+        function_exists('mb_regex_encoding') and mb_regex_encoding(static::$site['charset']);
+        function_exists('mb_internal_encoding') and mb_internal_encoding(static::$site['charset']);
 
-        /**
-         * Gets the current configuration setting of magic_quotes_gpc
-         * and kill magic quotes
-         */
+        // Gets the current configuration setting of magic_quotes_gpc and kill magic quotes
         if (get_magic_quotes_gpc()) {
-            function stripslashesGPC(&$value) { $value = stripslashes($value); }
+            function stripslashesGPC(&$value)
+            {
+                $value = stripslashes($value);
+            }
             array_walk_recursive($_GET, 'stripslashesGPC');
             array_walk_recursive($_POST, 'stripslashesGPC');
             array_walk_recursive($_COOKIE, 'stripslashesGPC');
@@ -171,31 +159,26 @@ class Morfy
         }
 
         // Start the session
-        !session_id() and @session_start();
+        Session::start();
+
+        // Register Fenom Autoload
+        Fenom::registerAutoload();
 
         // Load Plugins
         $this->loadPlugins();
         $this->runAction('plugins_loaded');
 
-        // Load Fenom Template Engine
-        include LIBRARIES_PATH . '/Fenom/Fenom.php';
-        Fenom::registerAutoload();
-
         // Get page for current requested url
-        $page = $this->getPage($this->getUrl());
+        $page = $this->getPage(Url::getUriString());
 
-        // Overload page title, keywords and description
-        empty($page['title']) and $page['title'] = static::$config['site_title'];
-        empty($page['keywords']) and $page['keywords'] = static::$config['site_keywords'];
-        empty($page['description']) and $page['description'] = static::$config['site_description'];
-
-        $page   = $page;
-        $config = self::$config;
-
+        // Overload page title, keywords and description if needed
+        empty($page['title']) and $page['title'] = static::$site['title'];
+        empty($page['keywords']) and $page['keywords'] = static::$site['keywords'];
+        empty($page['description']) and $page['description'] = static::$site['description'];
 
         // Load template
         $this->runAction('before_render');
-        $this->loadTemplate($page, $config);
+        $this->loadTemplate($page, self::$site);
         $this->runAction('after_render');
     }
 
@@ -203,36 +186,25 @@ class Morfy
      * Load template
      *
      *  <code>
-     *      Morfy::factory()->loadTemplate($page, $config);
+     *      Morfy::factory()->loadTemplate($page, $site);
      *  </code>
      *
      * @access public
+     * @param  array $page Page array
+     * @param  array $site Site Config array
      * @return string
      */
-    public function loadTemplate($page, $config)
+    public function loadTemplate($page, $site)
     {
-
         $fenom = Fenom::factory(
-            THEMES_PATH . '/' . $config['site_theme'] . '/',
-            ROOT_DIR . '/cache/fenom/',
-            array(
-                'disable_methods'      => false,
-                'disable_native_funcs' => false,
-                'auto_reload'          => true,
-                'force_compile'        => true,
-                'disable_cache'        => false,
-                'force_include'        => true,
-                'auto_escape'          => false,
-                'force_verify'         => false,
-                'disable_php_calls'    => false,
-                'disable_statics'      => false,
-                'strip'                => true,
-            )
+            THEMES_PATH . '/' . $site['theme'] . '/',
+            CACHE_PATH . '/fenom/',
+            self::$fenom
         );
 
-        // Do global tag {$.config} for the template
-        $fenom->addAccessorSmart('config', 'site_config', Fenom::ACCESSOR_PROPERTY);
-        $fenom->site_config = $config;
+        // Do global tag {$.site} for the template
+        $fenom->addAccessorSmart('site', 'site_config', Fenom::ACCESSOR_PROPERTY);
+        $fenom->site_config = $site;
 
         // Display page
         try {
@@ -242,110 +214,11 @@ class Morfy
         }
     }
 
-    /**
-     * Get Url
-     *
-     *  <code>
-     *      $url = Morfy::factory()->getUrl();
-     *  </code>
-     *
-     * @access  public
-     * @return string
-     */
-    public function getUrl()
-    {
-        // Get request url and script url
-        $url = '';
-        $request_url = (isset($_SERVER['REQUEST_URI'])) ? $_SERVER['REQUEST_URI'] : '';
-        $script_url  = (isset($_SERVER['PHP_SELF'])) ? $_SERVER['PHP_SELF'] : '';
-
-        // Get our url path and trim the / of the left and the right
-        if ($request_url != $script_url) $url = trim(preg_replace('/'. str_replace('/', '\/', str_replace('index.php', '', $script_url)) .'/', '', $request_url, 1), '/');
-        $url = preg_replace('/\?.*/', '', $url); // Strip query string
-
-        return $url;
-    }
-
-    /**
-     * Get Uri Segments
-     *
-     *  <code>
-     *      $uri_segments = Morfy::factory()->getUriSegments();
-     *  </code>
-     *
-     * @access  public
-     * @return array
-     */
-    public function getUriSegments()
-    {
-        return explode('/', $this->getUrl());
-    }
-
-    /**
-     * Get Uri Segment
-     *
-     *  <code>
-     *      $uri_segment = Morfy::factory()->getUriSegment(1);
-     *  </code>
-     *
-     * @access  public
-     * @return string
-     */
-    public function getUriSegment($segment)
-    {
-        $segments = $this->getUriSegments();
-        return isset($segments[$segment]) ? $segments[$segment] : null;
-    }
-
-    /**
-     * Create safe url.
-     *
-     *  <code>
-     *      $url = Morfy::factory()->sanitizeURL($url);
-     *  </code>
-     *
-     * @access  public
-     * @param  string $url Url to sanitize
-     * @return string
-     */
-    public function sanitizeURL($url)
-    {
-        $url = trim($url);
-        $url = rawurldecode($url);
-        $url = str_replace(array('--', '&quot;', '!', '@', '#', '$', '%', '^', '*', '(', ')', '+', '{', '}', '|', ':', '"', '<', '>',
-            '[', ']', '\\', ';', "'", ',', '*', '+', '~', '`', 'laquo', 'raquo', ']>', '&#8216;', '&#8217;', '&#8220;', '&#8221;', '&#8211;', '&#8212;'),
-            array('-', '-', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''),
-            $url);
-        $url = str_replace('--', '-', $url);
-        $url = rtrim($url, "-");
-        $url = str_replace('..', '', $url);
-        $url = str_replace('//', '', $url);
-        $url = preg_replace('/^\//', '', $url);
-        $url = preg_replace('/^\./', '', $url);
-        return $url;
-     }
-
-    /**
-     * Sanitize URL to prevent XSS - Cross-site scripting
-     *
-     *  <code>
-     *      Morfy::factory()->runSanitizeURL();
-     *  </code>
-     *
-     * @access  public
-     * @return void
-     */
-    public function runSanitizeURL()
-    {
-        $_GET = array_map(array($this, 'sanitizeURL'), $_GET);
-    }
-
-
    /**
      * Get pages
      *
      *  <code>
-     *      $pages = Morfy::factory()->getPages(CONTENT_PATH . '/blog/');
+     *      $pages = Morfy::factory()->getPages('blog');
      *  </code>
      *
      * @access  public
@@ -358,52 +231,42 @@ class Morfy
      */
     public function getPages($url = '', $order_by = 'date', $order_type = 'DESC', $ignore = array('404'), $limit = null)
     {
+        $pages = File::scan(CONTENT_PATH . '/' . $url, 'md');
 
-        // Page headers
-        $page_headers = $this->page_headers;
-
-        $pages = $this->getFiles(CONTENT_PATH . $url);
-
-        foreach($pages as $key => $page) {
-
+        foreach ($pages as $key => $page) {
             if (!in_array(basename($page, '.md'), $ignore)) {
-
                 $content = file_get_contents($page);
 
-                $_page_headers = explode(Morfy::SEPARATOR, $content);
+                $_page_headers = explode('---', $content);
 
-                foreach ($page_headers as $field => $regex) {
-                    if (preg_match('/^[ \t\/*#@]*' . preg_quote($regex, '/') . ':(.*)$/mi', $_page_headers[0], $match) && $match[1]) {
-                        $_pages[$key][ $field ] = trim($match[1]);
-                    } else {
-                        $_pages[$key][ $field ] = '';
-                    }
-                }
+                $_pages[$key] = Spyc::YAMLLoad($_page_headers[1]);
 
-                $url = str_replace(CONTENT_PATH, Morfy::$config['site_url'], $page);
+                $url = str_replace(CONTENT_PATH, Morfy::$site['url'], $page);
                 $url = str_replace('index.md', '', $url);
                 $url = str_replace('.md', '', $url);
                 $url = str_replace('\\', '/', $url);
                 $url = rtrim($url, '/');
                 $_pages[$key]['url'] = $url;
 
-                $_content = $this->parseContent($content);
-                if(is_array($_content)) {
-                    $_pages[$key]['content_short'] = $_content['content_short'];
-                    $_pages[$key]['content'] = $_content['content_full'];
+                $_content = $this->parseContent($_page_headers[2]);
+
+                if (is_array($_content)) {
+                    $_pages[$key]['summary'] = $_content['summary'];
+                    $_pages[$key]['content'] = $_content['content'];
                 } else {
-                    $_pages[$key]['content_short'] = $_content;
+                    $_pages[$key]['summary'] = $_content;
                     $_pages[$key]['content'] = $_content;
                 }
 
                 $_pages[$key]['slug'] = basename($page, '.md');
-
             }
         }
 
-        $_pages = $this->subvalSort($_pages, $order_by, $order_type);
+        $_pages = Arr::subvalSort($_pages, $order_by, $order_type);
 
-        if($limit != null) $_pages = array_slice($_pages, null, $limit);
+        if ($limit != null) {
+            $_pages = array_slice($_pages, null, $limit);
+        }
 
         return $_pages;
     }
@@ -421,45 +284,45 @@ class Morfy
      */
     public function getPage($url)
     {
-        // Page headers
-        $page_headers = $this->page_headers;
 
         // Get the file path
-        if($url) $file = CONTENT_PATH . '/' . $url; else $file = CONTENT_PATH . '/' .'index';
+        if ($url) {
+            $file = CONTENT_PATH . '/' . $url;
+        } else {
+            $file = CONTENT_PATH . '/' .'index';
+        }
 
         // Load the file
-        if(is_dir($file)) $file = CONTENT_PATH . '/' . $url .'/index.md'; else $file .= '.md';
+        if (is_dir($file)) {
+            $file = CONTENT_PATH . '/' . $url .'/index.md';
+        } else {
+            $file .= '.md';
+        }
 
         if (file_exists($file)) {
             $content = file_get_contents($file);
         } else {
             $content = file_get_contents(CONTENT_PATH . '/' . '404.md');
-            header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found');
+            Response::status(404);
         }
 
-        $_page_headers = explode(Morfy::SEPARATOR, $content);
+        $_page_headers = explode('---', $content);
 
-        foreach ($page_headers as $field => $regex) {
-            if (preg_match('/^[ \t\/*#@]*' . preg_quote($regex, '/') . ':(.*)$/mi', $_page_headers[0], $match) && $match[1]) {
-                $page[ $field ] = trim($match[1]);
-            } else {
-                $page[ $field ] = '';
-            }
-        }
+        $page = Spyc::YAMLLoad($_page_headers[1]);
 
-        $url = str_replace(CONTENT_PATH, Morfy::$config['site_url'], $file);
+        $url = str_replace(CONTENT_PATH, Morfy::$site['url'], $file);
         $url = str_replace('index.md', '', $url);
         $url = str_replace('.md', '', $url);
         $url = str_replace('\\', '/', $url);
         $url = rtrim($url, '/');
-        $pages['url'] = $url;
+        $page['url'] = $url;
 
-        $_content = $this->parseContent($content);
-        if(is_array($_content)) {
-            $page['content_short'] = $_content['content_short'];
-            $page['content'] = $_content['content_full'];
+        $_content = $this->parseContent($_page_headers[2]);
+
+        if (is_array($_content)) {
+            $page['summary'] = $_content['summary'];
+            $page['content'] = $_content['content'];
         } else {
-            $page['content_short'] = $_content;
             $page['content'] = $_content;
         }
 
@@ -469,51 +332,6 @@ class Morfy
     }
 
     /**
-     * Get list of files in directory recursive
-     *
-     *  <code>
-     *      $files = Morfy::factory()->getFiles('folder');
-     *      $files = Morfy::factory()->getFiles('folder', 'txt');
-     *      $files = Morfy::factory()->getFiles('folder', array('txt', 'log'));
-     *  </code>
-     *
-     * @access  public
-     * @param  string $folder Folder
-     * @param  mixed  $type   Files types
-     * @return array
-     */
-    public static function getFiles($folder, $type = null)
-    {
-        $data = array();
-        if (is_dir($folder)) {
-            $iterator = new RecursiveDirectoryIterator($folder);
-            foreach (new RecursiveIteratorIterator($iterator) as $file) {
-                if ($type !== null) {
-                    if (is_array($type)) {
-                        $file_ext = substr(strrchr($file->getFilename(), '.'), 1);
-                        if (in_array($file_ext, $type)) {
-                            if (strpos($file->getFilename(), $file_ext, 1)) {
-                                $data[] = $file->getPathName();
-                            }
-                        }
-                    } else {
-                        if (strpos($file->getFilename(), $type, 1)) {
-                            $data[] = $file->getPathName();
-                        }
-                    }
-                } else {
-                    if ($file->getFilename() !== '.' && $file->getFilename() !== '..') $data[] = $file->getPathName();
-                }
-            }
-
-            return $data;
-        } else {
-            return false;
-        }
-    }
-
-
-    /**
      * Content Parser
      *
      * @param  string $content Content to parse
@@ -521,39 +339,38 @@ class Morfy
      */
     protected function parseContent($content)
     {
-        // Parse Content after Headers
-        $_content = '';
-        $i = 0;
-        foreach (explode(Morfy::SEPARATOR, $content) as $c) {
-            ($i++!=0) and $_content .= $c;
-        }
-
-        $content = $_content;
 
         // Parse {site_url}
-        $content = str_replace('{site_url}', static::$config['site_url'], $_content);
+        $content = str_replace('{site_url}', static::$site['url'], $content);
 
-        // Parse {morfy_separator}
-        $content = str_replace('{morfy_separator}', Morfy::SEPARATOR, $content);
+        $ParsedownExtra = new ParsedownExtra();
+        $content = $ParsedownExtra->text($content);
 
-        // Parse {morfy_version}
-        $content = str_replace('{morfy_version}', Morfy::VERSION, $content);
-
-        // Parse {cut}
-        $pos = strpos($content, "{cut}");
-        if ($pos === false) {
+        // Parse page for summary <!--more-->
+        if (($pos = strpos($content, "<!--more-->")) === false) {
             $content = $this->applyFilter('content', $content);
         } else {
-            $content = explode("{cut}", $content);
-            $content['content_short'] = $this->applyFilter('content', $content[0]);
-            $content['content_full']  = $this->applyFilter('content', $content[0].$content[1]);
+            $content = explode("<!--more-->", $content);
+            $content['summary']  = $this->applyFilter('content', $content[0]);
+            $content['content']  = $this->applyFilter('content', $content[0].$content[1]);
         }
-
-        // Parse PHP
-        $content = Morfy::evalPHP($content);
 
         // Return content
         return $content;
+    }
+
+    /**
+     * Load Config
+     */
+    protected function loadConfig()
+    {
+        if (file_exists($site_config_path  = CONFIG_PATH . '/site.yml') &&
+            file_exists($fenom_config_path = CONFIG_PATH . '/fenom.yml')) {
+            static::$site  = Spyc::YAMLLoad(file_get_contents($site_config_path));
+            static::$fenom = Spyc::YAMLLoad(file_get_contents($fenom_config_path));
+        } else {
+            die("Oops.. Where is config file ?!");
+        }
     }
 
     /**
@@ -561,17 +378,11 @@ class Morfy
      */
     protected function loadPlugins()
     {
-        foreach (static::$config['plugins'] as $plugin) {
-            include_once PLUGINS_PATH .'/'. $plugin.'/'.$plugin.'.php';
+        if (is_array(static::$site['plugins']) && count(static::$site['plugins']) > 0) {
+            foreach (static::$site['plugins'] as $plugin) {
+                include_once PLUGINS_PATH .'/'. $plugin.'/'.$plugin.'.php';
+            }
         }
-    }
-
-    /**
-     * Load Config
-     */
-    protected function loadConfig($path)
-    {
-        if (file_exists($path)) static::$config = require $path; else die("Oops.. Where is config file ?!");
     }
 
     /**
@@ -627,7 +438,7 @@ class Morfy
         if (count(static::$actions) > 0) {
 
             // Sort actions by priority
-            $actions = $this->subvalSort(static::$actions, 'priority');
+            $actions = Arr::subvalSort(static::$actions, 'priority');
 
             // Loop through $actions array
             foreach ($actions as $action) {
@@ -644,23 +455,16 @@ class Morfy
                         } else {
                             call_user_func_array($action['function'], $args);
                         }
-
                     } else {
-
                         if ($return) {
                             return call_user_func_array($action['function'], $action['args']);
                         } else {
                             call_user_func_array($action['function'], $action['args']);
                         }
-
                     }
-
                 }
-
             }
-
         }
-
     }
 
     /**
@@ -682,12 +486,12 @@ class Morfy
 
         $args = array_slice(func_get_args(), 2);
 
-        if ( ! isset(static::$filters[$filter_name])) {
+        if (! isset(static::$filters[$filter_name])) {
             return $value;
         }
 
         foreach (static::$filters[$filter_name] as $priority => $functions) {
-            if ( ! is_null($functions)) {
+            if (! is_null($functions)) {
                 foreach ($functions as $function) {
                     $all_args = array_merge(array($value), $args);
                     $function_name = $function['function'];
@@ -751,124 +555,4 @@ class Morfy
 
         return true;
     }
-
-    /**
-     * Generate and store a unique token which can be used to help prevent
-     * [CSRF](http://wikipedia.org/wiki/Cross_Site_Request_Forgery) attacks.
-     *
-     *  <code>
-     *      $token = Morfy::factory()->generateToken();
-     *  </code>
-     *
-     * You can insert this token into your forms as a hidden field:
-     *
-     *  <code>
-     *      <input type="hidden" name="token" value="<?php echo Morfy::factory()->generateToken(); ?>">
-     *  </code>
-     *
-     * This provides a basic, but effective, method of preventing CSRF attacks.
-     *
-     * @param  boolean $new force a new token to be generated?. Default is false
-     * @return string
-     */
-    public function generateToken($new = false)
-    {
-        // Get the current token
-        if (isset($_SESSION[(string) Morfy::$security_token_name])) $token = $_SESSION[(string) Morfy::$security_token_name]; else $token = null;
-
-        // Create a new unique token
-        if ($new === true or ! $token) {
-
-            // Generate a new unique token
-            $token = sha1(uniqid(mt_rand(), true));
-
-            // Store the new token
-            $_SESSION[(string) Morfy::$security_token_name] = $token;
-        }
-
-        // Return token
-        return $token;
-    }
-
-    /**
-     * Check that the given token matches the currently stored security token.
-     *
-     *  <code>
-     *     if (Morfy::factory()->checkToken($token)) {
-     *         // Pass
-     *     }
-     *  </code>
-     *
-     * @param  string  $token token to check
-     * @return boolean
-     */
-    public function checkToken($token)
-    {
-        return Morfy::factory()->generateToken() === $token;
-    }
-
-    /**
-     * Sanitize data to prevent XSS - Cross-site scripting
-     *
-     *  <code>
-     *     $str = Morfy::factory()->cleanString($str);
-     *  </code>
-     *
-     * @param  string $str String
-     * @return string
-     */
-    public function cleanString($str) {
-        return htmlspecialchars($str, ENT_QUOTES, 'utf-8');
-    }
-
-    /**
-     * Subval sort
-     *
-     *  <code>
-     *      $new_array = Morfy::factory()->subvalSort($old_array, 'sort');
-     *  </code>
-     *
-     * @access  public
-     * @param  array  $a      Array
-     * @param  string $subkey Key
-     * @param  string $order  Order type DESC or ASC
-     * @return array
-     */
-    public function subvalSort($a, $subkey, $order = null)
-    {
-        if (count($a) != 0 || (!empty($a))) {
-            foreach ($a as $k => $v) {
-                $b[$k] = function_exists('mb_strtolower') ? mb_strtolower($v[$subkey]) : strtolower($v[$subkey]);
-            }
-            if ($order == null || $order == 'ASC') {
-                asort($b);
-            } else if ($order == 'DESC') {
-                arsort($b);
-            }
-            foreach ($b as $key => $val) {
-                $c[] = $a[$key];
-            }
-            return $c;
-        }
-    }
-
-    /**
-     * obEval
-     */
-    protected static function obEval($mathes)
-    {
-        ob_start();
-        eval($mathes[1]);
-        $mathes = ob_get_contents();
-        ob_end_clean();
-
-        return $mathes;
-    }
-
-    /**
-     * evalPHP
-     */
-    protected static function evalPHP($str) {
-        return preg_replace_callback('/\{php\}(.*?)\{\/php\}/ms','Morfy::obEval', $str);
-    }
-}
+ }

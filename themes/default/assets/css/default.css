@@ -570,6 +570,10 @@ a:hover {
         color: #fff;
     }
 
+    .light-theme .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #000;
+    }
+
     .morfy-promo-block {
         padding: 70px 0 100px;
     }

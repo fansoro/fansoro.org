@@ -7,15 +7,15 @@
 		<meta name="description" content="{$description}>">
 		<meta name="keywords" content="{$keywords}">
 		{Morfy::factory()->runAction('theme_meta')}
-		<link rel="shortcut icon" href="{$.config.site_url}/favicon.ico">
-		<title>{$.config.site_title} | {$title}</title>
+		<link rel="shortcut icon" href="{$.site.url}/favicon.ico">
+		<title>{$.site.title} | {$title}</title>
 
 		{* Bootstrap core CSS *}
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
-		<link href="{$.config.site_url}/themes/default/assets/css/bootstrap.min.css" rel="stylesheet">
-		<link href="{$.config.site_url}/themes/default/assets/css/default.css" rel="stylesheet">
-		<link href="{$.config.site_url}/themes/default/assets/css/animate.css" rel="stylesheet">
+		<link href="{$.site.url}/themes/default/assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="{$.site.url}/themes/default/assets/css/default.css" rel="stylesheet">
+		<link href="{$.site.url}/themes/default/assets/css/animate.css" rel="stylesheet">
 		{Morfy::factory()->runAction('theme_header')}
 		{ignore}
 		<script>
@@ -29,12 +29,12 @@
 		</script>
 		{/ignore}
 	</head>
-	<body {if Morfy::factory()->getUriSegment(0) != ''}class="light-theme"{/if}>
+	<body {if Url::getUriSegment(0) != ''}class="light-theme"{/if}>
 		<div id="wrap">
 		    <div class="mega-header">
 			    {include 'navbar.tpl'}
 
-                {if Morfy::factory()->getUriSegment(0) == ''}
+                {if Url::getUriSegment(0) == ''}
                 <div class="morfy-promo-block wow fadeIn animated">
                     <h1>Introducing Morfy</h1>
                     <p class="lead">Morfy is a simple, fast and light-weighted file-based Content<br> Management System. Making the Web easy.</p>
@@ -43,7 +43,7 @@
                 </div>
                 {else}
                     <div class="container">
-                        {if Morfy::factory()->getUriSegment(0) == 'blog' && Morfy::factory()->getUriSegment(1) == ''}
+                        {if Url::getUriSegment(0) == 'blog' && Url::getUriSegment(1) == ''}
                             <h1 class="page-header-h1">News about Morfy</h1>
                         {else}
                             <h1 class="page-header-h1">{$title}</h1>
@@ -52,7 +52,7 @@
                 {/if}
 			</div>
 
-            {if Morfy::factory()->getUriSegment(0) == ''}
+            {if Url::getUriSegment(0) == ''}
 				{include 'benefits.tpl'}
 				{include 'testimonial.tpl'}
             {/if}
@@ -77,10 +77,10 @@
 		</div>
 		{* Bootstrap core JavaScript *}
 		{* Placed at the end of the document so the pages load faster *}
-		<script src="{$.config.site_url}/themes/default/assets/js/jquery.min.js"></script>
-		<script src="{$.config.site_url}/themes/default/assets/js/bootstrap.min.js"></script>
-		<script src="{$.config.site_url}/themes/default/assets/js/wow.min.js"></script>
-		<script src="{$.config.site_url}/themes/default/assets/js/default.js"></script>
+		<script src="{$.site.url}/themes/default/assets/js/jquery.min.js"></script>
+		<script src="{$.site.url}/themes/default/assets/js/bootstrap.min.js"></script>
+		<script src="{$.site.url}/themes/default/assets/js/wow.min.js"></script>
+		<script src="{$.site.url}/themes/default/assets/js/default.js"></script>
 		{Morfy::factory()->runAction('theme_footer')}
 	</body>
 </html>
