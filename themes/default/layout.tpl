@@ -15,6 +15,7 @@
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
 		<link href="{$.config.site_url}/themes/default/assets/css/bootstrap.min.css" rel="stylesheet">
 		<link href="{$.config.site_url}/themes/default/assets/css/default.css" rel="stylesheet">
+		<link href="{$.config.site_url}/themes/default/assets/css/animate.css" rel="stylesheet">
 		{Morfy::factory()->runAction('theme_header')}
 		{ignore}
 		<script>
@@ -34,7 +35,7 @@
 			    {include 'navbar.tpl'}
 
                 {if Morfy::factory()->getUriSegment(0) == ''}
-                <div class="morfy-promo-block">
+                <div class="morfy-promo-block wow fadeIn animated">
                     <h1>Introducing Morfy</h1>
                     <p class="lead">Morfy is a simple, fast and light-weighted file-based Content<br> Management System. Making the Web easy.</p>
                     <a class="btn btn-white btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v1.0.6/morfy-cms-1.0.6.zip"><i class="fa fa-download"></i> Download Morfy 1.0.6</a>
@@ -78,6 +79,8 @@
 		{* Placed at the end of the document so the pages load faster *}
 		<script src="{$.config.site_url}/themes/default/assets/js/jquery.min.js"></script>
 		<script src="{$.config.site_url}/themes/default/assets/js/bootstrap.min.js"></script>
+		<script src="{$.config.site_url}/themes/default/assets/js/wow.min.js"></script>
+		<script src="{$.config.site_url}/themes/default/assets/js/default.js"></script>
 		{Morfy::factory()->runAction('theme_footer')}
 	</body>
 </html>
