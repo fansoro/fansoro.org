@@ -109,7 +109,7 @@ a:hover {
     margin: 0;
     padding: 0;
 
-    color: #000;
+    color: #fff;
 }
 
 
@@ -118,14 +118,14 @@ a:hover {
 
     text-align: center;
 
-    color: #000;
+    color: #fff;
 }
 
 .morfy-promo-block p.lead {
     padding-top: 20px;
     padding-bottom: 20px;
 
-    color: #000;
+    color: #fff;
 }
 
 .nav {
@@ -189,11 +189,17 @@ a:hover {
     background: #000;
 }
 
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
-    color: #fff;
-    background: #000;
+    color: #000;
+    background: #fff;
 }
 
 .navbar-default {
@@ -202,7 +208,7 @@ a:hover {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #000;
+    color: #fff;
 }
 
 .btn-black {
@@ -213,6 +219,19 @@ a:hover {
 }
 
 .btn-black:hover {
+    color: #fff;
+    border: 2px solid #000;
+    background: #000;
+}
+
+.btn-white {
+    color: #000;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.btn-white:hover {
     color: #fff;
     border: 2px solid #000;
     background: #000;
