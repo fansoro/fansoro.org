@@ -1,5 +1,47 @@
 /* Sticky footer styles
 -------------------------------------------------- */
+@font-face {
+  font-family: 'MORFY_300';
+  src: url('http://morfy.org/public/assets/fonts/MORFY_300.eot?#iefix') format('embedded-opentype'),  url('http://morfy.org/public/assets/fonts/MORFY_300.otf')  format('opentype'),
+	     url('http://morfy.org/public/assets/fonts/MORFY_300.woff') format('woff'), url('MORFY_300.ttf')  format('truetype'), url('http://morfy.org/public/assets/fonts/MORFY_300.svg#MORFY_300') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MORFY_400';
+  src: url('http://morfy.org/public/assets/fonts/MORFY_400?#iefix') format('embedded-opentype'),  url('http://morfy.org/public/assets/fonts/MORFY_400.otf')  format('opentype'),
+	     url('http://morfy.org/public/assets/fonts/MORFY_400.woff') format('woff'), url('http://morfy.org/public/assets/fonts/MORFY_400.ttf')  format('truetype'), url('http://morfy.org/public/assets/fonts/MORFY_400.svg#MORFY_400') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MORFY_700';
+  src: url('http://morfy.org/public/assets/fonts/MORFY_700.eot?#iefix') format('embedded-opentype'),  url('http://morfy.org/public/assets/fonts/MORFY_700.otf')  format('opentype'),
+	     url('http://morfy.org/public/assets/fonts/MORFY_700.woff') format('woff'), url('http://morfy.org/public/assets/fonts/MORFY_700.ttf')  format('truetype'), url('http://morfy.org/public/assets/fonts/MORFY_700.svg#MORFY_700') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+p {
+	font-family: 'MORFY_400', "Helvetica Neue", Helvetica, arial, sans-serif;
+	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.7; 
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: 'MORFY_400', "Helvetica Neue", Helvetica, arial, sans-serif;
+	color: #000;
+}
+
 
 html,
 body {
@@ -58,7 +100,7 @@ a:hover {
 .morfy-promo-block {
     color: #000;
     text-align: center;
-    padding: 120px 0 150px;
+    padding: 150px 0 180px;
 }
 
 .morfy-promo-block p.lead {
@@ -68,8 +110,8 @@ a:hover {
 }
 
 .nav {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -80,7 +122,7 @@ a:hover {
 }
 
 .navbar-brand>img {
-    margin-top: -8px;
+    margin-top: -4px;
 }
 
 .navbar-nav>li>a {
