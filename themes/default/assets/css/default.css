@@ -259,8 +259,8 @@ a:hover {
 .mega-header h1.page-header-h1 {
     font-size: 46px;
 
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .container-small {
@@ -495,7 +495,7 @@ a:hover {
 .light-theme .navbar-default .navbar-nav > .open > a:focus,
 .light-theme .navbar-default .navbar-nav > .open > a:hover {
     color: #000;
-    background: #fff;
+    background: #eee;
 }
 
 
