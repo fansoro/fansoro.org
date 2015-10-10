@@ -483,6 +483,10 @@ a:hover {
     background-color: #fff;
 }
 
+.light-theme .navbar-default .navbar-nav > li.active > a {
+    color: #fff;
+}
+
 .light-theme .navbar-default .navbar-nav > li > a {
     color: #000;
 }
