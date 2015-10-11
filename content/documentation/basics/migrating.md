@@ -6,5 +6,5 @@ template: documentation
 ---
 
 
-1. Go to the ```/confing/Morfy.php``` and change the Website URL, if needed.  
-2. Edit main ```.htaccess``` file and correct the RewriteBase rule.  
+1. Go to the `/config/site.yml` and change the Website URL, if needed.  
+2. Edit main `.htaccess` file and correct the RewriteBase rule.  

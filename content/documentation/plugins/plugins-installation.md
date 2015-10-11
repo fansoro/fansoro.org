@@ -5,5 +5,5 @@ keywords: documentation, development, lessons, faq, cms, questions
 template: documentation
 ---
 
-1. Unzip plugin to the folder ```/plugins/```
-2. Go to ```/config/Morfy.php``` and add plugin name to plugins array.
+1. Unzip plugin to the folder `/plugins/`
+2. Go to `/config/site.yml` and add plugin name to plugins section.
