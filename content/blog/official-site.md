@@ -2,7 +2,8 @@
 title: Official Site launched
 date: 2015-09-08 23:00
 template: blog_post
-author: Sergey Romanenko
+author:
+  name: Sergey Romanenko
 ---
 
 Hello Everyone!
