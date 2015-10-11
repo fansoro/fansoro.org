@@ -7,3 +7,4 @@ charset: 'UTF-8'
 timezone: 'Europe/Helsinki'
 theme: 'default'
 plugins:
+  sitemap
