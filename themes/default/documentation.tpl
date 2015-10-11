@@ -14,7 +14,7 @@
 		                    <h4 class="panel-title"><a data-parent="#accordion" data-toggle="collapse" href="#collapseOne">Basics</a></h4>
 		                </div>
 
-		                <div class="panel-collapse collapse {if Morfy::factory()->getUriSegment(1) == 'basics' || Morfy::factory()->getUriSegment(1) == ''}in{/if}" id="collapseOne">
+		                <div class="panel-collapse collapse {if Url::getUriSegment(1) == 'basics' || Url::getUriSegment(1) == ''}in{/if}" id="collapseOne">
 		                    <div class="panel-body">
 		                        <ul class="nav nav-list">
 		                            <li {if Url::getUriSegment(2) == 'requirements'}class="active"{/if}>
