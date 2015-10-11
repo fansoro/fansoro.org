@@ -11,9 +11,9 @@
   * file that was distributed with this source code.
   */
 
- class Morfy
- {
-     /**
+class Morfy
+{
+    /**
      * The version of Morfy
      *
      * @var string
@@ -103,6 +103,8 @@
 
         // Use the Force...
         include LIBRARIES_PATH . '/Force/ClassLoader/ClassLoader.php';
+
+        // Map Classes
         ClassLoader::mapClasses(array(
             // Yaml Parser/Dumper
             'Spyc'     => LIBRARIES_PATH . '/Spyc/Spyc.php',
@@ -119,11 +121,13 @@
 
             // Parsedown
             'Parsedown'      => LIBRARIES_PATH . '/Parsedown/Parsedown.php',
-            'ParsedownExtra' => LIBRARIES_PATH . '/Parsedown/ParsedownExtra.php',
-
-            // Fenom Template Engine
-            'Fenom'          => LIBRARIES_PATH . '/Fenom/Fenom.php',
+            'ParsedownExtra' => LIBRARIES_PATH . '/Parsedown/ParsedownExtra.php'
         ));
+
+        // Map Fenom Template Engine folder
+        ClassLoader::directory(LIBRARIES_PATH . '/Fenom/');
+
+        // Register the ClassLoader to the SPL autoload stack.
         ClassLoader::register();
 
         // Load config file
@@ -160,9 +164,6 @@
 
         // Start the session
         Session::start();
-
-        // Register Fenom Autoload
-        Fenom::registerAutoload();
 
         // Load Plugins
         $this->loadPlugins();
@@ -237,7 +238,7 @@
             if (!in_array(basename($page, '.md'), $ignore)) {
                 $content = file_get_contents($page);
 
-                $_page_headers = explode('---', $content);
+                $_page_headers = explode('---', $content, 3);
 
                 $_pages[$key] = Spyc::YAMLLoad($_page_headers[1]);
 
@@ -306,7 +307,7 @@
             Response::status(404);
         }
 
-        $_page_headers = explode('---', $content);
+        $_page_headers = explode('---', $content, 3);
 
         $page = Spyc::YAMLLoad($_page_headers[1]);
 
@@ -332,6 +333,23 @@
     }
 
     /**
+     * Parsedown
+     *
+     *  <code>
+     *      $content = Morfy::factory()->parsedown($content);
+     *  </code>
+     *
+     * @access  public
+     * @param  string $content Content to parse
+     * @return string $content Formatted content
+     */
+     public function parsedown($content)
+     {
+         $parsedown_extra = new ParsedownExtra();
+         return $parsedown_extra->text($content);
+     }
+
+    /**
      * Content Parser
      *
      * @param  string $content Content to parse
@@ -343,6 +361,7 @@
         // Parse {site_url}
         $content = str_replace('{site_url}', static::$site['url'], $content);
 
+        // Parsedown
         $content = $this->parsedown($content);
 
         // Parse page for summary <!--more-->
@@ -358,12 +377,6 @@
         return $content;
     }
 
-     public function parsedown($content)
-     {
-         $ParsedownExtra = new ParsedownExtra();
-         return $ParsedownExtra->text($content);
-     }
-
     /**
      * Load Config
      */
@@ -374,7 +387,7 @@
             static::$site  = Spyc::YAMLLoad(file_get_contents($site_config_path));
             static::$fenom = Spyc::YAMLLoad(file_get_contents($fenom_config_path));
         } else {
-            die("Oops.. Where is config file ?!");
+            die("Oops.. Where is config files ?!");
         }
     }
 
@@ -385,7 +398,10 @@
     {
         if (is_array(static::$site['plugins']) && count(static::$site['plugins']) > 0) {
             foreach (static::$site['plugins'] as $plugin) {
-                include_once PLUGINS_PATH .'/'. $plugin.'/'.$plugin.'.php';
+                static::$plugins[$plugin] = Spyc::YAMLLoad(file_get_contents(PLUGINS_PATH .'/'. $plugin.'/'.$plugin.'.yml'));
+                if (static::$plugins[$plugin]['enabled']) {
+                    include_once PLUGINS_PATH .'/'. $plugin.'/'.$plugin.'.php';
+                }
             }
         }
     }
@@ -560,4 +576,4 @@
 
         return true;
     }
- }
+}

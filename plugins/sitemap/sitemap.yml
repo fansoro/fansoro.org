@@ -1,0 +1,13 @@
+name: Sitemap
+version: 1.0.0
+description: "Provide automatically generated XML sitemap."
+author:
+  name: Sergey Romanenko
+  email: awilum@msn.com
+  url: http://morfy.org
+homepage: https://github.com/morfy-cms/morfy-plugin-sitemap
+bugs: https://github.com/morfy-cms/morfy-plugin-sitemap/issues
+license: MIT
+
+# Plugin settings
+enabled: true
