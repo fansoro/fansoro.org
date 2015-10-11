@@ -81,10 +81,10 @@
 		                    <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapse4">Plugins</a></h4>
 		                </div>
 
-		                <div class="panel-collapse collapse {if Morfy::factory()->getUriSegment(1) == 'plugins'}in{/if}" id="collapse4">
+		                <div class="panel-collapse collapse {if Url::getUriSegment(1) == 'plugins'}in{/if}" id="collapse4">
 		                    <div class="panel-body">
 		                        <ul class="nav nav-list">
-									<li {if Morfy::factory()->getUriSegment(2) == 'plugins-installation'}class="active"{/if}>
+									<li {if Url::getUriSegment(2) == 'plugins-installation'}class="active"{/if}>
 		                                <a href="{$.site.url}/documentation/plugins/plugins-installation">Plugins Installation</a>
 		                            </li>
 		                        </ul>
@@ -97,10 +97,10 @@
 		                    <h4 class="panel-title"><a class="collapsed" data-parent="#accordion" data-toggle="collapse" href="#collapse5">Advanced</a></h4>
 		                </div>
 
-		                <div class="panel-collapse collapse {if Morfy::factory()->getUriSegment(1) == 'advanced'}in{/if}" id="collapse5">
+		                <div class="panel-collapse collapse {if Url::getUriSegment(1) == 'advanced'}in{/if}" id="collapse5">
 		                    <div class="panel-body">
 		                        <ul class="nav nav-list">
-		                        	<li {if Morfy::factory()->getUriSegment(2) == 'constants'}class="active"{/if}>
+		                        	<li {if Url::getUriSegment(2) == 'constants'}class="active"{/if}>
 		                                <a href="{$.site.url}/documentation/advanced/constants">Constants</a>
 		                            </li>
 		                        </ul>
