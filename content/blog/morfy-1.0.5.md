@@ -2,7 +2,8 @@
 title: Morfy 1.0.5
 date: 2014-02-01 22:00
 template: blog_post
-author: Sergey Romanenko
+author:
+  name: Sergey Romanenko
 ---
 
 Changes:       

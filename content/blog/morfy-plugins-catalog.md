@@ -2,7 +2,8 @@
 title: Morfy Plugins Catalog
 date: 2015-09-09 19:00
 template: blog_post
-author: Sergey Romanenko
+author:
+  name: Sergey Romanenko
 ---
 
 Morfy Plugins Catalog - launched!  

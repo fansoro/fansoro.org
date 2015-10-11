@@ -2,7 +2,8 @@
 title: Morfy Bootswatch Themes
 date: 2015-09-18 19:30
 template: blog_post
-author: Sergey Romanenko
+author:
+  name: Sergey Romanenko
 ---
 
 15 Bootswatch themes for Morfy CMS!  
