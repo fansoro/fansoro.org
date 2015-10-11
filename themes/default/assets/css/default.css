@@ -246,6 +246,7 @@ a:hover {
 
 .navbar-default {
     border-color: transparent;
+    border-radius: 0;
     background-color: transparent;
 }
 
