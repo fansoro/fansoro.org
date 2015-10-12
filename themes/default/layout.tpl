@@ -64,7 +64,7 @@
 		<div id="footer">
 			<div class="container">
                 <p>
-                    <span>© 2014 - 2015 Sergey Romanenko</span>
+                    <span>© 2015 <a href="https://github.com/morfy-cms" rel="nofollow">Morfy</a></span>
                     <span class="pull-right">
                         Stay in touch:
                         <a rel="nofollow" href="https://twitter.com/morfy_cms">@monstra_cms</a> <span class="social-link-del">/</span>

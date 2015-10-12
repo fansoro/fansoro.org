@@ -10,7 +10,7 @@ template: documentation
         <tr><th>Name</th><th>Description</th></tr>
     </thead>
     <tbody>
-        <tr><td>Config</td><td></td></tr>
+        <tr><td>Site</td><td></td></tr>
         <tr><td>$.site.url</td><td>Site url</td></tr>
         <tr><td>$.site.charset</td><td>Site charset</td></tr>
         <tr><td>$.site.timezone</td><td>Site timezone</td></tr>
