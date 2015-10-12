@@ -22,6 +22,14 @@ template: documentation
             <td>Define the path to the content directory (without trailing slash).</td>
         </tr>
         <tr>
+            <td>BLOCKS_PATH</td>
+            <td>Define the path to the blocks directory (without trailing slash).</td>
+        </tr>
+        <tr>
+            <td>PAGES_PATH</td>
+            <td>Define the path to the pages directory (without trailing slash).</td>
+        </tr>
+        <tr>
             <td>LIBRARIES_PATH</td>
             <td>Define the path to the libraries directory (without trailing slash).</td>
         </tr>
@@ -32,6 +40,14 @@ template: documentation
         <tr>
             <td>PLUGINS_PATH</td>
             <td>Define the path to the plugins directory (without trailing slash).</td>
+        </tr>
+        <tr>
+            <td>CONFIG_PATH</td>
+            <td>Define the path to the config directory (without trailing slash).</td>
+        </tr>
+        <tr>
+            <td>CACHE_PATH</td>
+            <td>Define the path to the cache directory (without trailing slash).</td>
         </tr>
     </tbody>
 </table>
