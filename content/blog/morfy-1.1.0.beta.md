@@ -7,7 +7,7 @@ author:
 ---
 
 Hello Everyone!  
-   
+
 Morfy 1.1.0 Beta is now available for **beta testing** :)  
 
 Here is a list of major changes in 1.1.0:  
@@ -52,3 +52,6 @@ Report any bugs you find via [GitHub](https://github.com/morfy-cms/morfy/issues)
 **Remember, this is a beta release for beta testing, is not considered stable and should not be used for live web sites!**  
 
 **Download:** [Morfy 1.1.0 Beta](http://morfy.org/public/morfy/morfy-1.1.0.beta.zip)  
+
+
+[Discuss this article on the forum](http://forum.morfy.org/discussion/31/morfy-1-1-0-beta)
