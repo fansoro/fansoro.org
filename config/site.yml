@@ -9,3 +9,4 @@ timezone: 'Europe/Helsinki'
 theme: 'default'
 plugins:
   sitemap
+  feed

@@ -1,0 +1,14 @@
+name: Feed
+version: 1.0.0
+description: "Morfy feed plugin provide simple RSS feed."
+author:
+  name: Sergey Romanenko
+  email: awilum@msn.com
+  url: http://morfy.org
+homepage: https://github.com/morfy-cms/morfy-plugin-feed
+bugs: https://github.com/morfy-cms/morfy-plugin-feed/issues
+license: MIT
+
+# Plugin settings
+enabled: true
+page: blog
