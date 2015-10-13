@@ -1,6 +1,6 @@
 ---
 title: Morfy 1.1.0 beta
-date: 2015-10-13 00:10
+date: 2015-10-13 22:00
 template: blog_post
 author:
   name: Sergey Romanenko
@@ -28,12 +28,12 @@ Here is a list of major changes in 1.1.0:
 * Added ability to use custom variables for page header in valid YAML format.
 * Added new page header format. Between triple-dashed lines is page header variables.
 * Added add ability to load plugins configuration and disable or enable plugins.
-* Added <!--more--> for creating page summary text.
+* Added <!--more-- > for creating page summary text.
 * Added Morfy Favicon: favicon.ico
 * Added robots.txt
 * Removed Morfy configuration file Morfy.php
 * Removed PHP Tag {php}{/php} from content parser for security reasons.
-* Removed {cut}(use <!--more--> instead) also {morfy_separator} and {morfy_version} content tags.
+* Removed {cut}(use <!--more-- > instead) also {morfy_separator} and {morfy_version} content tags.
 * Removed Morfy private variable $page_headers. Because now you are free to set your own.
 * Removed Morfy protected variable $security_token_name (its part of Force Token Class)
 * Removed Morfy public static variable $config (use $site and $fenom instead)
