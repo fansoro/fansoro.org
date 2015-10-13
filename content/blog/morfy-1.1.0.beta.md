@@ -7,6 +7,7 @@ author:
 ---
 
 Hello Everyone!  
+   
 Morfy 1.1.0 Beta is now available for **beta testing** :)  
 
 Here is a list of major changes in 1.1.0:  
