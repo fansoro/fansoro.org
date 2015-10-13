@@ -21,8 +21,8 @@ Options -Indexes
 	RewriteEngine on
 
 	# Update code bellow for SEO improvements
-	# RewriteCond %{HTTP_HOST} ^www.example.org [NC]
- 	# RewriteRule ^(.*)$ http://example.org/$1 [R=301,L]
+	RewriteCond %{HTTP_HOST} ^www.morfy.org [NC]
+ 	RewriteRule ^(.*)$ http://morfy.org/$1 [R=301,L]
 
 	RewriteBase /
 	RewriteCond %{REQUEST_FILENAME} !-f
@@ -30,7 +30,7 @@ Options -Indexes
 	RewriteRule ^(.*)$ index.php [QSA,L]
 
 	# Update code bellow for SEO improvements
-	# Redirect 301 /index http://example.org/
+	Redirect 301 /index http://morfy.org
 </IfModule>
 
 # Prevent visitors from viewing our MD, TXT, HTML and MD files directly.
