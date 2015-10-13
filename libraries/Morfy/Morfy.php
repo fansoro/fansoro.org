@@ -18,21 +18,28 @@ class Morfy
      *
      * @var string
      */
-    const VERSION = '1.0.6';
+    const VERSION = '1.1.0 beta';
 
     /**
-     * Site Config array.
+     * Site Config array (/config/site.yml).
      *
      * @var array
      */
     public static $site;
 
     /**
-     * Fenom Config array.
+     * Fenom Config array (/config/fenom.yml).
      *
      * @var array
      */
     public static $fenom;
+
+    /**
+     * Current Site Theme config (/themes/%theme%/%theme%.yml).
+     *
+     * @var array
+     */
+    public static $theme;
 
     /**
      * Plugins
@@ -179,33 +186,40 @@ class Morfy
 
         // Load template
         $this->runAction('before_render');
-        $this->loadTemplate($page, self::$site);
+        $this->loadPageTemplate($page);
         $this->runAction('after_render');
     }
 
     /**
-     * Load template
+     * Load Page template
      *
      *  <code>
-     *      Morfy::factory()->loadTemplate($page, $site);
+     *      Morfy::factory()->loadPageTemplate($page);
      *  </code>
      *
      * @access public
      * @param  array $page Page array
-     * @param  array $site Site Config array
      * @return string
      */
-    public function loadTemplate($page, $site)
+    public function loadPageTemplate($page)
     {
         $fenom = Fenom::factory(
-            THEMES_PATH . '/' . $site['theme'] . '/',
+            THEMES_PATH . '/' . static::$site['theme'] . '/',
             CACHE_PATH . '/fenom/',
             self::$fenom
         );
 
+        if (file_exists($theme_config_path = THEMES_PATH . '/' . static::$site['theme'] . '/'. static::$site['theme'] .'.yml')) {
+            static::$theme = Spyc::YAMLLoad(file_get_contents($theme_config_path));
+
+            // Do global tag {$.theme} for the template
+            $fenom->addAccessorSmart('theme', 'theme_config', Fenom::ACCESSOR_PROPERTY);
+            $fenom->theme_config = static::$theme;
+        }
+
         // Do global tag {$.site} for the template
         $fenom->addAccessorSmart('site', 'site_config', Fenom::ACCESSOR_PROPERTY);
-        $fenom->site_config = $site;
+        $fenom->site_config = static::$site;
 
         // Display page
         try {
@@ -232,24 +246,24 @@ class Morfy
      */
     public function getPages($url = '', $order_by = 'date', $order_type = 'DESC', $ignore = array('404'), $limit = null)
     {
-        $pages = File::scan(CONTENT_PATH . '/' . $url, 'md');
+        $pages = File::scan(PAGES_PATH . '/' . $url, 'md');
 
         foreach ($pages as $key => $page) {
             if (!in_array(basename($page, '.md'), $ignore)) {
                 $content = file_get_contents($page);
 
-                $_page_headers = explode('---', $content, 3);
+                $_page = explode('---', $content, 3);
 
-                $_pages[$key] = Spyc::YAMLLoad($_page_headers[1]);
+                $_pages[$key] = Spyc::YAMLLoad($_page[1]);
 
-                $url = str_replace(CONTENT_PATH, Morfy::$site['url'], $page);
+                $url = str_replace(PAGES_PATH, static::$site['url'], $page);
                 $url = str_replace('index.md', '', $url);
                 $url = str_replace('.md', '', $url);
                 $url = str_replace('\\', '/', $url);
                 $url = rtrim($url, '/');
                 $_pages[$key]['url'] = $url;
 
-                $_content = $this->parseContent($_page_headers[2]);
+                $_content = $this->parseContent($_page[2]);
 
                 if (is_array($_content)) {
                     $_pages[$key]['summary'] = $_content['summary'];
@@ -288,14 +302,14 @@ class Morfy
 
         // Get the file path
         if ($url) {
-            $file = CONTENT_PATH . '/' . $url;
+            $file = PAGES_PATH . '/' . $url;
         } else {
-            $file = CONTENT_PATH . '/' .'index';
+            $file = PAGES_PATH . '/' .'index';
         }
 
         // Load the file
         if (is_dir($file)) {
-            $file = CONTENT_PATH . '/' . $url .'/index.md';
+            $file = PAGES_PATH . '/' . $url .'/index.md';
         } else {
             $file .= '.md';
         }
@@ -303,22 +317,22 @@ class Morfy
         if (file_exists($file)) {
             $content = file_get_contents($file);
         } else {
-            $content = file_get_contents(CONTENT_PATH . '/' . '404.md');
+            $content = file_get_contents(PAGES_PATH . '/' . '404.md');
             Response::status(404);
         }
 
-        $_page_headers = explode('---', $content, 3);
+        $_page = explode('---', $content, 3);
 
-        $page = Spyc::YAMLLoad($_page_headers[1]);
+        $page = Spyc::YAMLLoad($_page[1]);
 
-        $url = str_replace(CONTENT_PATH, Morfy::$site['url'], $file);
+        $url = str_replace(PAGES_PATH, static::$site['url'], $file);
         $url = str_replace('index.md', '', $url);
         $url = str_replace('.md', '', $url);
         $url = str_replace('\\', '/', $url);
         $url = rtrim($url, '/');
         $page['url'] = $url;
 
-        $_content = $this->parseContent($_page_headers[2]);
+        $_content = $this->parseContent($_page[2]);
 
         if (is_array($_content)) {
             $page['summary'] = $_content['summary'];
@@ -341,13 +355,29 @@ class Morfy
      *
      * @access  public
      * @param  string $content Content to parse
-     * @return string $content Formatted content
+     * @return string Formatted content
      */
-     public function parsedown($content)
-     {
-         $parsedown_extra = new ParsedownExtra();
-         return $parsedown_extra->text($content);
-     }
+    public function parsedown($content)
+    {
+        $parsedown_extra = new ParsedownExtra();
+        return $parsedown_extra->text($content);
+    }
+
+    /**
+     * Get Page Block
+     *
+     *  <code>
+     *      $content = Morfy::factory()->getBlock($content);
+     *  </code>
+     *
+     * @access  public
+     * @param  string $name Block name
+     * @return string Formatted Block content
+     */
+    public function getBlock($name)
+    {
+        return $this->parseContent(file_get_contents(BLOCKS_PATH . '/' . $name . '.md'));
+    }
 
     /**
      * Content Parser
@@ -360,6 +390,11 @@ class Morfy
 
         // Parse {site_url}
         $content = str_replace('{site_url}', static::$site['url'], $content);
+
+        // Parse {block=block-name}
+        $content = preg_replace_callback('/\{block=(.+?)\}/', function ($matches) {
+            return file_get_contents(BLOCKS_PATH . '/' . $matches[1] . '.md');
+        }, $content);
 
         // Parsedown
         $content = $this->parsedown($content);
