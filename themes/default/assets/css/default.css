@@ -324,6 +324,10 @@ a:hover {
 }
 
 /* Features Content */
+.benefits-container {
+    padding-bottom: 30px;
+}
+
 .features-columns {
     margin-bottom: 50px;
 

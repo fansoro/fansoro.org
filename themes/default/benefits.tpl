@@ -1,4 +1,4 @@
-<div class="container container-small">
+<div class="container container-small benefits-container">
     <h2 class="h2-reason text-center">Reasons to use Morfy</h2>
     <div class="row">
         <div class="col-md-4 wow fadeIn animated">
