@@ -102,7 +102,7 @@ a:hover {
 }
 
 .mega-header h1 {
-    font-size: 68px;
+    font-size: 72px;
 
     margin: 0;
     padding: 0;
@@ -120,6 +120,8 @@ a:hover {
 }
 
 .morfy-promo-block p.lead {
+    font-size: 24px;
+
     padding-top: 20px;
     padding-bottom: 20px;
 
