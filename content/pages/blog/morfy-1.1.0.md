@@ -69,6 +69,6 @@ I am happy to introduce Morfy 1.1.0 with a lot of changes :)
 
 <hr>  
 
-[<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/31/morfy-1-1-0)  
+[<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/39/morfy-1-1-0-release)  
 
 [<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)  
