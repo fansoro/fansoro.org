@@ -56,3 +56,5 @@ Report any bugs you find via [GitHub](https://github.com/morfy-cms/morfy/issues)
 <hr>    
 
 [<i class="fa fa-comments"></i> Discuss this article on the forum](http://forum.morfy.org/discussion/31/morfy-1-1-0-beta)
+
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)  

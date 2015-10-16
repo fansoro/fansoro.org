@@ -17,3 +17,7 @@ Changes:
 * Date format for blog posts and pages - Fixed  
 
 Download: [Morfy 1.0.6](https://github.com/Awilum/morfy-cms/archive/v1.0.6.zip)
+
+<hr>  
+
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)  

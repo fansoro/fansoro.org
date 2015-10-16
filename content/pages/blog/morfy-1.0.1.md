@@ -9,4 +9,8 @@ author:
 Changes:  
 * Default Theme - Improvements  
 
-Download: [Morfy 1.0.1](https://github.com/Awilum/morfy-cms/archive/v1.0.1.zip)
+Download: [Morfy 1.0.1](https://github.com/morfy-cms/morfy/archive/v1.0.1.zip)
+
+<hr>  
+
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)  

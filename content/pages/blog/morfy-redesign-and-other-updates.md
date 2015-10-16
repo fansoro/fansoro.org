@@ -15,10 +15,12 @@ I am continue working on this... fixing issues and adding new features.
 New Morfy Logo and Morfy Icon was developed and released.  
 You can check them here: http://morfy.org/about/logos-and-graphics  
 
-Also, Morfy [Official Forum](http://forum.morfy.org/) was redesigned :)
+Also, Morfy [Official Forum](http://forum.morfy.org) was redesigned :)
 
 BTW: Morfy Official Site already powered by Morfy 1.1.0
 
 Morfy 1.1.0 - comming soon!
 
-[Discuss this article on the forum](http://forum.morfy.org/topic/20/morfy-website-redesign-and-other-updates/)
+<hr>  
+
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)  
