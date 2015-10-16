@@ -52,7 +52,7 @@ I am happy to introduce Morfy 1.1.0 with a lot of changes :)
 
 ### Update from Morfy 1.0.6 to Morfy 1.1.0  
 1. **Backup your Site First!**    
-2. Download [Morfy 1.1.0](http://morfy.org/public/morfy/morfy-1.1.0.zip)    
+2. Download [Morfy 1.1.0](https://github.com/morfy-cms/morfy/releases/download/v1.1.0/morfy-1.1.0.zip)    
 3. Unzip the contents to a new folder on your local computer.  
 4. Upload `/config/`, `/themes/default/`, `/libraries/`, `/cache/`, `/content/`,  `/index.php`, `/robots.txt` with an FTP client to your host.  
 5. Move all your pages from `content` to `/content/pages/`  
