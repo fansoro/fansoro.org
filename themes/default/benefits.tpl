@@ -12,7 +12,7 @@
             <div class="features-columns">
                 <img src="{$.site.url}/themes/default/assets/img/icons/rocket.png" alt="">
                 <h4>Fast &amp; light-weighted</h4>
-                <p>Morfy is realy fast and lightweight!<br> Morfy doesn't use a database!</p>
+                <p>Morfy is realy fast and lightweight!<br> No database required, flat files only!</p>
             </div>
         </div>
         <div class="col-md-4 wow fadeIn animated">
@@ -27,25 +27,24 @@
     <div class="row">
         <div class="col-md-4 wow fadeIn animated">
             <div class="features-columns">
-                <img src="{$.site.url}/themes/default/assets/img/icons/bookshelf.png" alt="">
-
-                <h4>No database</h4>
-                <p>No database required, flat files only! </p>
+                <img src="{$.site.url}/themes/default/assets/img/icons/paintbrush.png" alt="">
+                <h4>Fenom Templates</h4>
+                <p>Morfy uses the Fenom templating engine, for powerful and flexible themes.</p>
             </div>
         </div>
         <div class="col-md-4 wow fadeIn animated">
             <div class="features-columns">
                 <img src="{$.site.url}/themes/default/assets/img/icons/typography.png" alt="">
 
-                <h4>Markdown formating</h4>
-                <p>Edit your website in your favourite text editor using simple Markdown formatting.</p>
+                <h4>Markdown Syntax</h4>
+                <p>Edit your website in your favourite text editor using simple Markdown syntax.</p>
             </div>
         </div>
         <div class="col-md-4 wow fadeIn animated">
             <div class="features-columns">
                 <img src="{$.site.url}/themes/default/assets/img/icons/merge.png" alt="">
 
-                <h4>Open source</h4>
+                <h4>Open Source</h4>
                 <p>Morfy is an open-source project licensed under the MIT LICENSE to set the world free!</p>
             </div>
         </div>
