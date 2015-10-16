@@ -46,7 +46,7 @@
                 <img src="{$.site.url}/themes/default/assets/img/icons/merge.png" alt="">
 
                 <h4>Open source</h4>
-                <p>Morfy is an open-source project licensed under the GNU GENERAL PUBLIC LICENSE v3 to set the world free!</p>
+                <p>Morfy is an open-source project licensed under the MIT LICENSE to set the world free!</p>
             </div>
         </div>
     </div>
