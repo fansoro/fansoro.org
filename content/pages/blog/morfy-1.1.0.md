@@ -1,5 +1,5 @@
 ---
-title: Morfy 1.1.0 beta
+title: Morfy 1.1.0 Release
 date: 2015-10-16 19:30
 template: blog_post
 author:
