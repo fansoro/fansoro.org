@@ -48,7 +48,7 @@ I am happy to introduce Morfy 1.1.0 with a lot of changes :)
 
 
 ### Download  
-[<i class="fa fa-download"></i> Morfy 1.1.0]( http://morfy.org/public/morfy/morfy-1.1.0.zip)  
+[<i class="fa fa-download"></i> Morfy 1.1.0](http://morfy.org/public/morfy/morfy-1.1.0.zip)  
 
 ### Update from Morfy 1.0.6 to Morfy 1.1.0  
 1. **Backup your Site First!**    
