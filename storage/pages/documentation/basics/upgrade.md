@@ -10,7 +10,7 @@ template: documentation
 2. Download [Morfy 1.1.1](https://github.com/morfy-cms/morfy/releases/download/v1.1.1/morfy-1.1.1.zip)    
 3. Unzip the contents to a new folder on your local computer.  
 4. Upload `/themes/default/`, `/libraries/`, `/index.php`, with an FTP client to your host.  
-5. Rename `content` folder to `/storage/`  
+5. Rename `content` folder to `storage`  
 
 
 ### Update from **Morfy 1.0.6** to **Morfy 1.1.0**
