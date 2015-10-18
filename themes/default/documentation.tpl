@@ -106,6 +106,9 @@
 									<li {if Url::getUriSegment(2) == 'shortcode'}class="active"{/if}>
 		                                <a href="{$.site.url}/documentation/advanced/shortcode">Shortcode <span class="badge">Force</span></a>
 		                            </li>
+									<li {if Url::getUriSegment(2) == 'url'}class="active"{/if}>
+		                                <a href="{$.site.url}/documentation/advanced/url">Url <span class="badge">Force</span></a>
+		                            </li>
 		                        </ul>
 		                    </div>
 		                </div>
