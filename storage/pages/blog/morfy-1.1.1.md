@@ -6,7 +6,7 @@ author:
   name: Sergey Romanenko
 ---
 
-Morfy 1.1.1 Release :)    
+### Morfy 1.1.1 Release with several important changes :)    
 
 ### Changes in 1.1.1:  
 * Added Force Shortcode class  
