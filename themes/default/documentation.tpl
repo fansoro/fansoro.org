@@ -109,6 +109,12 @@
 									<li {if Url::getUriSegment(2) == 'url'}class="active"{/if}>
 		                                <a href="{$.site.url}/documentation/advanced/url">Url <span class="badge">Force</span></a>
 		                            </li>
+									<li {if Url::getUriSegment(2) == 'session'}class="active"{/if}>
+		                                <a href="{$.site.url}/documentation/advanced/session">Session <span class="badge">Force</span></a>
+		                            </li>
+									<li {if Url::getUriSegment(2) == 'arr'}class="active"{/if}>
+		                                <a href="{$.site.url}/documentation/advanced/arr">Array <span class="badge">Force</span></a>
+		                            </li>
 									<li {if Url::getUriSegment(2) == 'token'}class="active"{/if}>
 		                                <a href="{$.site.url}/documentation/advanced/token">Token <span class="badge">Force</span></a>
 		                            </li>
