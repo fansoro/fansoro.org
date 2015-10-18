@@ -16,7 +16,7 @@ Examples of shortcode tags:
 
 Example of escaping shortcodes:  
 ```
-{{shortcode}}
+{{{shortcode}}}
 ```
 
 ### Add new shortcode
