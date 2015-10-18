@@ -103,6 +103,9 @@
 		                        	<li {if Url::getUriSegment(2) == 'constants'}class="active"{/if}>
 		                                <a href="{$.site.url}/documentation/advanced/constants">Constants</a>
 		                            </li>
+									<li {if Url::getUriSegment(2) == 'shortcode'}class="active"{/if}>
+		                                <a href="{$.site.url}/documentation/advanced/shortcode">Shortcode</a>
+		                            </li>
 		                        </ul>
 		                    </div>
 		                </div>
