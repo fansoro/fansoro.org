@@ -71,6 +71,7 @@
                         <a rel="nofollow" href="https://twitter.com/morfy_cms">@morfy_cms</a> <span class="social-link-del">/</span>
                         <a rel="nofollow" href="https://gitter.im/morfy-cms/morfy">Gitter</a> <span class="social-link-del">/</span>
                         <a rel="nofollow" href="https://www.facebook.com/MorfyCMS">Facebook</a> <span class="social-link-del">/</span>
+						<a rel="nofollow" href="http://www.youtube.com/c/MorfyOrganization">YouTube</a> <span class="social-link-del">/</span>
                         <a rel="nofollow" href="https://vk.com/morfy_cms">VK</a>
                     </span>
                 </p>
