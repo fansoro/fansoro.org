@@ -25,7 +25,7 @@ class Morfy
      *
      * @var string
      */
-    const VERSION = '1.1.0';
+    const VERSION = '1.1.2';
 
     /**
      * Site Config array (/config/site.yml).
@@ -375,7 +375,7 @@ class Morfy
     {
         // Add {site_url} shortcode
         Shortcode::add('site_url', function () {
-            return static::$site['url'];
+            return Morfy::$site['url'];
         });
 
         // Add {block name=block-name} shortcode
