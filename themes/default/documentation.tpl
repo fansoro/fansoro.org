@@ -109,6 +109,9 @@
 									<li {if Url::getUriSegment(2) == 'url'}class="active"{/if}>
 		                                <a href="{$.site.url}/documentation/advanced/url">Url <span class="badge">Force</span></a>
 		                            </li>
+									<li {if Url::getUriSegment(2) == 'token'}class="active"{/if}>
+		                                <a href="{$.site.url}/documentation/advanced/token">Token <span class="badge">Force</span></a>
+		                            </li>
 		                        </ul>
 		                    </div>
 		                </div>
