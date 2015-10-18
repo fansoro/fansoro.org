@@ -5,11 +5,11 @@
 		<div class="row">
 		    <div class="col-md-9">
 		        {$content}
-				<hr>
 				{if Url::getUriSegment(0) !== 'documentation'}
+				<hr>
 				<a href="https://github.com/morfy-cms/morfy.org/tree/master/storage/pages/{Url::getUriString()}.md"><i class="fa fa-github-square"></i> edit this page</a>
 				{/if}
-			</div>			
+			</div>
 			<div class="col-md-3">
 
 		        <div class="panel-group navigation-docs" id="accordion">
