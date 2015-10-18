@@ -18,7 +18,7 @@ Here is a list of major changes in 1.1.0:
 * Added Parsedown Lib for parsing Markdown files.
 * Added SPYC Lib for parsing YAML configurations.
 * Added new folders /cache/, /content/pages/ and /content/blocks/
-* Added ability to display PAGE BLOCKS. {block=name} and Morfy::factory()->getBlock('name');
+* Added ability to display PAGE BLOCKS. {block=name} and Morfy::getBlock('name');
 * Added new constants PAGES_PATH BLOCKS_PATH CACHE_PATH
 * Added new Morfy and Fenom configuration files site.yml and fenom.yml
 * Added new configuration file for Morfy default theme: default.yml

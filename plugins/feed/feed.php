@@ -10,7 +10,7 @@
  */
 
 if (Url::getUriSegment(0) == 'rss') {
-    Morfy::factory()->addAction('before_render', function () {
+    Morfy::addAction('before_render', function () {
 
         $fenom = Fenom::factory(
             PLUGINS_PATH . '/feed/templates/',
@@ -24,8 +24,8 @@ if (Url::getUriSegment(0) == 'rss') {
 
         Response::status(200);
         Request::setHeaders('Content-Type: text/xml; charset=utf-8');
-        $fenom->display('rss.tpl', array('page'  => Morfy::factory()->getPage(Morfy::$plugins['feed']['page']),
-                                         'pages' => Morfy::factory()->getPages(Morfy::$plugins['feed']['page'], 'date', 'DESC', array('404'))));
+        $fenom->display('rss.tpl', array('page'  => Morfy::getPage(Morfy::$plugins['feed']['page']),
+                                         'pages' => Morfy::getPages(Morfy::$plugins['feed']['page'], 'date', 'DESC', array('404'))));
         Request::shutdown();
 
     });

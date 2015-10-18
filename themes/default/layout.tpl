@@ -7,7 +7,7 @@
 		<meta name="description" content="{$description}>">
 		<meta name="keywords" content="{$keywords}">
 		<meta name='yandex-verification' content='65ab8145c4e162f5' />
-		{Morfy::factory()->runAction('theme_meta')}
+		{Morfy::runAction('theme_meta')}
 		<link rel="shortcut icon" href="{$.site.url}/favicon.ico">
 		<title>{$.site.title} | {$title}</title>
 
@@ -17,7 +17,7 @@
 		<link href="{$.site.url}/themes/default/assets/css/bootstrap.min.css" rel="stylesheet">
 		<link href="{$.site.url}/themes/default/assets/css/default.css" rel="stylesheet">
 		<link href="{$.site.url}/themes/default/assets/css/animate.css" rel="stylesheet">
-		{Morfy::factory()->runAction('theme_header')}
+		{Morfy::runAction('theme_header')}
 		{ignore}
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -58,9 +58,9 @@
 				{include 'testimonial.tpl'}
             {/if}
 
-			{Morfy::factory()->runAction('theme_content_before')}
+			{Morfy::runAction('theme_content_before')}
 			{block 'content'}{/block}
-			{Morfy::factory()->runAction('theme_content_after')}
+			{Morfy::runAction('theme_content_after')}
 		</div>
 		<div id="footer">
 			<div class="container">
@@ -82,6 +82,6 @@
 		<script src="{$.site.url}/themes/default/assets/js/bootstrap.min.js"></script>
 		<script src="{$.site.url}/themes/default/assets/js/wow.min.js"></script>
 		<script src="{$.site.url}/themes/default/assets/js/default.js"></script>
-		{Morfy::factory()->runAction('theme_footer')}
+		{Morfy::runAction('theme_footer')}
 	</body>
 </html>

@@ -10,7 +10,7 @@
  */
 
 if (Url::getUriSegment(0) == 'sitemap.xml') {
-    Morfy::factory()->addAction('before_render', function () {
+    Morfy::addAction('before_render', function () {
 
         $fenom = Fenom::factory(
             PLUGINS_PATH . '/sitemap/templates/',
@@ -22,7 +22,7 @@ if (Url::getUriSegment(0) == 'sitemap.xml') {
             "strip" => false
         ));
 
-        $pages = Morfy::factory()->getPages('', 'date', 'DESC', array('404'));
+        $pages = Morfy::getPages('', 'date', 'DESC', array('404'));
 
         Response::status(200);
         Request::setHeaders('Content-Type: text/xml; charset=utf-8');
