@@ -1,6 +1,6 @@
 ---
 title: Morfy 1.1.2 Release
-date: 2015-10-18 17:30
+date: 2015-10-19 00:15
 template: blog_post
 author:
   name: Sergey Romanenko
