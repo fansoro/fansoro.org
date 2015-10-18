@@ -17,6 +17,7 @@
 		<link href="{$.site.url}/themes/default/assets/css/bootstrap.min.css" rel="stylesheet">
 		<link href="{$.site.url}/themes/default/assets/css/default.css" rel="stylesheet">
 		<link href="{$.site.url}/themes/default/assets/css/animate.css" rel="stylesheet">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
 		{Morfy::runAction('theme_header')}
 		{ignore}
 		<script>
@@ -82,6 +83,7 @@
 		<script src="{$.site.url}/themes/default/assets/js/jquery.min.js"></script>
 		<script src="{$.site.url}/themes/default/assets/js/bootstrap.min.js"></script>
 		<script src="{$.site.url}/themes/default/assets/js/wow.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
 		<script src="{$.site.url}/themes/default/assets/js/default.js"></script>
 		{Morfy::runAction('theme_footer')}
 	</body>
