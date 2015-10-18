@@ -39,6 +39,6 @@ author:
 
 <hr>  
 
-[<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/44/morfy-1-1-1-release#latest)  
+[<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/44/morfy-1-1-1-release)  
 
 [<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)  
