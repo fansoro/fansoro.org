@@ -18,8 +18,8 @@ template: documentation
             <td>Define the path to the root directory (without trailing slash).</td>
         </tr>
         <tr>
-            <td>CONTENT_PATH</td>
-            <td>Define the path to the content directory (without trailing slash).</td>
+            <td>STORAGE_PATH</td>
+            <td>Define the path to the storage directory (without trailing slash).</td>
         </tr>
         <tr>
             <td>BLOCKS_PATH</td>
