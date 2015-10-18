@@ -7,8 +7,9 @@
 		        {$content}
 				<hr>
 				{if Url::getUriSegment(0) !== 'documentation'}
-				<a href="https://github.com/morfy-cms/morfy.org/tree/master/storage/pages/{Url::getUriString()}.md"><i class="fa fa-github-square"></i> edit this page</a>		    </div>
+				<a href="https://github.com/morfy-cms/morfy.org/tree/master/storage/pages/{Url::getUriString()}.md"><i class="fa fa-github-square"></i> edit this page</a>
 				{/if}
+			</div>			
 			<div class="col-md-3">
 
 		        <div class="panel-group navigation-docs" id="accordion">
