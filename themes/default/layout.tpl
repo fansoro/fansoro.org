@@ -46,7 +46,7 @@
                 {else}
                     <div class="container">
                         {if Url::getUriSegment(0) == 'blog' && Url::getUriSegment(1) == ''}
-                            <h1 class="page-header-h1">News about Morfy <a href="http://morfy.org/rss"><i class="fa fa-rss floa-right"></i></a></h1>
+                            <h1 class="page-header-h1">News about Morfy <a href="http://morfy.org/rss"><i class="fa fa-rss float-right"></i></a></h1>
                         {else}
                             <h1 class="page-header-h1">{$title}</h1>
                         {/if}
