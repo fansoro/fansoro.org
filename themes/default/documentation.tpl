@@ -118,8 +118,17 @@
 									<li {if Url::getUriSegment(2) == 'File'}class="active"{/if}>
 		                                <a href="{$.site.url}/documentation/advanced/file">File <span class="badge">Force</span></a>
 		                            </li>
+									<li {if Url::getUriSegment(2) == 'dir'}class="active"{/if}>
+		                                <a href="{$.site.url}/documentation/advanced/dir">Dir <span class="badge">Force</span></a>
+		                            </li>
 									<li {if Url::getUriSegment(2) == 'class-loader'}class="active"{/if}>
 		                                <a href="{$.site.url}/documentation/advanced/class-loader">ClassLoader <span class="badge">Force</span></a>
+		                            </li>
+									<li {if Url::getUriSegment(2) == 'class-loader'}class="active"{/if}>
+		                                <a href="{$.site.url}/documentation/advanced/response">Response <span class="badge">Force</span></a>
+		                            </li>
+									<li {if Url::getUriSegment(2) == 'class-loader'}class="active"{/if}>
+		                                <a href="{$.site.url}/documentation/advanced/request">Request <span class="badge">Force</span></a>
 		                            </li>
 									<li {if Url::getUriSegment(2) == 'token'}class="active"{/if}>
 		                                <a href="{$.site.url}/documentation/advanced/token">Token <span class="badge">Force</span></a>
