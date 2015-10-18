@@ -42,11 +42,11 @@
                     <p class="lead">Morfy is a simple, fast and light-weighted file-based Content<br> Management System. Making the Web easy.</p>
                     <a class="btn btn-white btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v1.1.2/morfy-1.1.2.zip"><i class="fa fa-download"></i> Download Morfy 1.1.2</a>
                     <a class="btn btn-white btn-lg btn-github-morfy" href="https://github.com/morfy-cms/morfy"><i class="fa fa-github"></i> View Project on GitHub</a>
-                </div>
+				</div>
                 {else}
                     <div class="container">
                         {if Url::getUriSegment(0) == 'blog' && Url::getUriSegment(1) == ''}
-                            <h1 class="page-header-h1">News about Morfy</h1>
+                            <h1 class="page-header-h1">News about Morfy <a href="http://morfy.org/rss" class="float-right"><i class="fa fa-rss"></i></a></h1>
                         {else}
                             <h1 class="page-header-h1">{$title}</h1>
                         {/if}
