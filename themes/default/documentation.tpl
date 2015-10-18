@@ -6,7 +6,7 @@
 		    <div class="col-md-9">
 		        {$content}
 				<hr>
-				<a href="https://github.com/morfy-cms/morfy.org/tree/master/storage/pages/documentation{$page.slug}"><i class="fa fa-github-square"></i> edit this page</a>
+				<a href="https://github.com/morfy-cms/morfy.org/tree/master/storage/pages/documentation/{$page.slug}.md"><i class="fa fa-github-square"></i> edit this page</a>
 		    </div>
 		    <div class="col-md-3">
 
