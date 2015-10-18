@@ -29,8 +29,6 @@ At the top of text files should place a [page header]({site_url}/documentation/c
 
 ### Text File Vars
 
-Write text file vars inside `{{}}` e.g. `{{var}}`
-
 <table class="table">
     <thead>
         <tr><th>Name</th><th>Description</th></tr>
