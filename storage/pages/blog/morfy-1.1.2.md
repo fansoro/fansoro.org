@@ -9,14 +9,14 @@ author:
 ### Morfy 1.1.2 Release :)    
 
 ### Changes in 1.1.2:  
-* Fixed Bug in {site_url} shortcode
+* Fixed Bug in {{site_url}} shortcode
 
 ### Download  
 [<i class="fa fa-download"></i> Morfy 1.1.2](https://github.com/morfy-cms/morfy/releases/download/v1.1.2/morfy-1.1.2.zip)  
 
 ### Update from Morfy 1.1.1 to Morfy 1.1.2  
 1. **Backup your Site First!**    
-2. Download [Morfy 1.1.1](https://github.com/morfy-cms/morfy/releases/download/v1.1.2/morfy-1.1.2.zip)    
+2. Download [Morfy 1.1.2](https://github.com/morfy-cms/morfy/releases/download/v1.1.2/morfy-1.1.2.zip)    
 3. Unzip the contents to a new folder on your local computer.  
 4. Upload `/libraries/`, with an FTP client to your host.  
 
