@@ -534,6 +534,12 @@ a:hover {
     color: #000;
 }
 
+.navigation-docs .panel.panel-default .badge {
+    position: absolute;
+    top: 13px;
+    right: 8px;
+}
+
 .light-theme .navbar-default {
     background-color: #fff;
 }

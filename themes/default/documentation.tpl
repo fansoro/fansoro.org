@@ -101,10 +101,10 @@
 		                    <div class="panel-body">
 		                        <ul class="nav nav-list">
 		                        	<li {if Url::getUriSegment(2) == 'constants'}class="active"{/if}>
-		                                <a href="{$.site.url}/documentation/advanced/constants">Constants</a>
+		                                <a href="{$.site.url}/documentation/advanced/constants">Constants <span class="badge">Morfy</span></a>
 		                            </li>
 									<li {if Url::getUriSegment(2) == 'shortcode'}class="active"{/if}>
-		                                <a href="{$.site.url}/documentation/advanced/shortcode">Shortcode</a>
+		                                <a href="{$.site.url}/documentation/advanced/shortcode">Shortcode <span class="badge">Force</span></a>
 		                            </li>
 		                        </ul>
 		                    </div>
