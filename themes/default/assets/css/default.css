@@ -222,7 +222,7 @@ a:hover {
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
     color: #fff;
-    background: #000;
+    background: #c75c5c;
 }
 
 .navbar-default .navbar-nav > li > a:focus,
@@ -284,8 +284,8 @@ a:hover {
 
 .btn-white:hover {
     color: #fff;
-    border: 2px solid #000;
-    background: #000;
+    border: 2px solid #c75c5c;
+    background: #c75c5c;
 }
 
 .btn-github-morfy {
