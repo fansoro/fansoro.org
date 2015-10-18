@@ -34,7 +34,7 @@ At the top of text files should place a [page header]({site_url}/documentation/c
         <tr><th>Name</th><th>Description</th></tr>
     </thead>
     <tbody>
-        <tr><td>site_url</td><td>Outputs site url</td></tr>
-        <tr><td>block=block-name</td><td>Display page block</td></tr>
+        <tr><td>{{site_url}}</td><td>Outputs site url</td></tr>
+        <tr><td>{{block name=block-name}}</td><td>Display page block</td></tr>
     </tbody>
 </table>
