@@ -8,7 +8,7 @@ If you want to promote Morfy and need the logo, text or links for your article, 
 
 ### Morfy Description
 
-Morfy is an Open Source, fast and light-weighted file-based Content Management System. That's Easy to install, upgrade and use. Morfy provides basic API's for plugins, themes and core developers! Content in Morfy is just a simple files written with markdown syntax in pages folder folder. You simply create markdown files in the pages folder and that becomes a page.  
+Morfy is an Open Source, fast and light-weighted file-based Content Management System. That's Easy to install, upgrade and use. Morfy provides basic API's for plugins, themes and core developers! Content in Morfy is just a simple files written with markdown syntax in pages folder. You simply create markdown files in the pages folder and that becomes a page.  
 
 ### Morfy Links
 Homepage: http://morfy.org   
