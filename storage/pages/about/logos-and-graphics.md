@@ -2,6 +2,7 @@
 title: Logos and Graphics
 description: Logos to promote Morfy CMS around the web
 template: about
+redirect: media
 ---
 
 ## Morfy Icon
