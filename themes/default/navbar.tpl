@@ -32,7 +32,7 @@
                 <li class="dropdown{if $slug == 'about'} active{/if}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{$.site.url}/about/logos-and-graphics">Logos and Graphics</a></li>
+                        <li><a href="{$.site.url}/about/media">Media</a></li>
                         <li><a href="{$.site.url}/about/license">License</a></li>
                     </ul>
                 </li>
