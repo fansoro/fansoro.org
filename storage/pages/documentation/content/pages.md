@@ -12,11 +12,11 @@ template: documentation
         <tr><th>Physical Location</th><th>URL</th></tr>
     </thead>
     <tbody>
-        <tr><td>content/index.md</td><td>/</td></tr>
-        <tr><td>content/sub.md</td><td>/sub</td></tr>
-        <tr><td>content/sub/index.md</td><td>/sub (same as above)</td></tr>
-        <tr><td>content/sub/page.md</td><td>/sub/page</td></tr>
-        <tr><td>content/a/very/long/url.md</td><td>/a/very/long/url</td></tr>
+        <tr><td>storage/content/index.md</td><td>/</td></tr>
+        <tr><td>storage/content/sub.md</td><td>/sub</td></tr>
+        <tr><td>storage/content/sub/index.md</td><td>/sub (same as above)</td></tr>
+        <tr><td>storage/content/sub/page.md</td><td>/sub/page</td></tr>
+        <tr><td>storage/content/a/very/long/url.md</td><td>/a/very/long/url</td></tr>
     </tbody>
 </table>
 
