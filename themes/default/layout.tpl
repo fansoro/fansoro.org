@@ -14,8 +14,7 @@
 		{* Bootstrap core CSS *}
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
-		<link href="{$.site.url}/themes/default/assets/css/bootstrap.min.css" rel="stylesheet">
-		<link href="{$.site.url}/themes/default/assets/css/default.css" rel="stylesheet">
+		<link href="{$.site.url}/themes/default/assets/css/morfy.css" rel="stylesheet">
 		<link href="{$.site.url}/themes/default/assets/css/animate.css" rel="stylesheet">
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
 		{Morfy::runAction('theme_header')}
