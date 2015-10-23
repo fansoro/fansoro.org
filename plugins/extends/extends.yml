@@ -1,0 +1,13 @@
+name: Extends
+version: 1.0.0
+description: "Extends"
+author:
+  name: Sergey Romanenko
+  email: awilum@msn.com
+  url: http://morfy.org
+homepage:
+bugs:
+license: MIT
+
+# Plugin settings
+enabled: true
