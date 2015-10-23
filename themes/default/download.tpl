@@ -24,6 +24,9 @@
                 {if Url::getUriSegment(1) == 'plugins'}
                     <a class="btn btn-add-plugin btn-black" href="https://github.com/morfy-cms/plugins/blob/master/plugins-list-en.md" target="_blank">Add a plugin</a>
                 {/if}
+				{if Url::getUriSegment(1) == 'themes'}
+                    <a class="btn btn-add-plugin btn-black" href="https://github.com/morfy-cms/morfy-themes-catalog/blob/master/themes.yml" target="_blank">Add a plugin</a>
+                {/if}
 	        </div>
 	    </div>
 	</div>
