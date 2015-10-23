@@ -2,100 +2,42 @@
 // Themes
 //
 
-.themes-table thead {
-    display: none;
-}
+.themes {
+    .theme-item {
+        height: 220px;
+        margin-bottom: 20px;
+        padding: 10px;
 
-.themes-table tr {
-    position: relative;
+        border-radius: 4px;
+        background: #f5f5f5;
+    }
 
-    display: block;
-    float: left;
-    overflow: hidden;
+    .theme-description {
+        padding-top: 16px;
+    }
 
-    width: 400px;
-    height: 170px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    margin-left: 0;
-    padding: 20px;
+    .theme-version {
+        font-size: 12px;
 
-    text-align: left;
+        position: absolute;
+        top: 0;
+        left: 0;
 
-    color: #000;
-    border-radius: 0;
-    background: #f5f5f5;
-}
+        padding-top: 3px;
+        padding-right: 8px;
+        padding-bottom: 3px;
+        padding-left: 8px;
 
-.themes-table tr td:nth-child(1) {
-    font-size: 24px;
+        color: #fff;
+        background: rgba(0,0,0,.3);
+    }
 
-    display: block;
-}
+    .theme-preview {
+        position: relative;
 
-.themes-table tr td:nth-child(2) {
-    color: #000;
-}
+        height: 100%;
 
-.themes-table tr td:nth-child(3) {
-    display: block;
-    float: left;
-
-    padding-top: 2px;
-    padding-right: 10px;
-    padding-bottom: 3px;
-    padding-left: 10px;
-
-    border: 2px solid #000;
-    border-radius: 4px;
-    background: #f5f5f5;
-}
-
-.themes-table tr td:nth-child(3):hover {
-    background: #000;
-}
-
-.themes-table tr td:nth-child(3):hover a {
-    color: #fff;
-}
-
-.themes-table tr td:nth-child(4) {
-    left: 120px;
-
-    display: block;
-
-    padding-top: 2px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-}
-
-.themes-table tr td:nth-child(3) a {
-    text-decoration: none;
-
-    color: #000;
-}
-
-.themes-table tr td:nth-child(4) a {
-    text-decoration: none;
-
-    color: #000;
-}
-
-.themes-table tr td:nth-child(3) {
-    position: absolute;
-    bottom: 15px;
-
-    margin-right: 10px;
-
-    color: #000;
-}
-
-.themes-table tr td:nth-child(4) {
-    position: absolute;
-    bottom: 15px;
-
-    margin-right: 10px;
-
-    color: #000;
+        background-position: top center;
+        background-size: cover;
+    }
 }

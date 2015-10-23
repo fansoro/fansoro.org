@@ -9,7 +9,7 @@
                     </div>
 				{elseif Url::getUriSegment(1) == 'themes'}
 					<div class="themes-table">
-						{Morfy::parsedown(file_get_contents('https://raw.githubusercontent.com/morfy-cms/morfy-themes-catalog/master/themes-list-en.md'))}
+						{Repository::getThemes()}
 					</div>
                 {else}
                     {$content}
