@@ -8,7 +8,25 @@
 		<meta name='yandex-verification' content='65ab8145c4e162f5' />
 		{Morfy::runAction('theme_meta')}
 		<link rel="shortcut icon" href="{$.site.url}/favicon.ico">
+		<link rel="apple-touch-icon" href="{$.site.url}/favicon.ico">
 		<title>{$.site.title} | {$title}</title>
+
+		{* Open Graph Protocol *}
+    	<meta property="og:site_name" content="{$.site.title}">
+	    <meta property="og:url" content="{$url}">
+	    <meta property="og:title" content="{$title} | {$.site.title}">
+
+	    {* Google+ Snippets *}
+	    <meta itemprop="url" content="{$url}">
+	    <meta itemprop="name" content="{$title} | {$.site.title}">
+
+		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+		<meta name="DC.description" content="{$description}" />
+		<meta name="DC.format" content="text/html" />
+		<meta name="DC.identifier" content="{$.site.url}" />
+		<meta name="DC.publisher" content="Morfy" />
+		<meta name="DC.title" content="{$.site.title}" />
+		<meta name="DC.type" content="Text" />
 
 		{* Bootstrap core CSS *}
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
