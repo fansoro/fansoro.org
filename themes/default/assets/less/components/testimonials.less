@@ -12,39 +12,40 @@
 
     text-align: center;
 
-    color: #000;
+    color: @black;
     background: url('../img/bg-2.jpg');
     background-repeat: no-repeat;
+
+    .carousel-caption {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        margin: 0 auto;
+
+        .container {
+            max-width: 770px;
+        }
+
+        h4 {
+            font-size: 24px;
+
+            margin-bottom: 20px;
+
+            color: @black;
+            text-shadow: none;
+        }
+
+        h5 {
+            font-size: 16px;
+            font-style: italic;
+
+            text-shadow: none;
+        }
+    }
 }
 
-.testimonial .carousel-caption {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    margin: 0 auto;
-}
-
-.testimonial .carousel-caption .container {
-    max-width: 770px;
-}
-
-.testimonial .carousel-caption h4 {
-    font-size: 24px;
-
-    margin-bottom: 20px;
-
-    color: #000;
-    text-shadow: none;
-}
-
-.testimonial .carousel-caption h5 {
-    font-size: 16px;
-    font-style: italic;
-
-    text-shadow: none;
-}
 
 
 @media (max-width: 600px) {
