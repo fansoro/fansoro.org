@@ -1,3 +1,3 @@
-{extends 'layout.tpl'}
+{extends 'base.tpl'}
 {block 'content'}
 {/block}
