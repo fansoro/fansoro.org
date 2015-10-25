@@ -5,6 +5,17 @@ keywords: documentation, development, lessons, faq, cms, questions
 template: documentation
 ---
 
+### Update from **Morfy 1.1.2** to **Morfy 1.1.3**
+1. **Backup your Site First!**    
+2. Download [Morfy 1.1.3](https://github.com/morfy-cms/morfy/releases/download/v1.1.3/morfy-1.1.3.zip)    
+3. Unzip the contents to a new folder on your local computer.  
+4. Upload `/libraries/Morfy/`, with an FTP client to your host.
+5. Update in .htaccess this   
+`<FilesMatch "(^#.*#|\.(md|txt|html|tpl)|~)$">`   
+to this:  
+`<FilesMatch "(^#.*#|\.(md|txt|html|tpl|yml|yaml)|~)$">`  
+
+
 ### Update from **Morfy 1.1.1** to **Morfy 1.1.2**  
 1. **Backup your Site First!**    
 2. Download [Morfy 1.1.2](https://github.com/morfy-cms/morfy/releases/download/v1.1.2/morfy-1.1.2.zip)    
