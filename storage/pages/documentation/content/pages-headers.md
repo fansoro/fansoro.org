@@ -27,7 +27,7 @@ keywords: key, words
 author:
   name: Sergey Romanenko
   email: awilum@msn.com
-  url: http://morfy.org
+  url: https://github.com/Awilum
 date: 2015-10-18 16:00
 tags: tag1, tag2
 robots: noindex, nofollow  

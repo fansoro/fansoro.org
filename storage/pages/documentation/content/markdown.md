@@ -147,7 +147,7 @@ Renders to:
 [Morfy site](http://morfy.org)
 ```
 
-Renders to:
+Renders to:  
 
 [Morfy site](http://morfy.org)
 
@@ -159,6 +159,15 @@ Renders to:
 ![Morfy Logo](http://morfy.org/public/assets/img/morfy-logo.png)
 ```
 
+Renders to:  
+
+![Morfy Logo](http://morfy.org/public/assets/img/morfy-logo.png)  
+
+
+```
+![Morfy Logo](http://morfy.org/public/assets/img/morfy-logo.png){.img-responsive}
+```
+
 Renders to:
 
-![Morfy Logo](http://morfy.org/public/assets/img/morfy-logo.png)
+![Morfy Logo](http://morfy.org/public/assets/img/morfy-logo.png){.img-responsive}  
