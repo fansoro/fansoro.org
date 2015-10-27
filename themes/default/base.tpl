@@ -12,9 +12,11 @@
 		<title>{$.site.title} | {$title}</title>
 
 		{* Open Graph Protocol *}
-    	<meta property="og:site_name" content="{$.site.title}">
+  		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="{$.site.title}">
 	    <meta property="og:url" content="{$url}">
 	    <meta property="og:title" content="{$title} | {$.site.title}">
+		<meta property="og:image" content="http://morfy.org/public/assets/img/morfy-logo.png" />
 
 	    {* Google+ Snippets *}
 	    <meta itemprop="url" content="{$url}">
