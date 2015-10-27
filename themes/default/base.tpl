@@ -11,6 +11,8 @@
 		<link rel="apple-touch-icon" href="{$.site.url}/favicon.ico">
 		<title>{$.site.title} | {$title}</title>
 
+		<meta property="fb:app_id" content="795025567272801" />
+
 		{* Open Graph Protocol *}
   		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="{$.site.title}">
