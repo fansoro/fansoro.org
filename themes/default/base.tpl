@@ -16,12 +16,17 @@
 		<meta property="og:site_name" content="{$.site.title}">
 	    <meta property="og:url" content="{$url}">
 	    <meta property="og:title" content="{$title} | {$.site.title}">
-		<meta property="og:image" content="http://morfy.org/public/assets/img/morfy-logo.png" />
+		<meta property="og:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
+
+		<meta property="twitter:site" content="@morfy_cms">
+		<meta property="twitter:title" content="{$title} | {$.site.title}">
+		<meta property="twitter:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
 
 	    {* Google+ Snippets *}
 	    <meta itemprop="url" content="{$url}">
 	    <meta itemprop="name" content="{$title} | {$.site.title}">
 
+		{* DC Schema *}
 		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
 		<meta name="DC.description" content="{$description}" />
 		<meta name="DC.format" content="text/html" />
