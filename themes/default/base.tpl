@@ -21,12 +21,12 @@
 		<meta property="og:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
 
 		{* Twitter Card *}
-  		<meta property="twitter:card" content="summary_large_image">
-		<meta property="twitter:account_id" content="3068674037">
-		<meta property="twitter:site" content="@morfy_cms">
-		<meta property="twitter:title" content="{$title} | {$.site.title}">
-		<meta property="twitter:description" content="Morfy is an Open Source, fast and light-weighted file-based Content Management System. Content in Morfy is just a simple files written with markdown syntax in pages folder. You simply create markdown files in the pages folder and that becomes a page.">
-		<meta property="twitter:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
+  		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:account_id" content="3068674037">
+		<meta name="twitter:site" content="@morfy_cms">
+		<meta name="twitter:title" content="{$title} | {$.site.title}">
+		<meta name="twitter:description" content="Morfy is an Open Source, fast and light-weighted file-based Content Management System. Content in Morfy is just a simple files written with markdown syntax in pages folder. You simply create markdown files in the pages folder and that becomes a page.">
+		<meta name="twitter:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
 
 	    {* Google+ Snippets *}
 		<link href="https://plus.google.com/+MorfyOrganization" rel="publisher">
