@@ -7,9 +7,19 @@
 		<meta name="description" content="{$description}">
 		<meta name='yandex-verification' content='65ab8145c4e162f5' />
 		{Morfy::runAction('theme_meta')}
-		<link rel="shortcut icon" href="{$.site.url}/favicon.ico">
-		<link rel="apple-touch-icon" href="{$.site.url}/favicon.ico">
 		<title>{$.site.title} | {$title}</title>
+
+		<link rel="shortcut icon" href="{$.site.url}/favicon.ico">
+
+		<link rel="icon" href="{$.site.url}/public/assets/morfy-icon-296.png" sizes="296x296" type="image/png">
+
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{$.site.url}/public/assets/morfy-icon-152.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{$.site.url}/public/assets/morfy-icon-144.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{$.site.url}/public/assets/morfy-icon-120.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{$.site.url}/public/assets/morfy-icon-114.png">
+
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="{$.site.url}/public/assets/morfy-icon-144.png">
 
 		<meta property="fb:app_id" content="795025567272801" />
 
