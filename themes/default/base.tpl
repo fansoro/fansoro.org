@@ -20,22 +20,14 @@
 	    <meta property="og:title" content="{$title} | {$.site.title}">
 		<meta property="og:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
 
+  		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:account_id" content="3068674037">
 		<meta property="twitter:site" content="@morfy_cms">
 		<meta property="twitter:title" content="{$title} | {$.site.title}">
 		<meta property="twitter:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
 
 	    {* Google+ Snippets *}
-	    <meta itemprop="url" content="{$url}">
-	    <meta itemprop="name" content="{$title} | {$.site.title}">
-
-		{* DC Schema *}
-		<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
-		<meta name="DC.description" content="{$description}" />
-		<meta name="DC.format" content="text/html" />
-		<meta name="DC.identifier" content="{$.site.url}" />
-		<meta name="DC.publisher" content="Morfy" />
-		<meta name="DC.title" content="{$.site.title}" />
-		<meta name="DC.type" content="Text" />
+		<link href="https://plus.google.com/+MorfyOrganization" rel="publisher">
 
 		{* Bootstrap core CSS *}
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
@@ -91,7 +83,7 @@
 		<div id="footer">
 			<div class="container">
                 <p>
-                    <span>© 2015 <a href="https://github.com/Awilum" rel="nofollow">Sergey Romanenko</a></span>
+                    <span>© 2015 <a href="https://github.com/Awilum">Sergey Romanenko</a></span>
                     <span class="pull-right">
                         Stay in touch:
                         <a rel="nofollow" href="https://twitter.com/morfy_cms">@morfy_cms</a> <span class="social-link-del">/</span>
