@@ -95,7 +95,7 @@
 		<div id="footer">
 			<div class="container">
                 <p>
-                    <span>© 2015 <a href="https://github.com/Awilum">Sergey Romanenko</a></span>
+                    <span>© 2015 <a href="http://awilum.github.io">Sergey Romanenko</a></span>
                     <span class="pull-right">
                         Stay in touch:
                         <a rel="nofollow" href="https://twitter.com/morfy_cms">@morfy_cms</a> <span class="social-link-del">/</span>
