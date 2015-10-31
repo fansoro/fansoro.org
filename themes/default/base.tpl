@@ -63,14 +63,24 @@
 	<body {if Url::getUriSegment(0) != ''}class="light-theme"{/if}>
 		<div id="wrap">
 		    <div class="mega-header">
-			    {include 'navbar.tpl'}
+				{if Url::getUriSegment(0) == 'ru'}
+					{include 'ru/navbar.tpl'}
+				{else}
+			    	{include 'navbar.tpl'}
+				{/if}
 
-                {if Url::getUriSegment(0) == ''}
+                {if (Url::getUriSegment(0) == '' || Url::getUriSegment(0) == 'ru') && Url::getUriSegment(1) == ''}
                 <div class="morfy-promo-block wow fadeIn">
-                    <h1>Introducing Morfy</h1>
-                    <p class="lead">Morfy is a simple, fast and light-weighted file-based Content<br> Management System. Making the Web easy.</p>
-                    <a class="btn btn-white btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v1.1.3/morfy-1.1.3.zip"><i class="fa fa-download"></i> Download Morfy 1.1.3</a>
-                    <a class="btn btn-white btn-lg btn-github-morfy" href="https://github.com/morfy-cms/morfy"><i class="fa fa-github"></i> View Project on GitHub</a>
+					{if Url::getUriSegment(0) == 'ru'}
+						<h1>ПРОСТАЯ И БЫСТРАЯ</h1>
+                    	<p class="lead">OPEN SOURCE CMS НА ФАЙЛАХ</p>
+                    	<a class="btn btn-white btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v1.1.3/morfy-1.1.3.zip"><i class="fa fa-download"></i> Скачать Morfy 1.1.3</a>
+					{else}
+				    	<h1>Introducing Morfy</h1>
+                    	<p class="lead">Morfy is a simple, fast and light-weighted file-based Content<br> Management System. Making the Web easy.</p>
+                    	<a class="btn btn-white btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v1.1.3/morfy-1.1.3.zip"><i class="fa fa-download"></i> Download Morfy 1.1.3</a>
+                    	<a class="btn btn-white btn-lg btn-github-morfy" href="https://github.com/morfy-cms/morfy"><i class="fa fa-github"></i> View Project on GitHub</a>
+					{/if}
 				</div>
                 {else}
                     <div class="container">
@@ -83,10 +93,15 @@
                 {/if}
 			</div>
 
-            {if Url::getUriSegment(0) == ''}
-				{include 'benefits.tpl'}
-				{include 'testimonial.tpl'}
-            {/if}
+            {if (Url::getUriSegment(0) == '' || Url::getUriSegment(0) == 'ru') && Url::getUriSegment(1) == ''}
+				{if Url::getUriSegment(0) == 'ru'}
+					{include 'ru/benefits.tpl'}
+					{include 'ru/testimonial.tpl'}
+				{else}
+					{include 'benefits.tpl'}
+					{include 'testimonial.tpl'}
+				{/if}
+			{/if}
 
 			{Morfy::runAction('theme_content_before')}
 			{block 'content'}{/block}
