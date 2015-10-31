@@ -16,7 +16,7 @@
                 <li class="dropdown{if $slug == 'download'} active{/if}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Скачать <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{$.site.url}/ru/download">Морфи</a></li>
+                        <li><a href="{$.site.url}/ru/download">Morfy</a></li>
                         <li><a href="{$.site.url}/ru/download/plugins">Плагины</a></li>
                         <li><a href="{$.site.url}/ru/download/themes">Темы</a></li>
                     </ul>
@@ -30,7 +30,7 @@
                     </ul>
                 </li>
                 <li class="dropdown{if $slug == 'about'} active{/if}">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">О Морфи <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">О Morfy <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="{$.site.url}/ru/about/media">Медия</a></li>
                         <li><a href="{$.site.url}/ru/about/license">Лицензия</a></li>
