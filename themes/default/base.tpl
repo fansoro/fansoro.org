@@ -112,7 +112,7 @@
                 <p>
                     <span>© 2015 <a href="http://awilum.github.io">Sergey Romanenko</a></span>
                     <span class="pull-right">
-						{Url::getUriSegment(0) == 'ru'}
+						{if Url::getUriSegment(0) == 'ru'}
 
 						{else}
 						Stay in touch:
