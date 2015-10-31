@@ -1,5 +1,5 @@
 <div class="container container-small benefits-container">
-    <h2 class="h2-reason text-center">Причины использовать Morfy</h2>
+    {*<h2 class="h2-reason text-center">Причины использовать Morfy</h2>*}
     <div class="row">
         <div class="col-md-4 wow fadeIn">
             <div class="features-columns">
