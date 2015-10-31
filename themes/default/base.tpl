@@ -64,9 +64,9 @@
 		<div id="wrap">
 		    <div class="mega-header">
 				{if Url::getUriSegment(0) == 'ru'}
-					{include 'ru/navbar.tpl'}
+					{include 'ru/navbar/navbar.tpl'}
 				{else}
-			    	{include 'navbar.tpl'}
+			    	{include 'navbar/navbar.tpl'}
 				{/if}
 
                 {if (Url::getUriSegment(0) == '' || Url::getUriSegment(0) == 'ru') && Url::getUriSegment(1) == ''}
