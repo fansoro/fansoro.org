@@ -1,7 +1,6 @@
 ---
 title: Headers
-description: Documentation for Morfy Developers and Morfy Users.
-keywords: documentation, development, lessons, faq, cms, questions
+description: Документация для разработчиков и пользователей.
 template: documentation
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Token
-description: Documentation for Morfy Developers and Morfy Users.
-keywords: documentation, development, lessons, faq, cms, questions
+description: Документация для разработчиков и пользователей.
 template: documentation
 ---
 Generate and store a unique token which can be used to help prevent  
