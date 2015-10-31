@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Добро пожаловать
 description: Документация для разработчиков и пользователей.
 template: documentation
 ---

@@ -1,7 +1,7 @@
 ---
-title: Documentation
+title: Документация
 description: Документация для разработчиков и пользователей.
 template: documentation
 ---
 
-### Welcome!
+### Добро пожаловать!
