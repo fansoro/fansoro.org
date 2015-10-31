@@ -11,8 +11,12 @@
 				{/if}
 			</div>
 			<div class="col-md-3">
-				{include 'navbar/navbar-documentation.tpl'}
-		    </div>
+				{if Url::getUriSegment(0) == 'ru'}
+					{include 'ru/navbar/navbar-documentation.tpl'}
+				{else}
+					{include 'navbar/navbar-documentation.tpl'}
+				{/if}
+			</div>
 		</div>
 
 	</div>
