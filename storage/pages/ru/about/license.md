@@ -1,6 +1,6 @@
 ---
-title: The Morfy License
-description: Morfy CMS LICENSE
+title: Лицензия
+description: Лицензия Morfy CMS
 template: about
 ---
 

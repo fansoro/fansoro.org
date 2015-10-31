@@ -1,6 +1,5 @@
 ---
-title: Download Morfy Themes
-description: Download plugins for Morfy CMS
-keywords: download, morfy, themes, simple, cms, free, open-source
+title: Скачать шаблоны для Morfy
+description: Скачать шаблоны для Morfy CMS
 template: download
 ---

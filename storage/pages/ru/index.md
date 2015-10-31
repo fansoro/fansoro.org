@@ -1,5 +1,5 @@
 ---
-title: Simple and fast file-based CMS
-description: Morfy is a simple and light-weighted Content Management System. Making the Web easy.
+title: Самая простая и быстрая CMS - Morfy CMS
+description: простая система управления сайтом с открытым исходным кодом и распространяется под лицензией MIT.
 template: home
 ---

@@ -1,16 +1,19 @@
 ---
-title: Media
-description: Media information to promote Morfy CMS around the web
+title: Медиа
+description: Медиа информация для продвижения Morfy CMS
 template: about
 ---
 
-If you want to promote Morfy and need the logo, text or links for your article, video, etc., you may use the ones provided below.   
+Если вы хотите расскаять о Morfy, и вам нужен логотип, текст или ссылки для вашей статьи, видео, и т.д., вы можете использовать, предусмотренные ниже.
 
-### Morfy Description
+### Morfy Описание
 
-Morfy is an Open Source, fast and light-weighted file-based Content Management System. That's Easy to install, upgrade and use. Morfy provides basic API's for plugins, themes and core developers! Content in Morfy is just a simple files written with markdown syntax in pages folder. You simply create markdown files in the pages folder and that becomes a page.  
+Morfy - простая система управления сайтом с открытым исходным кодом и распространяется под лицензией MIT.
+Работает на основе обычных текстовых файлов и не использует базу данных. Легко настраивается и расширяется!  
+C помощью Morfy можно создать: сайт визитку, сателлит, домашнюю страничку, сайт-портфолио, лендинг-страницы, блог.
+Morfy предоставляет API для легкой разработки плагинов и тем оформления.
 
-### Morfy Links
+### Morfy Ссылки
 Homepage: http://morfy.org   
 GitHub: https://github.com/morfy-cms/morfy  
 Twitter: https://twitter.com/morfy_cms  
@@ -18,7 +21,7 @@ Forum: http://forum.morfy.org
 Live Chat: https://gitter.im/morfy-cms/morfy  
 YouTube Channel: http://www.youtube.com/c/MorfyOrganization  
 
-### Morfy Logo
+### Morfy Логотип
 
 ![Morfy Icon]({site_url}/public/assets/img/morfy-icon.png){.img-responsive}
 
@@ -28,5 +31,5 @@ YouTube Channel: http://www.youtube.com/c/MorfyOrganization
 ### Morfy Credits
 
 ```
-Powered by <a href="http://morfy.org">Morfy</a>
+Работает на <a href="http://morfy.org">Morfy</a>
 ```

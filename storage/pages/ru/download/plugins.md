@@ -1,6 +1,5 @@
 ---
-title: Download Morfy Plugins
-description: Download plugins for Morfy CMS
-keywords: download, morfy, plugins, simple, cms, free, open-source
+title: Скачать плагины для Morfy
+description: Скачать плагины для Morfy CMS
 template: download
 ---
