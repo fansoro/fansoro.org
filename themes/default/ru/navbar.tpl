@@ -7,7 +7,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{$.site.url}"><img src="{$.site.url}/public/assets/img/{if Url::getUriSegment(0) == ''}morfy-logo-white.png{else}morfy-logo.png{/if}" width="132" alt="Morfy — simple but powerful flat-file CMS"></a>
+			<a class="navbar-brand" href="{$.site.url}/ru"><img src="{$.site.url}/public/assets/img/{if Url::getUriSegment(0) == 'ru'}{if Url::getUriSegment(1) == ''}morfy-logo-white.png{else}morfy-logo.png{/if}{else}{if Url::getUriSegment(0) == ''}morfy-logo-white.png{else}morfy-logo.png{/if}{/if}" width="132" alt="Morfy — simple but powerful flat-file CMS"></a>
 		</div>
 		<div class="collapse navbar-collapse">
             {set $slug = Url::getUriSegment(1)}

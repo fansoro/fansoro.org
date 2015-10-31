@@ -60,7 +60,7 @@
 		</script>
 		{/ignore}
 	</head>
-	<body {if Url::getUriSegment(0) != ''}class="light-theme"{/if}>
+	<body {if (Url::getUriSegment(0) != '' && Url::getUriSegment(0) != 'ru') || (Url::getUriSegment(1) != '' && Url::getUriSegment(0) == 'ru')}class="light-theme"{/if}>
 		<div id="wrap">
 		    <div class="mega-header">
 				{if Url::getUriSegment(0) == 'ru'}
