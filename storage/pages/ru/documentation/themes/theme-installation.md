@@ -1,14 +1,14 @@
 ---
-title: Theme Installation
+title: Установка Шаблонов
 description: Документация для разработчиков и пользователей.
 template: documentation
 ---
 
-1. Unzip theme to the folder `/themes/`
-2. Go to `/config/site.yml` and update `theme:` setting with your theme name.
-3. Save your changes.
+1. Распакуйте тему оформления в папку `/themes/`
+2. Откройте файл `/config/site.yml` и пропишите вашу тему в `theme:`
+3. Сохраните файл.
 
-Example:
+Пример:
 ```yml
 theme: mytheme
 ```
