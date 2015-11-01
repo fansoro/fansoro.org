@@ -3,11 +3,11 @@
 	<div class="container container-content">
 	    <div class="row">
 	        <div class="col-md-9">
-                {if Url::getUriSegment(1) == 'plugins'}
+                {if Url::getUriSegment(1) == 'plugins' || Url::getUriSegment(2) == 'plugins'}
                     <div class="plugins-table">
                         {Morfy::parsedown(file_get_contents('https://raw.githubusercontent.com/morfy-cms/morfy-plugins-catalog/master/plugins-list-en.md'))}
                     </div>
-				{elseif Url::getUriSegment(1) == 'themes'}
+				{elseif Url::getUriSegment(1) == 'themes' || Url::getUriSegment(2) == 'themes'}
 					<div class="themes-table">
 						{Repository::getThemes()}
 					</div>
