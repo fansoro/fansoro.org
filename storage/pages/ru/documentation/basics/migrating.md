@@ -1,9 +1,8 @@
 ---
-title: Moving Morfy or Migrating Hosts
+title: Перенос сайта
 description: Документация для разработчиков и пользователей.
 template: documentation
 ---
 
-
-1. Go to the `/config/site.yml` and change the Website URL, if needed.  
-2. Edit main `.htaccess` file and correct the RewriteBase rule.  
+1. Откройте в редакторе `/config/site.yml` и изменить URL вебсайта.  
+2. Откройте в редакторе `.htaccess` обновите правило RewriteBase если необходимо.  
