@@ -6,10 +6,11 @@
     	        {$content}
             </div>
 	        <div class="col-md-3 text-center">
-                <ul class="nav nav-list">
-					<li {if Url::getUriSegment(0) == 'about' && Url::getUriSegment(1) == 'media'} class="active"{/if}><a href="{$.site.url}/about/media">Media</a></li>
-                    <li {if Url::getUriSegment(0) == 'about' && Url::getUriSegment(1) == 'license'} class="active"{/if}><a href="{$.site.url}/about/license">License</a></li>
-                </ul>
+				{if Url::getUriSegment(0) == 'ru'}
+					{include 'ru/navbar/navbar-about.tpl'}
+				{else}
+					{include 'navbar/navbar-about.tpl'}
+				{/if}
 	        </div>
 	    </div>
 	</div>
