@@ -6,8 +6,8 @@
 		    <div class="col-md-9">
 		        {$content}
 				{if Url::getUriSegment(1) != ''}
-				<hr>
-				<a href="https://github.com/morfy-cms/morfy.org/tree/master/storage/pages/{Url::getUriString()}.md"><i class="fa fa-github-square"></i> {if Url::getUriSegment(0) == 'ru'}редактировать страницу{else}edit this page{/if}</a>
+					<hr>
+					<a href="https://github.com/morfy-cms/morfy.org/tree/master/storage/pages/{Url::getUriString()}.md"><i class="fa fa-github-square"></i> {if Url::getUriSegment(0) == 'ru'}редактировать страницу{else}edit this page{/if}</a>
 				{/if}
 			</div>
 			<div class="col-md-3">
