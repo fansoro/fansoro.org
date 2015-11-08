@@ -35,7 +35,7 @@
 		<meta name="twitter:account_id" content="3068674037">
 		<meta name="twitter:site" content="@morfy_cms">
 		<meta name="twitter:title" content="{$title} | {$.site.title}">
-		<meta name="twitter:description" content="Morfy is an Open Source, fast and light-weighted file-based Content Management System. Content in Morfy is just a simple files written with markdown syntax in pages folder. You simply create markdown files in the pages folder and that becomes a page.">
+		<meta name="twitter:description" content="Morfy is Modern Open Source Flat-File Content Management System. Content in Morfy is just a simple files written with markdown syntax in pages folder. You simply create markdown files in the pages folder and that becomes a page.">
 		<meta name="twitter:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
 
 	    {* Google+ Snippets *}
