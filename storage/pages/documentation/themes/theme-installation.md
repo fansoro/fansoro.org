@@ -1,7 +1,6 @@
 ---
 title: Theme Installation
 description: Documentation for Morfy Developers and Morfy Users.
-keywords: documentation, themes, development, lessons, faq, cms, questions
 template: documentation
 ---
 
