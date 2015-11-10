@@ -127,8 +127,18 @@
                 </p>
 			</div>
 		</div>
+		<div class="live-chat-button"><i class="fa fa-comments"></i></div>
 		{* Bootstrap core JavaScript *}
+		{ignore}
+		<script>
+		((window.gitter = {}).chat = {}).options = {
+	        room: 'morfy-cms/morfy',
+	        activationElement: '.live-chat-button'
+	    };
+		</script>
+		{/ignore}
 		{* Placed at the end of the document so the pages load faster *}
+		<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 		<script src="{$.site.url}/themes/default/assets/js/jquery.min.js"></script>
 		<script src="{$.site.url}/themes/default/assets/js/bootstrap.min.js"></script>
 		<script src="{$.site.url}/themes/default/assets/js/wow.min.js"></script>
