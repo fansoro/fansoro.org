@@ -143,7 +143,7 @@
 		<script src="{$.site.url}/themes/default/assets/js/jquery.min.js"></script>
 		<script src="{$.site.url}/themes/default/assets/js/bootstrap.min.js"></script>
 		<script src="{$.site.url}/themes/default/assets/js/wow.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js" async></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
 		<script src="{$.site.url}/themes/default/assets/js/default.js"></script>
 		{if Url::getUriSegment(0) == 'ru' || Url::getUriSegment(0) == ''}
 		<script src="{$.site.url}/themes/default/assets/js/universe.js" async></script>
