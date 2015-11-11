@@ -14,7 +14,3 @@ var wow = new WOW(
   }
 );
 wow.init();
-
-
-/* Init highlight.js */
-hljs.initHighlightingOnLoad();
