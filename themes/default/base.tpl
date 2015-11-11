@@ -74,13 +74,11 @@
 					{if Url::getUriSegment(0) == 'ru'}
 						<h1>ПРОСТАЯ И БЫСТРАЯ</h1>
                     	<p class="lead">OPEN SOURCE CMS НА ФАЙЛАХ</p>
-                    	<a class="btn btn-white btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v1.1.3/morfy-1.1.3.zip"><i class="fa fa-download"></i> Скачать Morfy 1.1.3</a>
-						<a class="btn btn-white btn-lg btn-github-morfy" href="https://github.com/morfy-cms/morfy"><i class="fa fa-github"></i> Проект на GitHub</a>
+                    	<a class="btn btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v1.1.3/morfy-1.1.3.zip">Скачать Morfy</a>
 					{else}
 				    	<h1>Introducing Morfy</h1>
 						<p class="lead">Modern Open Source Flat-File Content Management System.</p>
-                    	<a class="btn btn-white btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v1.1.3/morfy-1.1.3.zip"><i class="fa fa-download"></i> Download Morfy 1.1.3</a>
-                    	<a class="btn btn-white btn-lg btn-github-morfy" href="https://github.com/morfy-cms/morfy"><i class="fa fa-github"></i> View Project on GitHub</a>
+                    	<a class="btn btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v1.1.3/morfy-1.1.3.zip">Download Morfy</a>
 					{/if}
 				</div>
                 {else}
