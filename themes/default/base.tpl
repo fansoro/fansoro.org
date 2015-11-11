@@ -63,6 +63,11 @@
 	<body {if (Url::getUriSegment(0) != '' && Url::getUriSegment(0) != 'ru') || (Url::getUriSegment(1) != '' && Url::getUriSegment(0) == 'ru')}class="light-theme"{/if}>
 		<div id="wrap">
 		    <div class="mega-header">
+				{if Url::getUriSegment(0) == 'ru' || Url::getUriSegment(0) == ''}
+				<canvas class="universe"></canvas>
+				<div class="universe-dark-matter"></div>
+				{/if}
+
 				{if Url::getUriSegment(0) == 'ru'}
 					{include 'ru/navbar/navbar.tpl'}
 				{else}
@@ -141,6 +146,7 @@
 		<script src="{$.site.url}/themes/default/assets/js/wow.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
 		<script src="{$.site.url}/themes/default/assets/js/default.js"></script>
+		<script src="{$.site.url}/themes/default/assets/js/universe.js" async defer></script>
 		{Morfy::runAction('theme_footer')}
 	</body>
 </html>
