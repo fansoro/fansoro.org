@@ -19,6 +19,12 @@
                     <h5><a href="http://monchovarela.es/" rel="nofollow">Moncho Varela</a></h5>
                 </div>
             </div>
+            <div class="item">
+                <div class="carousel-caption">
+                    <h4>Very flexible and easy CMS! Fast templating engine. Markdown syntax with almost instant compilation. Easy development of Plug-ins.</h4>
+                    <h5><a href="https://github.com/pafnuty" rel="nofollow">Pavel Belousov</a></h5>
+                </div>
+            </div>
         </div>
     </div>
 </div>
