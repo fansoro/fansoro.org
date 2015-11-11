@@ -108,21 +108,20 @@
 		</div>
 		<div id="footer">
 			<div class="container">
-                <p>
-                    <span>© 2015 <a href="http://awilum.github.io">Sergey Romanenko</a></span>
-                    <span class="pull-right">
-						{if Url::getUriSegment(0) == 'ru'}
-
-						{else}
-						Stay in touch:
-						{/if}
-                        <a rel="nofollow" href="https://twitter.com/morfy_cms">@morfy_cms</a> <span class="social-link-del">/</span>
-                        <a rel="nofollow" href="https://gitter.im/morfy-cms/morfy">Gitter</a> <span class="social-link-del">/</span>
-                        <a rel="nofollow" href="https://www.facebook.com/MorfyCMS">Facebook</a> <span class="social-link-del">/</span>
-						<a rel="nofollow" href="http://www.youtube.com/c/MorfyOrganization">YouTube</a> <span class="social-link-del">/</span>
-                        <a rel="nofollow" href="https://vk.com/morfy_cms">VK</a>
-                    </span>
+                <p class="social-links text-center">
+					<a rel="nofollow" href="https://twitter.com/morfy_cms"><i class="fa fa-twitter"></i></a>
+					<a rel="nofollow" href="https://gitter.im/morfy-cms/morfy"><i class="fa fa-comments"></i></a>
+					<a rel="nofollow" href="https://www.facebook.com/MorfyCMS"><i class="fa fa-facebook"></i></a>
+					<a rel="nofollow" href="http://www.youtube.com/c/MorfyOrganization"><i class="fa fa-youtube-play"></i></a>
+					<a rel="nofollow" href="https://vk.com/morfy_cms"><i class="fa fa-vk"></i></a>
                 </p>
+				<p class="text-center">
+					<ul class="copyright">
+						<li>© 2015 <a href="http://awilum.github.io">Sergey Romanenko</a></li>
+						<li>All rights reserved</li>
+						<li>Morfy is released under the MIT license</li>
+					</ul>
+				</p>
 			</div>
 		</div>
 		<div class="live-chat-button"><i class="fa fa-comments"></i></div>
