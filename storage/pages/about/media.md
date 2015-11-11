@@ -1,5 +1,5 @@
 ---
-title: Media
+title: Media Information
 description: Media information to promote Morfy CMS around the web
 template: about
 ---
