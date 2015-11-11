@@ -19,7 +19,7 @@
             <div class="features-columns">
                 <img src="{$.site.url}/themes/default/assets/img/icons/gear.png" alt="Morfy Flexible">
                 <h4>Flexible</h4>
-                <p>Morfy provides basic api's for plugins, themes and core developers!</p>
+                <p>Morfy provides amazing api's for plugins, themes and core developers!</p>
             </div>
         </div>
     </div>
