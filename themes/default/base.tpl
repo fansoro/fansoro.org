@@ -114,6 +114,7 @@
 			<div class="container">
                 <p class="social-links text-center">
 					<a rel="nofollow" href="https://twitter.com/morfy_cms"><i class="fa fa-twitter"></i></a>
+					<a rel="nofollow" href="https://github.com/morfy-cms/morfy"><i class="fa fa-github"></i></a>
 					<a rel="nofollow" href="https://gitter.im/morfy-cms/morfy"><i class="fa fa-comments"></i></a>
 					<a rel="nofollow" href="https://www.facebook.com/MorfyCMS"><i class="fa fa-facebook"></i></a>
 					<a rel="nofollow" href="http://www.youtube.com/c/MorfyOrganization"><i class="fa fa-youtube-play"></i></a>
