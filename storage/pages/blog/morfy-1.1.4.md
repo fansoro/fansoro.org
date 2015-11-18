@@ -24,6 +24,6 @@ author:
 
 <hr>  
 
-[<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/53/morfy-1-1-4-release)  
+[<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/66/morfy-1-1-4-release#latest)  
 
 [<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)  
