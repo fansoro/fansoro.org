@@ -1,14 +1,4 @@
 title: 'Morfy'
 description: 'Modern Open Source Flat-File Content Management System'
-keywords: 'morfy, cms, php, filesystem'
-url: 'http://morfy.org'
 author:
   email: 'awilum@msn.com'
-charset: 'UTF-8'
-timezone: 'Europe/Helsinki'
-theme: 'default'
-plugins:
-  sitemap
-  feed
-  redirect
-  extends
