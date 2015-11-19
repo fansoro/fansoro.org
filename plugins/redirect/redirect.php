@@ -9,8 +9,11 @@
  * file that was distributed with this source code.
  */
 
-Morfy::addAction('before_render', function () {
-    if (isset(Morfy::$page['redirect'])) {
-        Request::redirect(Morfy::$page['redirect']);
+Action::add('before_page_rendered', function () {
+    $page = Pages::getCurrentPage();
+    $redirect = Arr::get($page, 'redirect');
+
+    if (isset($redirect)) {
+        Request::redirect($redirect);
     }
 });

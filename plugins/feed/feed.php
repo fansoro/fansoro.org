@@ -8,24 +8,19 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 if (Url::getUriSegment(0) == 'rss') {
-    Morfy::addAction('before_render', function () {
+    Action::add('before_page_rendered', function () {
 
-        $fenom = Fenom::factory(
-            PLUGINS_PATH . '/feed/templates/',
-            CACHE_PATH . '/fenom/',
-            Morfy::$fenom
-        );
+        $template = Template::factory(PLUGINS_PATH . '/feed/templates/');
 
-        $fenom->setOptions(array(
+        $template->setOptions(array(
             "strip" => false
         ));
 
         Response::status(200);
         Request::setHeaders('Content-Type: text/xml; charset=utf-8');
-        $fenom->display('rss.tpl', array('page'  => Morfy::getPage(Morfy::$plugins['feed']['page']),
-                                         'pages' => Morfy::getPages(Morfy::$plugins['feed']['page'], 'date', 'DESC', array('404'))));
+        $template->display('rss.tpl', array('page'  => Pages::getPage(Config::get('plugins.feed.page')),
+                                        'pages' => Pages::getPages(Config::get('plugins.feed.page'), 'date', 'DESC', array('404', 'index'))));
         Request::shutdown();
 
     });

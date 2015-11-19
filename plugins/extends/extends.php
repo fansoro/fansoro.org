@@ -21,14 +21,10 @@ class Repository
         }
         */
 
-        $themes = Spyc::YAMLLoad(file_get_contents('https://raw.githubusercontent.com/morfy-cms/morfy-themes-catalog/master/themes.yml'));
+        $themes = Yaml::parse(file_get_contents('https://raw.githubusercontent.com/morfy-cms/morfy-themes-catalog/master/themes.yml'));
 
-        $fenom = Fenom::factory(
-            PLUGINS_PATH . '/extends/templates/',
-            CACHE_PATH . '/fenom/',
-            Morfy::$fenom
-        );
+        $template = Template::factory(PLUGINS_PATH . '/extends/templates/');
 
-        $fenom->display('themes.tpl', array('themes' => $themes));
+        $template->display('themes.tpl', array('themes' => $themes));
     }
 }
