@@ -6,35 +6,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{$description}">
 		<meta name='yandex-verification' content='65ab8145c4e162f5' />
-		{Morfy::runAction('theme_meta')}
-		<title>{$.site.title} | {$title}</title>
+		{Action::run('theme_meta')}
+		<title>{$config.site.title} | {$title}</title>
 
-		<link rel="shortcut icon" href="{$.site.url}/favicon.ico">
+		<link rel="shortcut icon" href="{Url::getBase()}/favicon.ico">
 
-		<link rel="icon" href="{$.site.url}/public/assets/morfy-icon-296.png" sizes="296x296" type="image/png">
+		<link rel="icon" href="{Url::getBase()}/public/assets/morfy-icon-296.png" sizes="296x296" type="image/png">
 
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{$.site.url}/public/assets/morfy-icon-152.png">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{$.site.url}/public/assets/morfy-icon-144.png">
-		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{$.site.url}/public/assets/morfy-icon-120.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{$.site.url}/public/assets/morfy-icon-114.png">
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{Url::getBase()}/public/assets/morfy-icon-152.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{Url::getBase()}/public/assets/morfy-icon-144.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{Url::getBase()}/public/assets/morfy-icon-120.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{Url::getBase()}/public/assets/morfy-icon-114.png">
 
 		<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="{$.site.url}/public/assets/morfy-icon-144.png">
+		<meta name="msapplication-TileImage" content="{Url::getBase()}/public/assets/morfy-icon-144.png">
 
 		<meta property="fb:app_id" content="795025567272801" />
 
 		{* Open Graph Protocol *}
   		<meta property="og:type" content="website">
-		<meta property="og:site_name" content="{$.site.title}">
+		<meta property="og:site_name" content="{$config.site.title}">
 	    <meta property="og:url" content="{$url}">
-	    <meta property="og:title" content="{$title} | {$.site.title}">
+	    <meta property="og:title" content="{$title} | {$config.site.title}">
 		<meta property="og:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
 
 		{* Twitter Card *}
   		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:account_id" content="3068674037">
 		<meta name="twitter:site" content="@morfy_cms">
-		<meta name="twitter:title" content="{$title} | {$.site.title}">
+		<meta name="twitter:title" content="{$title} | {$config.site.title}">
 		<meta name="twitter:description" content="Morfy is Modern Open Source Flat-File Content Management System. Content in Morfy is just a simple files written with markdown syntax in pages folder. You simply create markdown files in the pages folder and that becomes a page.">
 		<meta name="twitter:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
 
@@ -44,10 +44,10 @@
 		{* Bootstrap core CSS *}
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
-		<link href="{$.site.url}/themes/default/assets/css/morfy.css?1" rel="stylesheet">
-		<link href="{$.site.url}/themes/default/assets/css/animate.css" rel="stylesheet">
+		<link href="{Url::getBase()}/themes/default/assets/css/morfy.css?1" rel="stylesheet">
+		<link href="{Url::getBase()}/themes/default/assets/css/animate.css" rel="stylesheet">
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
-		{Morfy::runAction('theme_header')}
+		{Action::run('theme_header')}
 		{ignore}
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -106,9 +106,9 @@
 				{/if}
 			{/if}
 
-			{Morfy::runAction('theme_content_before')}
+			{Action::run('theme_content_before')}
 			{block 'content'}{/block}
-			{Morfy::runAction('theme_content_after')}
+			{Action::run('theme_content_after')}
 		</div>
 		<div id="footer">
 			<div class="container">
@@ -141,15 +141,15 @@
 		{/ignore}
 		{* Placed at the end of the document so the pages load faster *}
 		<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-		<script src="{$.site.url}/themes/default/assets/js/jquery.min.js"></script>
-		<script src="{$.site.url}/themes/default/assets/js/bootstrap.min.js"></script>
-		<script src="{$.site.url}/themes/default/assets/js/wow.min.js"></script>
+		<script src="{Url::getBase()}/themes/default/assets/js/jquery.min.js"></script>
+		<script src="{Url::getBase()}/themes/default/assets/js/bootstrap.min.js"></script>
+		<script src="{Url::getBase()}/themes/default/assets/js/wow.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
-		<script src="{$.site.url}/themes/default/assets/js/default.js"></script>
+		<script src="{Url::getBase()}/themes/default/assets/js/default.js"></script>
 		{if Url::getUriSegment(0) == 'ru' || Url::getUriSegment(0) == ''}
-		<script src="{$.site.url}/themes/default/assets/js/universe.js" async></script>
+		<script src="{Url::getBase()}/themes/default/assets/js/universe.js" async></script>
 		{/if}
 
-		{Morfy::runAction('theme_footer')}
+		{Action::run('theme_footer')}
 	</body>
 </html>
