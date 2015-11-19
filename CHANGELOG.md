@@ -1,10 +1,49 @@
+# v2.0.0, 2015-XX-XX
+* Improved Morfy Architecture.
+* Improved Morfy Security.
+* Improved Default Morfy Theme.
+* Improved Morfy Configurations System.
+* Added Morfy Smart Cache based on Doctrine Cache.
+* Added Minimum PHP version support is 5.5
+* Added Composer Support.
+* Added Morfy /boot/ directory with defines.php, shortcodes.php, actions.php filters.php
+* Added New Classes: Action, Filter, Blocks, Cache, Config, Pages, Template, Yaml, Plugins.
+* Added New Config file: system.yml
+* Added New Pages::getCurrentPage() and Pages::updateCurrentPage() methods.
+* Added new Pages::display() method.
+* Added New Pages actions `before_page_rendered` and `after_page_rendered`
+* Added Shortcode and Markdown parsers as a content filters.
+* Added Fenom Storage to store data in Fenom.
+* Added Output buffering.
+* Added ability to configure of display errors. Default value is false - for production.
+* Added and used Composer Autoloader instead of Force Autoloader.
+* Removed BLOCKS_PATH and PAGES_PATH constants.
+* Added .gitignore, composer.json and .gitkeep instead of .empty
+* Removed constants: site, fenom, theme, page, plugins and actions from Morfy Class.
+* Removed force, fenom, parsedown and spyc from libraries directory.
+* Removed Fenom Config file fenom.yml
+* Removed Actions before_render and after_render
+* Removed Morfy Installer.
+
+# v1.1.4, 2015-11-18
+* Fixed Morfy Installer
+* Fixed Force Libraries
+
+# v1.1.3, 2015-10-25
+* Default Theme: change layout.tpl to base.tpl
+* Fixed welcome page bug. Change content to storage
+* Fixed Prevent visitors from viewing yml, yaml files directly.
+
+# v1.1.2, 2015-10-19
+* Fixed Bug in {site_url} shortcode
+
 # v1.1.1, 2015-10-18
 * Added Force Shortcode class
 * Added STORAGE_PATH constant
 * Added `storage` folder
 * Updated Force Components 1.0.1
 * Updated Morfy Class with static methods.
-* Removed Morfy `` and chaining.
+* Removed Morfy `factory()->` and chaining.
 * Removed `content` folder
 * Removed CONTENT_PATH constant
 
@@ -15,7 +54,7 @@
 * Added Parsedown Lib for parsing Markdown files.
 * Added SPYC Lib for parsing YAML configurations.
 * Added new folders /cache/, /content/pages/ and /content/blocks/
-* Added ability to display PAGE BLOCKS. {block=name} and Morfy::getBlock('name');
+* Added ability to display PAGE BLOCKS. {block=name} and Morfy::factory()->getBlock('name');
 * Added new constants PAGES_PATH BLOCKS_PATH CACHE_PATH
 * Added new Morfy and Fenom configuration files site.yml and fenom.yml
 * Added new configuration file for Morfy default theme: default.yml
