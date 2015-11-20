@@ -10,23 +10,19 @@
  */
 
 if (Url::getUriSegment(0) == 'sitemap.xml') {
-    Morfy::addAction('before_render', function () {
+    Action::add('before_page_rendered', function () {
 
-        $fenom = Fenom::factory(
-            PLUGINS_PATH . '/sitemap/templates/',
-            CACHE_PATH . '/fenom/',
-            Morfy::$fenom
-        );
+        $template = Template::factory(PLUGINS_PATH . '/sitemap/templates//');
 
-        $fenom->setOptions(array(
+        $template->setOptions(array(
             "strip" => false
         ));
 
-        $pages = Morfy::getPages('', 'date', 'DESC', array('404'));
+        $pages = Pages::getPages('', 'date', 'DESC', array('404'));
 
         Response::status(200);
         Request::setHeaders('Content-Type: text/xml; charset=utf-8');
-        $fenom->display('sitemap.tpl', array('pages' => $pages));
+        $template->display('sitemap.tpl', array('pages' => $pages));
         Request::shutdown();
 
     });
