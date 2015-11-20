@@ -19,7 +19,7 @@ Required Apache modules
 
 ###PHP Requirements
 
-Minimum php vesion is 5.3  
+Minimum php vesion is 5.5  
 
 Required PHP modules  
 - mbstring  
