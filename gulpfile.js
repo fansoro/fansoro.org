@@ -3,11 +3,11 @@
 // (c) Sergey Romanenko <https://github.com/Awilum>
 //
 
-var Promise = require("es6-promise").Promise
-var gulp = require('gulp');
-var less = require('gulp-less');
-var autoprefixer = require('gulp-autoprefixer');
-var csso = require('gulp-csso');
+var Promise = require("es6-promise").Promise,
+    gulp = require('gulp'),
+    less = require('gulp-less'),
+    autoprefixer = require('gulp-autoprefixer'),
+    csso = require('gulp-csso');
 
 gulp.task('process-css', function() {
       return gulp.src('themes/default/assets/less/morfy.less')
