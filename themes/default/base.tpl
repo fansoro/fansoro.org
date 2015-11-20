@@ -61,7 +61,8 @@
 		{/ignore}
 	</head>
 	<body {if (Url::getUriSegment(0) != '' && Url::getUriSegment(0) != 'ru') || (Url::getUriSegment(1) != '' && Url::getUriSegment(0) == 'ru')}class="light-theme"{/if}>
-		{if Url::getUriSegment(0) == 'ru' || Url::getUriSegment(0) == ''}
+		{if (Url::getUriSegment(0) != '' && Url::getUriSegment(0) != 'ru') || (Url::getUriSegment(1) != '' && Url::getUriSegment(0) == 'ru')}
+		{else}
 		<canvas class="universe"></canvas>
 		<div class="universe-dark-matter"></div>
 		{/if}
