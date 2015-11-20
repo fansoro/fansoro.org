@@ -21,18 +21,6 @@ template: documentation
             <td>Define the path to the storage directory (without trailing slash).</td>
         </tr>
         <tr>
-            <td>BLOCKS_PATH</td>
-            <td>Define the path to the blocks directory (without trailing slash).</td>
-        </tr>
-        <tr>
-            <td>PAGES_PATH</td>
-            <td>Define the path to the pages directory (without trailing slash).</td>
-        </tr>
-        <tr>
-            <td>LIBRARIES_PATH</td>
-            <td>Define the path to the libraries directory (without trailing slash).</td>
-        </tr>
-        <tr>
             <td>THEMES_PATH</td>
             <td>Define the path to the themes directory (without trailing slash).</td>
         </tr>
