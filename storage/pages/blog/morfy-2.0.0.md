@@ -52,6 +52,6 @@ Morfy 2.0.0 has totaly new Architecture, improved Security and amazing Performan
 
 <hr>
 
-[<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/39/morfy-2-0-release)
+[<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/67/morfy-2-0-0-release)
 
 [<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)
