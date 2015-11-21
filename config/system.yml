@@ -10,6 +10,7 @@ plugins:
   feed
   redirect
   extends
+  highlight
 
 fenom:
   disable_methods: false
