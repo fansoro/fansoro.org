@@ -46,7 +46,6 @@
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
 		<link href="{Url::getBase()}/themes/default/assets/css/morfy.css?1" rel="stylesheet">
 		<link href="{Url::getBase()}/themes/default/assets/css/animate.css" rel="stylesheet">
-		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/styles/default.min.css">
 		{Action::run('theme_header')}
 		{ignore}
 		<script>
@@ -145,7 +144,6 @@
 		<script src="{Url::getBase()}/themes/default/assets/js/jquery.min.js"></script>
 		<script src="{Url::getBase()}/themes/default/assets/js/bootstrap.min.js"></script>
 		<script src="{Url::getBase()}/themes/default/assets/js/wow.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
 		<script src="{Url::getBase()}/themes/default/assets/js/default.js"></script>
 		{if Url::getUriSegment(0) == 'ru' || Url::getUriSegment(0) == ''}
 		<script src="{Url::getBase()}/themes/default/assets/js/universe.js" async></script>
