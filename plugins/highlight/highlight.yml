@@ -1,0 +1,14 @@
+name: Highlight
+version: 1.0.0
+description: "Highlight plugin for Morfy adds a powerful code highlighting functionality with Highlight.js"
+author:
+  name: Sergey Romanenko
+  email: awilum@msn.com
+  url: http://morfy.org
+homepage: https://github.com/morfy-cms/morfy-plugin-reading-time
+bugs: https://github.com/morfy-cms/morfy-plugin-reading-time/issues
+license: MIT
+
+# Plugin settings
+enabled: true
+theme: monokai
