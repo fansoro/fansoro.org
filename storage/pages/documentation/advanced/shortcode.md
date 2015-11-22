@@ -72,7 +72,7 @@ function foo($attributes, $content) {
     if (isset($color)) $color = $color; else $color = 'black';
 
     // return
-    return '<span style="color:'.$color.'">'.Morfy::applyFilter('content', $content).'</span>';
+    return '<span style="color:'.$color.'">'.Filter::apply('content', $content).'</span>';
 }
 ```
 Add shortcode {foo color="red"}  
