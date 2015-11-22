@@ -5,7 +5,7 @@
 	        <div class="col-md-9">
                 {if Url::getUriSegment(1) == 'plugins' || Url::getUriSegment(2) == 'plugins'}
                     <div class="plugins-table">
-                        {Markdown::parse(file_get_contents('https://raw.githubusercontent.com/morfy-cms/morfy-plugins-catalog/master/plugins-list-en.md'))}
+                        {Markdown::parse(file_get_contents('https://raw.githubusercontent.com/morfy-cms/morfy-plugins-catalog/master/README.md'))}
                     </div>
 				{elseif Url::getUriSegment(1) == 'themes' || Url::getUriSegment(2) == 'themes'}
 					<div class="themes-table">
