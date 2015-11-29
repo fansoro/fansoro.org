@@ -11,6 +11,12 @@
 
 class Repository
 {
+    public static function getPlugins()
+    {
+        $file = Markdown::parse(file_get_contents('https://raw.githubusercontent.com/morfy-cms/morfy-plugins-catalog/master/README.md'));
+        echo $file;
+    }
+
     public static function getThemes()
     {
         /* If there a list of YAML files

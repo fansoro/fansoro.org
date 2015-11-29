@@ -7,7 +7,7 @@
         <h3>{$theme.name}</h3>
         <p><a href="{$theme.author.url}">{$theme.author.name}</a></p>
         <p>
-            <a href="{$theme.download}" class="btn btn-white">Download</a>
+            <a href="{$theme.download}" class="btn btn-black">Download</a>
         </p>
     </div>
 </div>
