@@ -107,10 +107,14 @@
 			{/if}
 
 			{Action::run('theme_content_before')}
-			{block 'content'}{/block}
+			<section>
+			    <div class="separator top grey"></div>
+				{block 'content'}{/block}
+			</section>
 			{Action::run('theme_content_after')}
 		</div>
 		<div id="footer">
+			<div class="separator top grey"></div>
 			<div class="container">
                 <p class="social-links text-center">
 					<a rel="nofollow" href="https://twitter.com/morfy_cms"><i class="fa fa-twitter"></i></a>
