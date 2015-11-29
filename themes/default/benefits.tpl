@@ -1,3 +1,5 @@
+<section>
+<div class="separator top grey"></div>
 <div class="container container-small benefits-container">
     <h2 class="h2-reason text-center">Reasons to use Morfy</h2>
     <div class="row">
@@ -5,7 +7,7 @@
             <div class="features-columns">
                 <img src="{Url::getBase()}/themes/default/assets/img/icons/magicwand.png" alt="Morfy Simple">
                 <h4>Simple</h4>
-                <p>Easy to install, upgrade and use. Morfy installation only takes a few minutes.</p>
+                <p>Easy to install, upgrade and use.<br>No installation needed, just copy files to your server!</p>
             </div>
         </div>
         <div class="col-md-4 wow fadeIn">
@@ -48,3 +50,4 @@
         </div>
     </div>
 </div>
+</section>

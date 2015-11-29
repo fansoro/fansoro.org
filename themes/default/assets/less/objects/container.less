@@ -2,11 +2,32 @@
     max-width: 1000px;
 }
 
-.container-content {
-    padding-top: 30px;
-    padding-bottom: 30px;
+section {
+    position: relative;
 }
 
-.container-content h3 {
-    margin-top: 34px;
+.container-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.separator.grey {
+    background: transparent url('../img/tile-hr-grey.png') repeat-x 0 0;
+}
+
+.separator.top {
+    top: -10px;
+}
+
+.separator.bottom {
+    bottom: -10px;
+}
+
+.separator {
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    left: 0;
+
+    height: 20px;
 }
