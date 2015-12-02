@@ -112,9 +112,6 @@
                         <a href="{Url::getBase()}/documentation/advanced/dir">Dir <span class="badge">Force</span></a>
                     </li>
                     <li {if Url::getUriSegment(2) == 'class-loader'}class="active"{/if}>
-                        <a href="{Url::getBase()}/documentation/advanced/class-loader">ClassLoader <span class="badge">Force</span></a>
-                    </li>
-                    <li {if Url::getUriSegment(2) == 'class-loader'}class="active"{/if}>
                         <a href="{Url::getBase()}/documentation/advanced/response">Response <span class="badge">Force</span></a>
                     </li>
                     <li {if Url::getUriSegment(2) == 'class-loader'}class="active"{/if}>
