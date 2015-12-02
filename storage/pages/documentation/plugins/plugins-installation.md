@@ -9,7 +9,7 @@ template: documentation
 3. Save your changes.
 
 Example:
-```yml
+```
 ...
 # Site Plugins
 plugins:

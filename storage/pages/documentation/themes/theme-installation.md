@@ -9,6 +9,6 @@ template: documentation
 3. Save your changes.
 
 Example:
-```yml
+```
 theme: mytheme
 ```
