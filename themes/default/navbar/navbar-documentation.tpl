@@ -12,7 +12,7 @@
                     </li>
 
                     <li {if Url::getUriSegment(2) == 'installation'}class="active"{/if}>
-                        <a href="{Url::getBase()}/documentation/basics/installation">Installation on a Web Server</a>
+                        <a href="{Url::getBase()}/documentation/basics/installation">Installation</a>
                     </li>
 
                     <li {if Url::getUriSegment(2) == 'upgrade'}class="active"{/if}>

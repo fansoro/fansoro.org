@@ -12,7 +12,7 @@
                     </li>
 
                     <li {if Url::getUriSegment(3) == 'installation'}class="active"{/if}>
-                        <a href="{Url::getBase()}/ru/documentation/basics/installation">Установка на веб-сервер</a>
+                        <a href="{Url::getBase()}/ru/documentation/basics/installation">Установка</a>
                     </li>
 
                     <li {if Url::getUriSegment(3) == 'upgrade'}class="active"{/if}>
