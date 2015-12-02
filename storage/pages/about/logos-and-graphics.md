@@ -5,7 +5,7 @@ template: about
 redirect: media
 ---
 
-## Morfy Icon
+## Morfy Icon{.margin-top-hard}
 ![Morfy Icon]({site_url}/public/assets/img/morfy-icon.png){.img-responsive}
 
 ## Morfy Logo

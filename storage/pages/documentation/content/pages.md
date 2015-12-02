@@ -4,7 +4,7 @@ description: Documentation for Morfy Developers and Morfy Users.
 template: documentation
 ---
 
-### Pages and Urls structure in Morfy:
+### Pages and Urls structure in Morfy:{.margin-top-hard}
 
 <table class="table">
     <thead>
