@@ -4,7 +4,19 @@ description: Documentation for Morfy Developers and Morfy Users.
 template: documentation
 ---
 
-1. [Download the latest version.](http://morfy.org/download)
-2. Unzip the contents to a new folder on your local computer.
-3. Upload that whole folder with an FTP client to your host.
-4. You may also need to recursively CHMOD the folder `/cache/` to 755(or 777) if your host doesn't set it implicitly.
+## Using (S)FTP
+
+[Download the latest version.](http://morfy.org/download)  
+
+Unzip the contents to a new folder on your local computer, and upload to your webhost using the (S)FTP client of your choice. After you’ve done this, be sure to chmod the following directories (with containing files) to 777, so they are readable and writable by Morfy:  
+* `cache/`
+* `themes/`
+* `plugins/`
+
+## Using Composer
+
+You can easily install Morfy with Composer.
+
+```
+composer create-project morfy-cms/morfy
+```
