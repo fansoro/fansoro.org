@@ -4,7 +4,7 @@ description: Documentation for Morfy Developers and Morfy Users.
 template: documentation
 ---
 
-## Using (S)FTP
+## Using (S)FTP{.margin-top-hard}
 
 [Download the latest version.](http://morfy.org/download)  
 
