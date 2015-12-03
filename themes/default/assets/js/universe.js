@@ -43,10 +43,10 @@ window.requestAnimFrame = (function() {
     H = window.innerHeight;
     ctx.canvas.width  = W;
     ctx.canvas.height = H;
-    bounds.top      = 100;
-    bounds.right    = W - 100;
-    bounds.bottom   = H - 200;
-    bounds.left     = 100;
+    bounds.top      = 0;
+    bounds.right    = W;
+    bounds.bottom   = H;
+    bounds.left     = 0;
   };
 
   var draw = function() {
