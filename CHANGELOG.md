@@ -1,4 +1,9 @@
-# v2.0.0, 2015-XX-XX
+# v2.0.1, 2015-12-03
+* Fixed robots.txt
+* Removed LIBRARIES_PATH constant
+* Updated .gitignore
+
+# v2.0.0, 2015-11-20
 * Improved Morfy Architecture.
 * Improved Morfy Security.
 * Improved Default Morfy Theme.
