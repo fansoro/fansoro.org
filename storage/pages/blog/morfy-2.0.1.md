@@ -20,7 +20,7 @@ Morfy 2.0.1 Release :)
 1. **Backup your Site First!**
 2. Download [Morfy 2.0.1](https://github.com/morfy-cms/morfy/releases/download/v2.0.1/morfy-2.0.1.zip)
 3. Unzip the contents to a new folder on your local computer.
-4. Upload `/morfy/boot/defines.php`, `/robots.txt` with an (s)FTP client to your host.
+4. Upload `/morfy/boot/defines.php`, `/robots.txt`, `/composer.json` with an (s)FTP client to your host.
 
 <hr>
 
