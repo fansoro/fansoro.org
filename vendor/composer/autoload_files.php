@@ -16,8 +16,8 @@ return array(
     $vendorDir . '/force/url/Url.php',
     $vendorDir . '/force/filesystem/File.php',
     $vendorDir . '/force/filesystem/Dir.php',
-    $baseDir . '/libraries/Morfy/boot/defines.php',
-    $baseDir . '/libraries/Morfy/boot/shortcodes.php',
-    $baseDir . '/libraries/Morfy/boot/filters.php',
-    $baseDir . '/libraries/Morfy/boot/actions.php',
+    $baseDir . '/morfy/boot/defines.php',
+    $baseDir . '/morfy/boot/shortcodes.php',
+    $baseDir . '/morfy/boot/filters.php',
+    $baseDir . '/morfy/boot/actions.php',
 );

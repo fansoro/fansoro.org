@@ -6,16 +6,16 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Action' => $baseDir . '/libraries/Morfy/Action.php',
-    'Blocks' => $baseDir . '/libraries/Morfy/Blocks.php',
-    'Cache' => $baseDir . '/libraries/Morfy/Cache.php',
-    'Config' => $baseDir . '/libraries/Morfy/Config.php',
+    'Action' => $baseDir . '/morfy/Action.php',
+    'Blocks' => $baseDir . '/morfy/Blocks.php',
+    'Cache' => $baseDir . '/morfy/Cache.php',
+    'Config' => $baseDir . '/morfy/Config.php',
     'Fenom' => $vendorDir . '/fenom/fenom/src/Fenom.php',
-    'Filter' => $baseDir . '/libraries/Morfy/Filter.php',
-    'Markdown' => $baseDir . '/libraries/Morfy/Markdown.php',
-    'Morfy' => $baseDir . '/libraries/Morfy/Morfy.php',
-    'Pages' => $baseDir . '/libraries/Morfy/Pages.php',
-    'Plugins' => $baseDir . '/libraries/Morfy/Plugins.php',
-    'Template' => $baseDir . '/libraries/Morfy/Template.php',
-    'Yaml' => $baseDir . '/libraries/Morfy/Yaml.php',
+    'Filter' => $baseDir . '/morfy/Filter.php',
+    'Markdown' => $baseDir . '/morfy/Markdown.php',
+    'Morfy' => $baseDir . '/morfy/Morfy.php',
+    'Pages' => $baseDir . '/morfy/Pages.php',
+    'Plugins' => $baseDir . '/morfy/Plugins.php',
+    'Template' => $baseDir . '/morfy/Template.php',
+    'Yaml' => $baseDir . '/morfy/Yaml.php',
 );
