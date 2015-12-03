@@ -4,7 +4,13 @@ description: Documentation for Morfy Developers and Morfy Users.
 template: documentation
 ---
 
-### Update from **Morfy 1.1.4** to **Morfy 2.0.0**{.margin-top-hard}
+### Update from **Morfy 2.0.0** to **Morfy 2.0.1**{.margin-top-hard}
+1. **Backup your Site First!**
+2. Download [Morfy 2.0.1](https://github.com/morfy-cms/morfy/releases/download/v2.0.1/morfy-2.0.1.zip)
+3. Unzip the contents to a new folder on your local computer.
+4. Upload `/morfy/boot/defines.php`, `/robots.txt`, `/composer.json` with an (s)FTP client to your host.
+
+### Update from **Morfy 1.1.4** to **Morfy 2.0.0**
 1. **Backup your Site First!**
 2. Download [Morfy 2.0.0](https://github.com/morfy-cms/morfy/releases/download/v2.0.0/morfy-2.0.0.zip)
 3. Unzip the contents to a new folder on your local computer.
