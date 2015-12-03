@@ -14,7 +14,7 @@ Morfy 2.0.1 Release :)
 * Updated .gitignore
 
 ### Download
-[<i class="fa fa-download"></i> Morfy 2.0.1](https://github.com/morfy-cms/morfy/releases/download/v2.0.0/morfy-2.0.1.zip)
+[<i class="fa fa-download"></i> Morfy 2.0.1](https://github.com/morfy-cms/morfy/releases/download/v2.0.1/morfy-2.0.1.zip)
 
 ### Update from Morfy 2.0.0 to Morfy 2.0.1
 1. **Backup your Site First!**
