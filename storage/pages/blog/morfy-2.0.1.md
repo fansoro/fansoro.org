@@ -24,6 +24,6 @@ Morfy 2.0.1 Release :)
 
 <hr>
 
-[<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/67/morfy-2-0-1-release)
+[<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/76/morfy-2-0-1-release#latest)
 
 [<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)
