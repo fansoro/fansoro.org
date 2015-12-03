@@ -51,10 +51,6 @@ template: documentation
             <td>$config.system.theme</td>
             <td>System theme</td>
         </tr>
-        <tr>
-            <td>$config.system.theme</td>
-            <td>System theme</td>
-        </tr>
     </tbody>
 </table>
 
