@@ -78,11 +78,11 @@
 					{if Url::getUriSegment(0) == 'ru'}
 						<h1>ПРОСТАЯ И БЫСТРАЯ</h1>
                     	<p class="lead">OPEN SOURCE CMS НА ФАЙЛАХ</p>
-                    	<a class="btn btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v2.0.0/morfy-2.0.0.zip">Скачать Morfy</a>
+                    	<a class="btn btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v2.0.1/morfy-2.0.1.zip">Скачать Morfy</a>
 					{else}
 				    	<h1>Introducing Morfy</h1>
 						<p class="lead">Modern Open Source Flat-File Content Management System.</p>
-                    	<a class="btn btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v2.0.0/morfy-2.0.0.zip">Download Morfy</a>
+                    	<a class="btn btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v2.0.1/morfy-2.0.1.zip">Download Morfy</a>
 					{/if}
 				</div>
                 {else}
