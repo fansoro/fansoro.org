@@ -16,7 +16,7 @@ fenom:
   disable_methods: false
   disable_native_funcs: false
   auto_reload: true
-  force_compile: false
+  force_compile: true
   disable_cache: false
   force_include: true
   auto_escape: false

@@ -1,0 +1,17 @@
+name: Snow
+version: 1.0.0
+description: "Snow plugin to generate snowflake for Morfy"
+author:
+  name: Sergey Romanenko
+  email: awilum@msn.com
+  url: http://morfy.org
+homepage: https://github.com/morfy-cms/morfy-plugin-snow
+bugs: https://github.com/morfy-cms/morfy-plugin-snow/issues
+license: MIT
+
+# Plugin settings
+enabled: true
+min_size: 5
+max_size: 50
+new_on: 1000
+flake_color: '#0099FF'
