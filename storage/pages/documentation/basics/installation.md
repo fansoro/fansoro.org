@@ -22,3 +22,9 @@ You can easily install Morfy with Composer.
 ```
 composer create-project morfy-cms/morfy
 ```
+
+Also you may need to install vendor libs for Default Theme
+```
+cd /morfy/themes/default  
+bower install
+```
