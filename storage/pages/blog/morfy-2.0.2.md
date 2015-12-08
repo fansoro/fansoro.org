@@ -23,7 +23,7 @@ Morfy 2.0.2 Release :)
 1. **Backup your Site First!**
 2. Download [Morfy 2.0.1](https://github.com/morfy-cms/morfy/releases/download/v2.0.2/morfy-2.0.2.zip)
 3. Unzip the contents to a new folder on your local computer.
-4. Upload `/themes/default/`, `/morfy/`, `/vendor/doctrine/`, `/.gitignore` with an (s)FTP client to your host.
+4. Upload `/themes/default/`, `/morfy/`, `/vendor/doctrine/`, `/.gitignore`, `/composer.json` with an (s)FTP client to your host.
 
 <hr>
 
