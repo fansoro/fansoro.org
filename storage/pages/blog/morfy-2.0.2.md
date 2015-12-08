@@ -27,6 +27,29 @@ Morfy 2.0.2 Release :)
 
 <hr>
 
+Default Theme in Morfy 2.0.2 use BOWER http://bower.io   
+And if your are using composer or github clone to install Morfy   
+then You also need to install vendors for Default Theme by running in console   
+
+```
+bower install
+```
+
+from default theme directory   
+
+<hr>
+
+Also, in Morfy 2.0.2 you may access current page template and set your variables if needed    
+Example:  
+```
+Action::add('before_page_rendered', function() {
+    $template = Pages::getCurrentTemplate();
+    $template->assign('var', 'value');
+});
+```
+
+<hr>
+
 [<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/77/morfy-2-0-2-release)
 
 [<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)
