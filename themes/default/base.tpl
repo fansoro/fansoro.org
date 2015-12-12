@@ -124,7 +124,13 @@
 					<a rel="nofollow" href="http://www.youtube.com/c/MorfyOrganization"><i class="fa fa-youtube-play"></i></a>
 					<a rel="nofollow" href="https://vk.com/morfy_cms"><i class="fa fa-vk"></i></a>
                 </p>
-				<p class="text-center">
+				<p>
+					<ul class="locales">
+						<li><a href="{Url::getBase()}">English</a></li>
+						<li><a href="{Url::getBase()}/ru">Русский</a></li>
+					</ul>
+				</p>
+				<p>
 					<ul class="copyright">
 						<li>© 2015 <a href="http://awilum.github.io">Sergey Romanenko</a></li>
 						<li>All rights reserved</li>

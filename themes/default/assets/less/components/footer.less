@@ -27,10 +27,14 @@
         color: @footer-text-color;
     }
 
+    .locales,
     .copyright {
+        margin: 0;
+        padding: 0;
+
         list-style: none;
 
-        .text-center;
+        .text-left;
 
         li {
             display: inline-block;
@@ -38,9 +42,12 @@
             margin: 0 0 0 1em;
             padding: 0 0 0 1em;
 
-            border-left: solid 1px rgba(255, 255, 255, 0.2);
+            border-left: solid 1px rgba(255, 255, 255, .075);
 
             &:first-of-type {
+                margin-left: 0;
+                padding-left: 0;
+
                 border-left: none;
             }
         }

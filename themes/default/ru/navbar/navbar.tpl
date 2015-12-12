@@ -39,4 +39,5 @@
             </ul>
 		</div>
 	</div>
+	<div class="separator bottom grey hide"></div>
 </div>
