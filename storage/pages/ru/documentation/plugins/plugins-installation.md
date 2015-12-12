@@ -4,11 +4,11 @@ description: Документация для разработчиков и по�
 template: documentation
 ---
 
-1. Unzip plugin to the folder `/plugins/`
-2. Go to `/config/system.yml` and add plugin name to plugins section.
-3. Save your changes.
+1. Распакуйте плагин в папку `/plugins/`
+2. Откройте файл `/config/system.yml` и пропишите ваш плагин в `plugins:`
+3. Сохраните файл.
 
-Example:
+Пример:
 ```yml
 ...
 # Site Plugins
