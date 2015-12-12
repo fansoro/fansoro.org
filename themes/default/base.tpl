@@ -132,9 +132,10 @@
 				</p>
 				<p>
 					<ul class="copyright">
-						<li>© 2015 <a href="http://awilum.github.io">Sergey Romanenko</a></li>
-						<li>All rights reserved</li>
-						<li>Morfy is released under the MIT license</li>
+						<li>
+							<a href="{Url::getBase()}">Morfy</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://awilum.github.io" class="highlight">Sergey Romanenko</a> and <a href="https://github.com/morfy-cms/morfy/graphs/contributors" class="highlight">Morfy Community</a> <br>
+							© 2015 <a href="{Url::getBase()}/about/license">Morfy</a>
+						</li>
 					</ul>
 				</p>
 			</div>
