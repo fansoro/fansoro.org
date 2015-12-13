@@ -4,8 +4,9 @@ description: Документация для разработчиков и по�
 template: documentation
 ---
 
-Any page need contain header in YAML format and its must be a first thing in the page file.  
-Here is a basic example:  
+Страница должна иметь заголовок в YAML формате
+
+Простой пример:  
 
 ```
 ---
@@ -15,10 +16,11 @@ description: My page description
 My page body.
 ```
 
-Between these triple-dashed lines, you can set predefined page header variables or even create custom ones of your own. These variables will then be available to you to access in site templates.  
+Между тройными дефисами, вы можете устанавливать заголовок страницы с перменными, которые можно будет использовать в шаблонах.  
 
-### Predefined Page Header Variables
-Here is a list of predefined page header variables with example values:  
+
+### Предустановленные переменные в заголовке страницы
+Список предустановленых переменных с примерами:
 ```
 title: Welcome  
 description: Some description here   
@@ -34,9 +36,10 @@ template: index (allows you to use different templates in your theme)
 ```
 
 
-### Custom Page Header Variables
-You can create your own custom page headers using any valid YAML syntax.  
-Example:   
+### Кастомные переменные
+Вы можете легко добавлять свои собтвенные переменыне в валиднном YAML формате.  
+
+Пример:   
 ```
 author:
   twitter: @morfy_cms
