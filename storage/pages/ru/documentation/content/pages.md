@@ -26,7 +26,7 @@ Text files are marked up using Markdown. They can also contain regular HTML.
 At the top of text files should place a [page header]({site_url}/documentation/content/pages-headers) to specify attributes of the page.
 
 
-### Шоркоды доступные на странице
+### Шорткоды доступные на странице
 
 <table class="table">
     <thead>
