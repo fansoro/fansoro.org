@@ -4,22 +4,5 @@ description: Documentation for Morfy Developers and Morfy Users.
 template: documentation
 ---
 
-###Web Servers{.margin-top-hard}
-
-For local development you may use one of those, that we recommend below.  
-
-[XAMPP](https://www.apachefriends.org) is free and open source cross-platform web server with Apache, PHP, and MySQL in one simple package.  
-[MAMP](https://www.mamp.info/) Apache, MySQL, PHP in one package for OS X and Windows.  
-
-###Apache Requirements
-
-Required Apache modules  
-- mod_rewrite
-
-
-###PHP Requirements
-
-Minimum php vesion is 5.5  
-
-Required PHP modules  
-- mbstring  
+PHP 5.5 or higher with PHP's [Multibyte String module](http://php.net/mbstring)     
+Apache with [Mod Rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html)  
