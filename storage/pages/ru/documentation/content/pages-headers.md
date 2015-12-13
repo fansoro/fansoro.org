@@ -1,5 +1,5 @@
 ---
-title: Headers
+title: Заголовок страницы
 description: Документация для разработчиков и пользователей.
 template: documentation
 ---
