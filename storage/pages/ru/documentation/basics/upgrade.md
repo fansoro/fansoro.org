@@ -3,6 +3,19 @@ title: Upgrading to the Latest Version
 description: Документация для разработчиков и пользователей.
 template: documentation
 ---
+
+### Update from Morfy **2.0.1** to **Morfy 2.0.2**{.margin-top-hard}
+1. **Backup your Site First!**
+2. Download [Morfy 2.0.2](https://github.com/morfy-cms/morfy/releases/download/v2.0.2/morfy-2.0.2.zip)
+3. Unzip the contents to a new folder on your local computer.
+4. Upload `/themes/default/`, `/morfy/`, `/vendor/doctrine/`, `/.gitignore`, `/composer.json` with an (s)FTP client to your host.
+
+### Update from **Morfy 2.0.0** to **Morfy 2.0.1**
+1. **Backup your Site First!**
+2. Download [Morfy 2.0.1](https://github.com/morfy-cms/morfy/releases/download/v2.0.1/morfy-2.0.1.zip)
+3. Unzip the contents to a new folder on your local computer.
+4. Upload `/morfy/boot/defines.php`, `/robots.txt`, `/composer.json` with an (s)FTP client to your host.
+
 ### Update from **Morfy 1.1.4** to **Morfy 2.0.0**
 1. **Backup your Site First!**
 2. Download [Morfy 2.0.0](https://github.com/morfy-cms/morfy/releases/download/v2.0.0/morfy-2.0.0.zip)
