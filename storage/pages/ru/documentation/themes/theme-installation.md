@@ -9,6 +9,6 @@ template: documentation
 3. Сохраните файл.
 
 Пример:
-```yml
+```
 theme: mytheme
 ```

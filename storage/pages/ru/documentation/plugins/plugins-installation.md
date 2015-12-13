@@ -9,7 +9,7 @@ template: documentation
 3. Сохраните файл.
 
 Пример:
-```yml
+```
 ...
 # Site Plugins
 plugins:
