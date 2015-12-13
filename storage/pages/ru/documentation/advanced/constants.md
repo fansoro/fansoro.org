@@ -7,8 +7,8 @@ template: documentation
 <table class="table table-striped table-bordered">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Description</th>
+            <th>Название</th>
+            <th>Описание</th>
         </tr>
     </thead>
     <tbody>
