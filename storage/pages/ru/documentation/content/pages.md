@@ -1,14 +1,14 @@
 ---
-title: Pages
+title: Страницы
 description: Документация для разработчиков и пользователей.
 template: documentation
 ---
 
-### Pages and Urls structure in Morfy:
+### Структура страниц и ссылок в Morfy:{.margin-top-hard}
 
 <table class="table">
     <thead>
-        <tr><th>Physical Location</th><th>URL</th></tr>
+        <tr><th>Расположение</th><th>URL</th></tr>
     </thead>
     <tbody>
         <tr><td>storage/content/index.md</td><td>/</td></tr>
@@ -20,20 +20,20 @@ template: documentation
 </table>
 
 
-### Text File Markup
+### Разметка страницы
 
 Text files are marked up using Markdown. They can also contain regular HTML.  
 At the top of text files should place a [page header]({site_url}/documentation/content/pages-headers) to specify attributes of the page.
 
 
-### Text File Vars
+### Шоркоды доступные на странице
 
 <table class="table">
     <thead>
-        <tr><th>Name</th><th>Description</th></tr>
+        <tr><th>Название</th><th>Описание</th></tr>
     </thead>
     <tbody>
-        <tr><td>{{site_url}}</td><td>Outputs site url</td></tr>
-        <tr><td>{{block name=block-name}}</td><td>Display page block</td></tr>
+        <tr><td>{{site_url}}</td><td>Выводит url сайта</td></tr>
+        <tr><td>{{block name=block-name}}</td><td>Загружает блок на страницу</td></tr>
     </tbody>
 </table>
