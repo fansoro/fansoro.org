@@ -20,7 +20,7 @@
                     </li>
 
                     <li {if Url::getUriSegment(2) == 'migrating'}class="active"{/if}>
-                        <a href="{Url::getBase()}/documentation/basics/migrating">Moving Morfy or Migrating Hosts</a>
+                        <a href="{Url::getBase()}/documentation/basics/migrating">Moving Fansoro or Migrating Hosts</a>
                     </li>
 
                 </ul>
@@ -91,7 +91,7 @@
             <div class="panel-body">
                 <ul class="nav nav-list">
                     <li {if Url::getUriSegment(2) == 'constants'}class="active"{/if}>
-                        <a href="{Url::getBase()}/documentation/advanced/constants">Constants <span class="badge">Morfy</span></a>
+                        <a href="{Url::getBase()}/documentation/advanced/constants">Constants <span class="badge">Fansoro</span></a>
                     </li>
                     <li {if Url::getUriSegment(2) == 'shortcode'}class="active"{/if}>
                         <a href="{Url::getBase()}/documentation/advanced/shortcode">Shortcode <span class="badge">Force</span></a>

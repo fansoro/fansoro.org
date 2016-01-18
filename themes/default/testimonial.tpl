@@ -5,7 +5,7 @@
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
                     <div class="carousel-caption">
-                        <h4>Morfy is simple and work great, the file template is a great idea, i love it.</h4>
+                        <h4>Fansoro is simple and work great, the file template is a great idea, i love it.</h4>
                         <h5><a href="#" rel="nofollow">Fred</a></h5>
                     </div>
                 </div>

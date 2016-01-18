@@ -1,6 +1,6 @@
 ---
 title: Headers
-description: Documentation for Morfy Developers and Morfy Users.
+description: Documentation for Fansoro Developers and Fansoro Users.
 template: documentation
 ---
 
@@ -39,5 +39,5 @@ You can create your own custom page headers using any valid YAML syntax.
 Example:   
 ```
 author:
-  twitter: @morfy_cms
+  twitter: @fansoro_cms
 ```

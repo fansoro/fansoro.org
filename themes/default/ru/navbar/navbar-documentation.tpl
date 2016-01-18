@@ -91,7 +91,7 @@
             <div class="panel-body">
                 <ul class="nav nav-list">
                     <li {if Url::getUriSegment(3) == 'constants'}class="active"{/if}>
-                        <a href="{Url::getBase()}/ru/documentation/advanced/constants">Constants <span class="badge">Morfy</span></a>
+                        <a href="{Url::getBase()}/ru/documentation/advanced/constants">Constants <span class="badge">Fansoro</span></a>
                     </li>
                     <li {if Url::getUriSegment(3) == 'shortcode'}class="active"{/if}>
                         <a href="{Url::getBase()}/ru/documentation/advanced/shortcode">Shortcode <span class="badge">Force</span></a>

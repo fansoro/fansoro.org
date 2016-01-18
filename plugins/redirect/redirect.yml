@@ -4,9 +4,9 @@ description: "Redirect plugin provide simple redirect functionality for pages."
 author:
   name: Sergey Romanenko
   email: awilum@msn.com
-  url: http://morfy.org
-homepage: https://github.com/morfy-cms/morfy-plugin-redirect
-bugs: https://github.com/morfy-cms/morfy-plugin-redirect/issues
+  url: http://fansoro.org
+homepage: https://github.com/fansoro-cms/fansoro-plugin-redirect
+bugs: https://github.com/fansoro-cms/fansoro-plugin-redirect/issues
 license: MIT
 
 # Plugin settings

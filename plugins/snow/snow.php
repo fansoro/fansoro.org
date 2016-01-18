@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Morfy Snow Plugin
+ * Fansoro Snow Plugin
  *
  * (c) Romanenko Sergey / Awilum <awilum@msn.com>
  *

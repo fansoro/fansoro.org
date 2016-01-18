@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Morfy Redirect Plugin
+ * Fansoro Redirect Plugin
  *
  * (c) Romanenko Sergey / Awilum <awilum@msn.com>
  *

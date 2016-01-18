@@ -3,4 +3,4 @@ Disallow: /libraries/
 Disallow: /plugins/
 Disallow: /config/
 
-SITEMAP: http://morfy.org/sitemap.xml
+SITEMAP: http://fansoro.org/sitemap.xml

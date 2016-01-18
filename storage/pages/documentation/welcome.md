@@ -1,7 +1,7 @@
 ---
 title: Welcome
-description: Documentation for Morfy Developers and Morfy Users.
+description: Documentation for Fansoro Developers and Fansoro Users.
 template: documentation
 ---
 
-Morfy is a simple and light-weighted Content Management System written in PHP!
+Fansoro is a simple and light-weighted Content Management System written in PHP!

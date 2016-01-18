@@ -1,10 +1,10 @@
 ---
 title: Pages
-description: Documentation for Morfy Developers and Morfy Users.
+description: Documentation for Fansoro Developers and Fansoro Users.
 template: documentation
 ---
 
-### Pages and Urls structure in Morfy:{.margin-top-hard}
+### Pages and Urls structure in Fansoro:{.margin-top-hard}
 
 <table class="table">
     <thead>

@@ -1,12 +1,12 @@
 ---
-title: Morfy 2.0.1 Release
+title: Fansoro 2.0.1 Release
 date: 2015-12-03 20:00
 template: blog_post
 author:
   name: Sergey Romanenko
 ---
 
-Morfy 2.0.1 Release :)  
+Fansoro 2.0.1 Release :)  
 
 ### Here is a list of changes in 2.0.1:
 * Fixed robots.txt
@@ -14,16 +14,16 @@ Morfy 2.0.1 Release :)
 * Updated .gitignore
 
 ### Download
-[<i class="fa fa-download"></i> Morfy 2.0.1](https://github.com/morfy-cms/morfy/releases/download/v2.0.1/morfy-2.0.1.zip)
+[<i class="fa fa-download"></i> Fansoro 2.0.1](https://github.com/fansoro-cms/fansoro/releases/download/v2.0.1/fansoro-2.0.1.zip)
 
-### Update from Morfy 2.0.0 to Morfy 2.0.1
+### Update from Fansoro 2.0.0 to Fansoro 2.0.1
 1. **Backup your Site First!**
-2. Download [Morfy 2.0.1](https://github.com/morfy-cms/morfy/releases/download/v2.0.1/morfy-2.0.1.zip)
+2. Download [Fansoro 2.0.1](https://github.com/fansoro-cms/fansoro/releases/download/v2.0.1/fansoro-2.0.1.zip)
 3. Unzip the contents to a new folder on your local computer.
-4. Upload `/morfy/boot/defines.php`, `/robots.txt`, `/composer.json` with an (s)FTP client to your host.
+4. Upload `/fansoro/boot/defines.php`, `/robots.txt`, `/composer.json` with an (s)FTP client to your host.
 
 <hr>
 
-[<i class="fa fa-comments"></i> Discuss this article on the Morfy Forum](http://forum.morfy.org/discussion/76/morfy-2-0-1-release#latest)
+[<i class="fa fa-comments"></i> Discuss this article on the Fansoro Forum](http://forum.fansoro.org/discussion/76/fansoro-2-0-1-release#latest)
 
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)

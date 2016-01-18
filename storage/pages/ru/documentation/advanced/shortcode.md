@@ -23,7 +23,7 @@ Example of escaping shortcodes:
 Your shorcode function:  
 ```
 function returnSiteUrl() {
-   return Morfy::$site['url'];
+   return Fansoro::$site['url'];
 }
 ```
 

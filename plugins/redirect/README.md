@@ -1,5 +1,5 @@
-# Morfy Redirect Plugin
-Morfy redirect plugin provide simple redirect functionality for pages.
+# Fansoro Redirect Plugin
+Fansoro redirect plugin provide simple redirect functionality for pages.
 
 Usage:  
 ```
@@ -11,4 +11,4 @@ redirect: some-page
 ```
 
 ## License
-See [LICENSE](https://github.com/morfy-cms/morfy-plugin-redirect/blob/master/LICENSE)
+See [LICENSE](https://github.com/fansoro-cms/fansoro-plugin-redirect/blob/master/LICENSE)

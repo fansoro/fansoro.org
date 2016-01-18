@@ -1,5 +1,5 @@
 ---
-title: Morfy 1.0.5
+title: Fansoro 1.0.5
 date: 2014-02-01 22:00
 template: blog_post
 author:
@@ -11,8 +11,8 @@ Changes:
 * Default Theme Fav Icon fixes  
 * Sitemap Plugin fixes  
 
-Download: [Morfy 1.0.5](https://github.com/morfy-cms/morfy/archive/v1.0.5.zip)
+Download: [Fansoro 1.0.5](https://github.com/fansoro-cms/fansoro/archive/v1.0.5.zip)
 
 <hr>  
 
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)  
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)  

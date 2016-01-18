@@ -5,7 +5,7 @@ template: documentation
 ---
 
 
-These standards for code formatting and documentation must be followed by anyone contributing to Morfy.  
+These standards for code formatting and documentation must be followed by anyone contributing to Fansoro.  
 Any contributions that do not meet these guidelines will not be accepted.
 
 https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md  

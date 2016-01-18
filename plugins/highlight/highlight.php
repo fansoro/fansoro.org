@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Morfy Reading Time Plugin
+ * Fansoro Reading Time Plugin
  *
  * (c) Romanenko Sergey / Awilum <awilum@msn.com>
  *

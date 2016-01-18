@@ -2,7 +2,7 @@
 
 ![Highlight](screenshot.png)  
 
-Highlight plugin for [Morfy](https://github.com/morfy-cms/morfy) adds a powerful code highlighting functionality with [Highlight.js](https://highlightjs.org/)
+Highlight plugin for [Fansoro](https://github.com/fansoro-cms/fansoro) adds a powerful code highlighting functionality with [Highlight.js](https://highlightjs.org/)
 
 
 * 137 languages and 65 styles [(live demo)](https://highlightjs.org/static/demo/)   
@@ -12,7 +12,7 @@ Highlight plugin for [Morfy](https://github.com/morfy-cms/morfy) adds a powerful
 * compatible with any js framework   
 
 ## Installation
-See [this instruction](http://morfy.org/documentation/plugins/plugins-installation)
+See [this instruction](http://fansoro.org/documentation/plugins/plugins-installation)
 
 ## Usage
 
@@ -65,4 +65,4 @@ Check out a [live demo](https://highlightjs.org/static/demo/) of these themes!
 | school_bank            |                          |                           |
 
 ## License
-See [LICENSE](https://github.com/morfy-cms/morfy-plugin-reading-time/blob/master/LICENSE)
+See [LICENSE](https://github.com/fansoro-cms/fansoro-plugin-reading-time/blob/master/LICENSE)

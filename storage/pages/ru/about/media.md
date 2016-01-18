@@ -1,35 +1,35 @@
 ---
 title: Медиа
-description: Медиа информация для продвижения Morfy CMS
+description: Медиа информация для продвижения Fansoro CMS
 template: about
 ---
 
-Если вы хотите расскаять о Morfy, и вам нужен логотип, текст или ссылки для вашей статьи, видео, и т.д., вы можете использовать, предусмотренные ниже.
+Если вы хотите расскаять о Fansoro, и вам нужен логотип, текст или ссылки для вашей статьи, видео, и т.д., вы можете использовать, предусмотренные ниже.
 
-### Morfy Описание
+### Fansoro Описание
 
-Morfy - простая система управления сайтом с открытым исходным кодом и распространяется под лицензией MIT.
+Fansoro - простая система управления сайтом с открытым исходным кодом и распространяется под лицензией MIT.
 Работает на основе обычных текстовых файлов и не использует базу данных. Легко настраивается и расширяется!  
-C помощью Morfy можно создать: сайт визитку, сателлит, домашнюю страничку, сайт-портфолио, лендинг-страницы, блог.
-Morfy предоставляет API для легкой разработки плагинов и тем оформления.
+C помощью Fansoro можно создать: сайт визитку, сателлит, домашнюю страничку, сайт-портфолио, лендинг-страницы, блог.
+Fansoro предоставляет API для легкой разработки плагинов и тем оформления.
 
-### Morfy Ссылки
-Homepage: http://morfy.org   
-GitHub: https://github.com/morfy-cms/morfy  
-Twitter: https://twitter.com/morfy_cms  
-Forum: http://forum.morfy.org   
-Live Chat: https://gitter.im/morfy-cms/morfy  
-YouTube Channel: http://www.youtube.com/c/MorfyOrganization  
+### Fansoro Ссылки
+Homepage: http://fansoro.org   
+GitHub: https://github.com/fansoro-cms/fansoro  
+Twitter: https://twitter.com/fansoro_cms  
+Forum: http://forum.fansoro.org   
+Live Chat: https://gitter.im/fansoro-cms/fansoro  
+YouTube Channel: http://www.youtube.com/c/FansoroOrganization  
 
-### Morfy Логотип
+### Fansoro Логотип
 
-![Morfy Icon]({site_url}/public/assets/img/morfy-icon.png){.img-responsive}
+![Fansoro Icon]({site_url}/public/assets/img/fansoro-icon.png){.img-responsive}
 
-![Morfy Logo]({site_url}/public/assets/img/morfy-logo.png){.img-responsive}
+![Fansoro Logo]({site_url}/public/assets/img/fansoro-logo.png){.img-responsive}
 
 
-### Morfy Credits
+### Fansoro Credits
 
 ```
-Работает на <a href="http://morfy.org">Morfy</a>
+Работает на <a href="http://fansoro.org">Fansoro</a>
 ```

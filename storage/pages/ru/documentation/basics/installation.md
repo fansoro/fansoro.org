@@ -6,7 +6,7 @@ template: documentation
 
 ## Используя (S)FTP{.margin-top-hard}
 
-[Скачайте последнюю версию.](http://morfy.org/ru/download)  
+[Скачайте последнюю версию.](http://fansoro.org/ru/download)  
 
 Расспакуйте архив в новую папку на вашем компьютере и загрузите их на ваш веб-сервер используя (S)FTP клиент. После загрузки вам необходимо установить права `777` на папки:
 * `cache/`
@@ -17,14 +17,14 @@ template: documentation
 
 ## Используя Composer
 
-Вы можете легко установить Morfy используя Composer.  
+Вы можете легко установить Fansoro используя Composer.  
 
 ```
-composer create-project morfy-cms/morfy
+composer create-project fansoro-cms/fansoro
 ```
 
 Также вам понадобится установить библиотеки для темы Default  
 ```
-cd /morfy/themes/default  
+cd /fansoro/themes/default  
 bower install
 ```

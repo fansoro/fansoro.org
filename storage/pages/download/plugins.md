@@ -1,5 +1,5 @@
 ---
-title: Download Morfy Plugins
-description: Download plugins for Morfy CMS
+title: Download Fansoro Plugins
+description: Download plugins for Fansoro CMS
 template: download
 ---

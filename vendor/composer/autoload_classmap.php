@@ -6,16 +6,16 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Action' => $baseDir . '/morfy/Action.php',
-    'Blocks' => $baseDir . '/morfy/Blocks.php',
-    'Cache' => $baseDir . '/morfy/Cache.php',
-    'Config' => $baseDir . '/morfy/Config.php',
+    'Action' => $baseDir . '/fansoro/Action.php',
+    'Blocks' => $baseDir . '/fansoro/Blocks.php',
+    'Cache' => $baseDir . '/fansoro/Cache.php',
+    'Config' => $baseDir . '/fansoro/Config.php',
     'Fenom' => $vendorDir . '/fenom/fenom/src/Fenom.php',
-    'Filter' => $baseDir . '/morfy/Filter.php',
-    'Markdown' => $baseDir . '/morfy/Markdown.php',
-    'Morfy' => $baseDir . '/morfy/Morfy.php',
-    'Pages' => $baseDir . '/morfy/Pages.php',
-    'Plugins' => $baseDir . '/morfy/Plugins.php',
-    'Template' => $baseDir . '/morfy/Template.php',
-    'Yaml' => $baseDir . '/morfy/Yaml.php',
+    'Filter' => $baseDir . '/fansoro/Filter.php',
+    'Markdown' => $baseDir . '/fansoro/Markdown.php',
+    'Fansoro' => $baseDir . '/fansoro/Fansoro.php',
+    'Pages' => $baseDir . '/fansoro/Pages.php',
+    'Plugins' => $baseDir . '/fansoro/Plugins.php',
+    'Template' => $baseDir . '/fansoro/Template.php',
+    'Yaml' => $baseDir . '/fansoro/Yaml.php',
 );

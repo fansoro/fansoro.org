@@ -4,7 +4,7 @@ description: Документация для разработчиков и по�
 template: documentation
 ---
 
-### Структура страниц и ссылок в Morfy:{.margin-top-hard}
+### Структура страниц и ссылок в Fansoro:{.margin-top-hard}
 
 <table class="table">
     <thead>

@@ -1,5 +1,5 @@
 #
-# This file is part of the Morfy.
+# This file is part of the Fansoro.
 #
 # (c) Romanenko Sergey / Awilum <awilum@msn.com>
 #
@@ -15,7 +15,7 @@ AddDefaultCharset UTF-8
 
 	## Begin - Rewrite rules to block out some common exploits.
 	# If you experience problems on your site block out the operations listed below
-	# This attempts to block the most common type of exploit `attempts` to Morfy
+	# This attempts to block the most common type of exploit `attempts` to Fansoro
 	#
 	# Block out any script trying to base64_encode data within the URL.
 	RewriteCond %{QUERY_STRING} base64_encode[^(]*\([^)]*\) [OR]
@@ -30,17 +30,17 @@ AddDefaultCharset UTF-8
 	#
 	## End - Rewrite rules to block out some common exploits.
 
-	## Begin - Rewrite rules for Morfy
+	## Begin - Rewrite rules for Fansoro
 	RewriteBase /
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^(.*)$ index.php [QSA,L]
-	## End - Rewrite rules for Morfy
+	## End - Rewrite rules for Fansoro
 
 	# Update code bellow for SEO improvements
-	RewriteCond %{HTTP_HOST} ^www.morfy.org [NC]
- 	RewriteRule ^(.*)$ http://morfy.org/$1 [R=301,L]
-	Redirect 301 /index http://morfy.org
+	RewriteCond %{HTTP_HOST} ^www.fansoro.org [NC]
+ 	RewriteRule ^(.*)$ http://fansoro.org/$1 [R=301,L]
+	Redirect 301 /index http://fansoro.org
 
 </IfModule>
 

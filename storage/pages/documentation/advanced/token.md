@@ -1,6 +1,6 @@
 ---
 title: Token
-description: Documentation for Morfy Developers and Morfy Users.
+description: Documentation for Fansoro Developers and Fansoro Users.
 template: documentation
 ---
 Generate and store a unique token which can be used to help prevent  

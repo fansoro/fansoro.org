@@ -1,12 +1,12 @@
 ---
-title: The Morfy License
-description: Morfy CMS LICENSE
+title: The Fansoro License
+description: Fansoro CMS LICENSE
 template: about
 ---
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Morfy Content Management
+Copyright (c) 2015 Fansoro Content Management
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,5 +1,5 @@
 ---
-title: Morfy 1.0.3
+title: Fansoro 1.0.3
 date: 2014-01-24 22:00
 template: blog_post
 author:
@@ -12,8 +12,8 @@ Changes:
 * New method cleanString() - Sanitize data to prevent XSS (Cross-site scripting)  
 * Default Theme - Improvements  
 
-Download: [Morfy 1.0.3](https://github.com/morfy-cms/morfy/archive/v1.0.3.zip)
+Download: [Fansoro 1.0.3](https://github.com/fansoro-cms/fansoro/archive/v1.0.3.zip)
 
 <hr>  
 
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/morfy-cms/morfy)  
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)  

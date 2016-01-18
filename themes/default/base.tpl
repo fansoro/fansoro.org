@@ -11,15 +11,15 @@
 
 		<link rel="shortcut icon" href="{Url::getBase()}/favicon.ico">
 
-		<link rel="icon" href="{Url::getBase()}/public/assets/morfy-icon-296.png" sizes="296x296" type="image/png">
+		<link rel="icon" href="{Url::getBase()}/public/assets/fansoro-icon-296.png" sizes="296x296" type="image/png">
 
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{Url::getBase()}/public/assets/morfy-icon-152.png">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{Url::getBase()}/public/assets/morfy-icon-144.png">
-		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{Url::getBase()}/public/assets/morfy-icon-120.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{Url::getBase()}/public/assets/morfy-icon-114.png">
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{Url::getBase()}/public/assets/fansoro-icon-152.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{Url::getBase()}/public/assets/fansoro-icon-144.png">
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{Url::getBase()}/public/assets/fansoro-icon-120.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{Url::getBase()}/public/assets/fansoro-icon-114.png">
 
 		<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="{Url::getBase()}/public/assets/morfy-icon-144.png">
+		<meta name="msapplication-TileImage" content="{Url::getBase()}/public/assets/fansoro-icon-144.png">
 
 		<meta property="fb:app_id" content="795025567272801" />
 
@@ -28,23 +28,23 @@
 		<meta property="og:site_name" content="{$config.site.title}">
 	    <meta property="og:url" content="{$url}">
 	    <meta property="og:title" content="{$title} | {$config.site.title}">
-		<meta property="og:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
+		<meta property="og:image" content="http://fansoro.org/public/assets/img/fansoro-logo.png">
 
 		{* Twitter Card *}
   		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:account_id" content="3068674037">
-		<meta name="twitter:site" content="@morfy_cms">
+		<meta name="twitter:site" content="@fansoro_cms">
 		<meta name="twitter:title" content="{$title} | {$config.site.title}">
-		<meta name="twitter:description" content="Morfy is Modern Open Source Flat-File Content Management System. Content in Morfy is just a simple files written with markdown syntax in pages folder. You simply create markdown files in the pages folder and that becomes a page.">
-		<meta name="twitter:image" content="http://morfy.org/public/assets/img/morfy-logo.png">
+		<meta name="twitter:description" content="Fansoro is Modern Open Source Flat-File Content Management System. Content in Fansoro is just a simple files written with markdown syntax in pages folder. You simply create markdown files in the pages folder and that becomes a page.">
+		<meta name="twitter:image" content="http://fansoro.org/public/assets/img/fansoro-logo.png">
 
 	    {* Google+ Snippets *}
-		<link href="https://plus.google.com/+MorfyOrganization" rel="publisher">
+		<link href="https://plus.google.com/+FansoroOrganization" rel="publisher">
 
 		{* Bootstrap core CSS *}
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
-		<link href="{Url::getBase()}/themes/default/assets/css/morfy.css?1" rel="stylesheet">
+		<link href="{Url::getBase()}/themes/default/assets/css/fansoro.css?1" rel="stylesheet">
 		<link href="{Url::getBase()}/themes/default/assets/css/animate.css" rel="stylesheet">
 		{Action::run('theme_header')}
 		{ignore}
@@ -74,21 +74,21 @@
 				{/if}
 
                 {if (Url::getUriSegment(0) == '' || Url::getUriSegment(0) == 'ru') && Url::getUriSegment(1) == ''}
-                <div class="morfy-promo-block wow fadeIn">
+                <div class="fansoro-promo-block wow fadeIn">
 					{if Url::getUriSegment(0) == 'ru'}
 						<h1>ПРОСТАЯ И БЫСТРАЯ</h1>
                     	<p class="lead">OPEN SOURCE CMS НА ФАЙЛАХ</p>
-                    	<a class="btn btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v2.0.2/morfy-2.0.2.zip">Скачать Morfy</a>
+                    	<a class="btn btn-lg btn-download-fansoro" href="https://github.com/fansoro-cms/fansoro/releases/download/v2.0.2/fansoro-2.0.2.zip">Скачать Fansoro</a>
 					{else}
-				    	<h1>Introducing Morfy</h1>
+				    	<h1>Introducing Fansoro</h1>
 						<p class="lead">Modern Open Source Flat-File Content Management System.</p>
-                    	<a class="btn btn-lg btn-download-morfy" href="https://github.com/morfy-cms/morfy/releases/download/v2.0.2/morfy-2.0.2.zip">Download Morfy</a>
+                    	<a class="btn btn-lg btn-download-fansoro" href="https://github.com/fansoro-cms/fansoro/releases/download/v2.0.2/fansoro-2.0.2.zip">Download Fansoro</a>
 					{/if}
 				</div>
                 {else}
                     <div class="container">
                         {if Url::getUriSegment(0) == 'blog' && Url::getUriSegment(1) == ''}
-                            <h1 class="page-header-h1">News about Morfy <a href="http://morfy.org/rss" class="blog-rss-button"><i class="fa fa-rss"></i></a></h1>
+                            <h1 class="page-header-h1">News about Fansoro <a href="http://fansoro.org/rss" class="blog-rss-button"><i class="fa fa-rss"></i></a></h1>
                         {else}
                             <h1 class="page-header-h1">{$title}</h1>
                         {/if}
@@ -117,12 +117,12 @@
 			<div class="separator top grey"></div>
 			<div class="container">
                 <p class="social-links text-center">
-					<a rel="nofollow" href="https://twitter.com/morfy_cms"><i class="fa fa-twitter"></i></a>
-					<a rel="nofollow" href="https://github.com/morfy-cms/morfy"><i class="fa fa-github"></i></a>
-					<a rel="nofollow" href="https://gitter.im/morfy-cms/morfy"><i class="fa fa-comments"></i></a>
-					<a rel="nofollow" href="https://www.facebook.com/MorfyCMS"><i class="fa fa-facebook"></i></a>
-					<a rel="nofollow" href="http://www.youtube.com/c/MorfyOrganization"><i class="fa fa-youtube-play"></i></a>
-					<a rel="nofollow" href="https://vk.com/morfy_cms"><i class="fa fa-vk"></i></a>
+					<a rel="nofollow" href="https://twitter.com/fansoro_cms"><i class="fa fa-twitter"></i></a>
+					<a rel="nofollow" href="https://github.com/fansoro-cms/fansoro"><i class="fa fa-github"></i></a>
+					<a rel="nofollow" href="https://gitter.im/fansoro-cms/fansoro"><i class="fa fa-comments"></i></a>
+					<a rel="nofollow" href="https://www.facebook.com/FansoroCMS"><i class="fa fa-facebook"></i></a>
+					<a rel="nofollow" href="http://www.youtube.com/c/FansoroOrganization"><i class="fa fa-youtube-play"></i></a>
+					<a rel="nofollow" href="https://vk.com/fansoro_cms"><i class="fa fa-vk"></i></a>
                 </p>
 				<p>
 					<ul class="locales">
@@ -133,8 +133,8 @@
 				<p>
 					<ul class="copyright">
 						<li>
-							<a href="{Url::getBase()}">Morfy</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://awilum.github.io" class="highlight">Sergey Romanenko</a> and <a href="https://github.com/morfy-cms/morfy/graphs/contributors" class="highlight">Morfy Community</a> <br>
-							© 2015 <a href="{Url::getBase()}/about/license">Morfy</a>
+							<a href="{Url::getBase()}">Fansoro</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://awilum.github.io" class="highlight">Sergey Romanenko</a> and <a href="https://github.com/fansoro-cms/fansoro/graphs/contributors" class="highlight">Fansoro Community</a> <br>
+							© 2015 <a href="{Url::getBase()}/about/license">Fansoro</a>
 						</li>
 					</ul>
 				</p>
@@ -145,7 +145,7 @@
 		{ignore}
 		<script>
 		((window.gitter = {}).chat = {}).options = {
-	        room: 'morfy-cms/morfy',
+	        room: 'fansoro-cms/fansoro',
 	        activationElement: '.live-chat-button'
 	    };
 		</script>

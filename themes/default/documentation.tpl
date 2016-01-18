@@ -7,7 +7,7 @@
 		        {$content}
 				{if (Url::getUriSegment(0) != '' && Url::getUriSegment(0) != 'ru') || (Url::getUriSegment(1) != '' && Url::getUriSegment(0) == 'ru')}
 					<hr>
-					<a href="https://github.com/morfy-cms/morfy.org/tree/master/storage/pages/{Url::getUriString()}.md"><i class="fa fa-github-square"></i> {if Url::getUriSegment(0) == 'ru'}редактировать страницу{else}edit this page{/if}</a>
+					<a href="https://github.com/fansoro-cms/fansoro.org/tree/master/storage/pages/{Url::getUriString()}.md"><i class="fa fa-github-square"></i> {if Url::getUriSegment(0) == 'ru'}редактировать страницу{else}edit this page{/if}</a>
 				{/if}
 			</div>
 			<div class="col-md-3">

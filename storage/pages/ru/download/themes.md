@@ -1,5 +1,5 @@
 ---
-title: Скачать шаблоны для Morfy
-description: Скачать шаблоны для Morfy CMS
+title: Скачать шаблоны для Fansoro
+description: Скачать шаблоны для Fansoro CMS
 template: download
 ---

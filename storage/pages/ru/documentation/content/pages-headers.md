@@ -42,5 +42,5 @@ template: index (allows you to use different templates in your theme)
 Пример:   
 ```
 author:
-  twitter: @morfy_cms
+  twitter: @fansoro_cms
 ```

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Morfy Sitemap Plugin
+ * Fansoro Sitemap Plugin
  *
  * (c) Romanenko Sergey / Awilum <awilum@msn.com>
  *

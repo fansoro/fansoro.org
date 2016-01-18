@@ -1,6 +1,6 @@
 ---
 title: Shortcode
-description: Documentation for Morfy Developers and Morfy Users.
+description: Documentation for Fansoro Developers and Fansoro Users.
 template: documentation
 ---
 
@@ -23,7 +23,7 @@ Example of escaping shortcodes:
 Your shorcode function:  
 ```
 function returnSiteUrl() {
-   return Morfy::$site['url'];
+   return Fansoro::$site['url'];
 }
 ```
 

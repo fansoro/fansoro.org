@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Morfy Feed Plugin
+ * Fansoro Feed Plugin
  *
  * (c) Romanenko Sergey / Awilum <awilum@msn.com>
  *

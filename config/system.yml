@@ -33,6 +33,6 @@ errors:
 
 cache:
   enabled: true
-  prefix: morfy
+  prefix: fansoro
   driver: auto
   lifetime: 604800

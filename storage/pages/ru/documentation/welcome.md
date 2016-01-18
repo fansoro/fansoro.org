@@ -4,4 +4,4 @@ description: Документация для разработчиков и по�
 template: documentation
 ---
 
-Morfy is a simple and light-weighted Content Management System written in PHP!
+Fansoro is a simple and light-weighted Content Management System written in PHP!

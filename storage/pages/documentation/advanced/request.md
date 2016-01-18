@@ -1,6 +1,6 @@
 ---
 title: Request
-description: Documentation for Morfy Developers and Morfy Users.
+description: Documentation for Fansoro Developers and Fansoro Users.
 template: documentation
 ---
 

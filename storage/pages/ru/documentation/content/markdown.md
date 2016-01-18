@@ -144,30 +144,30 @@ Renders to:
 ##Links
 
 ```
-[Morfy site](http://morfy.org)
+[Fansoro site](http://fansoro.org)
 ```
 
 Renders to:  
 
-[Morfy site](http://morfy.org)
+[Fansoro site](http://fansoro.org)
 
 
 ##Images
 
 
 ```
-![Morfy Logo](http://morfy.org/public/assets/img/morfy-logo.png)
+![Fansoro Logo](http://fansoro.org/public/assets/img/fansoro-logo.png)
 ```
 
 Renders to:  
 
-![Morfy Logo](http://morfy.org/public/assets/img/morfy-logo.png)  
+![Fansoro Logo](http://fansoro.org/public/assets/img/fansoro-logo.png)  
 
 
 ```
-![Morfy Logo](http://morfy.org/public/assets/img/morfy-logo.png){.img-responsive}
+![Fansoro Logo](http://fansoro.org/public/assets/img/fansoro-logo.png){.img-responsive}
 ```
 
 Renders to:
 
-![Morfy Logo](http://morfy.org/public/assets/img/morfy-logo.png){.img-responsive}  
+![Fansoro Logo](http://fansoro.org/public/assets/img/fansoro-logo.png){.img-responsive}  

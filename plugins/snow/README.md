@@ -1,8 +1,8 @@
 # Snow
-Snow plugin to generate snowflake for Morfy
+Snow plugin to generate snowflake for Fansoro
 
 ## Installation
-See [this instruction](http://morfy.org/documentation/plugins/plugins-installation)
+See [this instruction](http://fansoro.org/documentation/plugins/plugins-installation)
 
 
 ## Options
@@ -15,4 +15,4 @@ See [this instruction](http://morfy.org/documentation/plugins/plugins-installati
 | flake_color | #0099FF (color of snowflake) |
 
 ## License
-See [LICENSE](https://github.com/morfy-cms/morfy-plugin-snow/blob/master/LICENSE)
+See [LICENSE](https://github.com/fansoro-cms/fansoro-plugin-snow/blob/master/LICENSE)

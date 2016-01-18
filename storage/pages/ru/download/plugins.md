@@ -1,5 +1,5 @@
 ---
-title: Скачать плагины для Morfy
-description: Скачать плагины для Morfy CMS
+title: Скачать плагины для Fansoro
+description: Скачать плагины для Fansoro CMS
 template: download
 ---

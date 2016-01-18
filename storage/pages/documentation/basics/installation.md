@@ -1,14 +1,14 @@
 ---
 title: Installation
-description: Documentation for Morfy Developers and Morfy Users.
+description: Documentation for Fansoro Developers and Fansoro Users.
 template: documentation
 ---
 
 ## Using (S)FTP{.margin-top-hard}
 
-[Download the latest version.](http://morfy.org/download)  
+[Download the latest version.](http://fansoro.org/download)  
 
-Unzip the contents to a new folder on your local computer, and upload to your webhost using the (S)FTP client of your choice. After you’ve done this, be sure to chmod the following directories (with containing files) to `777`, so they are readable and writable by Morfy:  
+Unzip the contents to a new folder on your local computer, and upload to your webhost using the (S)FTP client of your choice. After you’ve done this, be sure to chmod the following directories (with containing files) to `777`, so they are readable and writable by Fansoro:  
 * `cache/`
 * `config/`
 * `storage/`
@@ -17,14 +17,14 @@ Unzip the contents to a new folder on your local computer, and upload to your we
 
 ## Using Composer
 
-You can easily install Morfy with Composer.
+You can easily install Fansoro with Composer.
 
 ```
-composer create-project morfy-cms/morfy
+composer create-project fansoro-cms/fansoro
 ```
 
 Also you may need to install vendor libs for Default Theme
 ```
-cd /morfy/themes/default  
+cd /fansoro/themes/default  
 bower install
 ```
