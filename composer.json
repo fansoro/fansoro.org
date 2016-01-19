@@ -1,5 +1,5 @@
 {
-    "name": "fansoro-cms/fansoro",
+    "name": "fansoro/fansoro",
     "type": "library",
     "description": "Fansoro is Modern Open Source Flat-File Content Management System",
     "keywords": ["fansoro", "php", "cms", "flat-file", "markdown"],

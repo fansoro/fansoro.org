@@ -143,7 +143,7 @@
 		{ignore}
 		<script>
 		((window.gitter = {}).chat = {}).options = {
-	        room: 'fansoro-cms/fansoro',
+	        room: 'fansoro/fansoro',
 	        activationElement: '.live-chat-button'
 	    };
 		</script>
