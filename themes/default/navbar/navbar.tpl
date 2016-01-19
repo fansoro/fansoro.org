@@ -7,7 +7,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{Url::getBase()}"><img src="{Url::getBase()}/public/assets/img/{if Url::getUriSegment(0) == ''}fansoro-logo-white.png{else}fansoro-logo.png{/if}" width="330" alt="Modern Open Source Flat-File Content Management System"></a>
+			<a class="navbar-brand" href="{Url::getBase()}"><img src="{Url::getBase()}/public/assets/img/{if Url::getUriSegment(0) == ''}fansoro-icon.png{else}fansoro-icon.png{/if}" width="330" alt="Modern Open Source Flat-File Content Management System"></a>
 		</div>
 		<div class="collapse navbar-collapse">
             {set $slug = Url::getUriSegment(0)}
