@@ -62,8 +62,6 @@
 	<body {if (Url::getUriSegment(0) != '' && Url::getUriSegment(0) != 'ru') || (Url::getUriSegment(1) != '' && Url::getUriSegment(0) == 'ru')}class="light-theme"{/if}>
 		{if (Url::getUriSegment(0) != '' && Url::getUriSegment(0) != 'ru') || (Url::getUriSegment(1) != '' && Url::getUriSegment(0) == 'ru')}
 		{else}
-		<canvas class="universe"></canvas>
-		<div class="universe-dark-matter"></div>
 		{/if}
 		<div id="wrap">
 		    <div class="mega-header">
@@ -156,10 +154,6 @@
 		<script src="{Url::getBase()}/themes/default/assets/js/bootstrap.min.js"></script>
 		<script src="{Url::getBase()}/themes/default/assets/js/wow.min.js"></script>
 		<script src="{Url::getBase()}/themes/default/assets/js/default.js"></script>
-		{if Url::getUriSegment(0) == 'ru' || Url::getUriSegment(0) == ''}
-		<script src="{Url::getBase()}/themes/default/assets/js/universe.js" async></script>
-		{/if}
-
 		{Action::run('theme_footer')}
 	</body>
 </html>
