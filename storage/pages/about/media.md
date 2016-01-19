@@ -1,6 +1,6 @@
 ---
 title: Media Information
-description: Media information to promote Fansoro CMS around the web
+description: Media information to promote Fansoro around the web
 template: about
 ---
 
@@ -12,10 +12,10 @@ Fansoro is an Open Source, fast and light-weighted file-based Content Management
 
 ### Fansoro Links
 Homepage: http://fansoro.org   
-GitHub: https://github.com/fansoro-cms/fansoro  
+GitHub: https://github.com/fansoro/fansoro  
 Twitter: https://twitter.com/fansoro_cms  
 Forum: http://forum.fansoro.org   
-Live Chat: https://gitter.im/fansoro-cms/fansoro  
+Live Chat: https://gitter.im/fansoro/fansoro  
 YouTube Channel: http://www.youtube.com/c/FansoroOrganization  
 
 ### Fansoro Logo

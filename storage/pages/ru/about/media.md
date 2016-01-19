@@ -1,6 +1,6 @@
 ---
 title: Медиа
-description: Медиа информация для продвижения Fansoro CMS
+description: Медиа информация для продвижения Fansoro
 template: about
 ---
 
@@ -15,10 +15,10 @@ Fansoro предоставляет API для легкой разработки 
 
 ### Fansoro Ссылки
 Homepage: http://fansoro.org   
-GitHub: https://github.com/fansoro-cms/fansoro  
+GitHub: https://github.com/fansoro/fansoro  
 Twitter: https://twitter.com/fansoro_cms  
 Forum: http://forum.fansoro.org   
-Live Chat: https://gitter.im/fansoro-cms/fansoro  
+Live Chat: https://gitter.im/fansoro/fansoro  
 YouTube Channel: http://www.youtube.com/c/FansoroOrganization  
 
 ### Fansoro Логотип
