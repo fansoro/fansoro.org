@@ -7,7 +7,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{Url::getBase()}/ru"><img src="{Url::getBase()}/public/assets/img/{if Url::getUriSegment(0) == 'ru'}{if Url::getUriSegment(1) == ''}fansoro-logo-white.png{else}fansoro-logo.png{/if}{else}{if Url::getUriSegment(0) == ''}fansoro-logo-white.png{else}fansoro-logo.png{/if}{/if}" width="330" alt="Fansoro — simple but powerful flat-file CMS"></a>
+			<a class="navbar-brand" href="{Url::getBase()}/ru"><img src="{Url::getBase()}/public/assets/img/{if Url::getUriSegment(0) == 'ru'}{if Url::getUriSegment(1) == ''}fansoro-icon.png{else}fansoro-icon.png{/if}{else}{if Url::getUriSegment(0) == ''}fansoro-icon.png{else}fansoro-icon.png{/if}{/if}" width="330" alt="Fansoro — simple but powerful flat-file CMS"></a>
 		</div>
 		<div class="collapse navbar-collapse">
             {set $slug = Url::getUriSegment(1)}
