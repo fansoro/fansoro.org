@@ -6,7 +6,7 @@ author:
   name: Sergey Romanenko
 ---
 
-Fansoro 2.0.2 Release :)
+Fansoro 2.0.3 Release :)
 
 ### Here is a list of changes in 2.0.3:
 * Project Rebranded!
