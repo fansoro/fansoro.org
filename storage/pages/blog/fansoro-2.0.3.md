@@ -1,6 +1,6 @@
 ---
 title: Fansoro 2.0.3 Release
-date: 2015-12-08 20:15
+date: 2016-01-20 20:15
 template: blog_post
 author:
   name: Sergey Romanenko
