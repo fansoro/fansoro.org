@@ -23,4 +23,4 @@ Fansoro 1.1.0 - comming soon!
 
 <hr>  
 
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)  
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro/fansoro)  

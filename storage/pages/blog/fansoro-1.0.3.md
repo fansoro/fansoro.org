@@ -12,8 +12,8 @@ Changes:
 * New method cleanString() - Sanitize data to prevent XSS (Cross-site scripting)  
 * Default Theme - Improvements  
 
-Download: [Fansoro 1.0.3](https://github.com/fansoro-cms/fansoro/archive/v1.0.3.zip)
+Download: [Fansoro 1.0.3](https://github.com/fansoro/fansoro/archive/v1.0.3.zip)
 
 <hr>  
 
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)  
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro/fansoro)  

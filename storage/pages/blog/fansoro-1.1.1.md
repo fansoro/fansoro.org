@@ -20,25 +20,23 @@ author:
 
 
 ### Download  
-[<i class="fa fa-download"></i> Fansoro 1.1.1](https://github.com/fansoro-cms/fansoro/releases/download/v1.1.1/fansoro-1.1.1.zip)  
+[<i class="fa fa-download"></i> Fansoro 1.1.1](https://github.com/fansoro/fansoro/releases/download/v1.1.1/fansoro-1.1.1.zip)  
 
 ### Update from Fansoro 1.1.0 to Fansoro 1.1.1  
 1. **Backup your Site First!**    
-2. Download [Fansoro 1.1.1](https://github.com/fansoro-cms/fansoro/releases/download/v1.1.1/fansoro-1.1.1.zip)    
+2. Download [Fansoro 1.1.1](https://github.com/fansoro/fansoro/releases/download/v1.1.1/fansoro-1.1.1.zip)    
 3. Unzip the contents to a new folder on your local computer.  
 4. Upload `/themes/default/`, `/libraries/`, `/index.php`, with an FTP client to your host.  
 5. Rename `content` folder to `storage`  
 
 ### Current supported plugins for Fansoro 1.1.1  
-[Maintenance](https://github.com/fansoro-cms/fansoro-plugin-maintenance)  
-[Feed](https://github.com/fansoro-cms/fansoro-plugin-feed)   
-[Sitemap](https://github.com/fansoro-cms/fansoro-plugin-sitemap)   
+[Maintenance](https://github.com/fansoro/fansoro-plugin-maintenance)  
+[Feed](https://github.com/fansoro/fansoro-plugin-feed)   
+[Sitemap](https://github.com/fansoro/fansoro-plugin-sitemap)   
 
 ### Current supported themes for Fansoro 1.1.1
-[15 Bootswatch themes](https://github.com/fansoro-cms/fansoro-theme-bootswatch)   
+[15 Bootswatch themes](https://github.com/fansoro/fansoro-theme-bootswatch)   
 
 <hr>  
 
-[<i class="fa fa-comments"></i> Discuss this article on the Fansoro Forum](http://forum.fansoro.org/discussion/44/fansoro-1-1-1-release)  
-
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)  
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro/fansoro)  

@@ -41,17 +41,15 @@ Fansoro 2.0.0 has totaly new Architecture, improved Security and amazing Perform
 * Removed Fansoro Installer.
 
 ### Download
-[<i class="fa fa-download"></i> Fansoro 2.0.0](https://github.com/fansoro-cms/fansoro/releases/download/v2.0.0/fansoro-2.0.0.zip)
+[<i class="fa fa-download"></i> Fansoro 2.0.0](https://github.com/fansoro/fansoro/releases/download/v2.0.0/fansoro-2.0.0.zip)
 
 ### Update from Fansoro 1.1.4 to Fansoro 2.0.0
 1. **Backup your Site First!**
-2. Download [Fansoro 2.0.0](https://github.com/fansoro-cms/fansoro/releases/download/v2.0.0/fansoro-2.0.0.zip)
+2. Download [Fansoro 2.0.0](https://github.com/fansoro/fansoro/releases/download/v2.0.0/fansoro-2.0.0.zip)
 3. Unzip the contents to a new folder on your local computer.
 4. Upload `/vendors/`, `/fansoro/`, `/themes/default/`, `/index.php`, `/config/system.yml` with an FTP client to your host.
 5. Remove `/libraries/` from your host.
 
 <hr>
 
-[<i class="fa fa-comments"></i> Discuss this article on the Fansoro Forum](http://forum.fansoro.org/discussion/67/fansoro-2-0-0-release)
-
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro/fansoro)

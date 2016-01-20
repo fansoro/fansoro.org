@@ -18,12 +18,10 @@ Fansoro 2.0.1 Release :)
 
 ### Update from Fansoro 2.0.0 to Fansoro 2.0.1
 1. **Backup your Site First!**
-2. Download [Fansoro 2.0.1](https://github.com/fansoro-cms/fansoro/releases/download/v2.0.1/fansoro-2.0.1.zip)
+2. Download [Fansoro 2.0.1](https://github.com/fansoro/fansoro/releases/download/v2.0.1/fansoro-2.0.1.zip)
 3. Unzip the contents to a new folder on your local computer.
 4. Upload `/fansoro/boot/defines.php`, `/robots.txt`, `/composer.json` with an (s)FTP client to your host.
 
 <hr>
 
-[<i class="fa fa-comments"></i> Discuss this article on the Fansoro Forum](http://forum.fansoro.org/discussion/76/fansoro-2-0-1-release#latest)
-
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro/fansoro)

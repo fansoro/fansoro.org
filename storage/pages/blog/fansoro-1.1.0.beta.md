@@ -47,7 +47,7 @@ Here is a list of major changes in 1.1.0:
 * Removed Markdown plugin
 * Removed Sitemap plugin
 
-Report any bugs you find via [GitHub](https://github.com/fansoro-cms/fansoro/issues) or [Fansoro Forum](http://forum.fansoro.org).  
+Report any bugs you find via [GitHub](https://github.com/fansoro/fansoro/issues) or [Fansoro Forum](http://forum.fansoro.org).  
 
 **Remember, this is a beta release for beta testing, is not considered stable and should not be used for live web sites!**  
 
@@ -55,6 +55,4 @@ Report any bugs you find via [GitHub](https://github.com/fansoro-cms/fansoro/iss
 
 <hr>    
 
-[<i class="fa fa-comments"></i> Discuss this article on the forum](http://forum.fansoro.org/discussion/31/fansoro-1-1-0-beta)
-
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)  
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro/fansoro)  

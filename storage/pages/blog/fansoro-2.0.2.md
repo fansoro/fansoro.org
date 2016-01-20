@@ -17,11 +17,11 @@ Fansoro 2.0.2 Release :)
 * Fixed Default Themes styles
 
 ### Download
-[<i class="fa fa-download"></i> Fansoro 2.0.2](https://github.com/fansoro-cms/fansoro/releases/download/v2.0.2/fansoro-2.0.2.zip)
+[<i class="fa fa-download"></i> Fansoro 2.0.2](https://github.com/fansoro/fansoro/releases/download/v2.0.2/fansoro-2.0.2.zip)
 
 ### Update from Fansoro 2.0.1 to Fansoro 2.0.2
 1. **Backup your Site First!**
-2. Download [Fansoro 2.0.2](https://github.com/fansoro-cms/fansoro/releases/download/v2.0.2/fansoro-2.0.2.zip)
+2. Download [Fansoro 2.0.2](https://github.com/fansoro/fansoro/releases/download/v2.0.2/fansoro-2.0.2.zip)
 3. Unzip the contents to a new folder on your local computer.
 4. Upload `/themes/default/`, `/fansoro/`, `/vendor/doctrine/`, `/.gitignore`, `/composer.json` with an (s)FTP client to your host.
 
@@ -50,6 +50,4 @@ Action::add('before_page_rendered', function() {
 
 <hr>
 
-[<i class="fa fa-comments"></i> Discuss this article on the Fansoro Forum](http://forum.fansoro.org/discussion/77/fansoro-2-0-2-release)
-
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro/fansoro)

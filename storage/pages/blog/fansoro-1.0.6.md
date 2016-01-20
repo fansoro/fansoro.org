@@ -16,8 +16,8 @@ Changes:
 * Default Theme - remove IE9 Support   
 * Date format for blog posts and pages - Fixed  
 
-Download: [Fansoro 1.0.6](https://github.com/Awilum/fansoro-cms/archive/v1.0.6.zip)
+Download: [Fansoro 1.0.6](https://github.com/Awilum/fansoro/archive/v1.0.6.zip)
 
 <hr>  
 
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)  
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro/fansoro)  

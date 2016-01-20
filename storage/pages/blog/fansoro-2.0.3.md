@@ -19,7 +19,7 @@ Fansoro 2.0.3 Release :)
 
 ### Update from Fansoro 2.0.2 to Fansoro 2.0.3
 1. **Backup your Site First!**
-2. Download [Fansoro 2.0.3](https://github.com/fansoro-cms/fansoro/releases/download/v2.0.3/fansoro-2.0.3.zip)
+2. Download [Fansoro 2.0.3](https://github.com/fansoro/fansoro/releases/download/v2.0.3/fansoro-2.0.3.zip)
 3. Unzip the contents to a new folder on your local computer.
 4. Upload `/fansoro/`, `/vendor/`, `/.gitignore`, `/composer.json`, `/LICENSE.md`, `/index.php` with an (s)FTP client to your host.
 

@@ -12,8 +12,7 @@ It's easy to use and update.
 You just need to edit plugins-list-en.md on a GitHub using Markdown syntax.  
 
 Plugins Page: [http://fansoro.org/download/plugins](http://fansoro.org/download/plugins)  
-Github Repository: [https://github.com/Awilum/fansoro-cms-plugins](https://github.com/Awilum/fansoro-cms-plugins)  
 
 <hr>  
 
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)  
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro/fansoro)  

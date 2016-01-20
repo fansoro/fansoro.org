@@ -10,8 +10,8 @@ Changes:
 * Fansoro Filters - Closure support added.  
 * Default Theme - Fixes  
 
-Download: [Fansoro 1.0.2](https://github.com/fansoro-cms/fansoro/archive/v1.0.2.zip)
+Download: [Fansoro 1.0.2](https://github.com/fansoro/fansoro/archive/v1.0.2.zip)
 
 <hr>  
 
-[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro-cms/fansoro)  
+[<i class="fa fa-comments"></i> Discuss this article on the Gitter Chat](https://gitter.im/fansoro/fansoro)  
