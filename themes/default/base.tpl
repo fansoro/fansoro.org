@@ -116,11 +116,11 @@
 			<div class="container">
                 <p class="social-links text-center">
 					<a rel="nofollow" href="https://twitter.com/fansoro_cms"><i class="fa fa-twitter"></i></a>
-					<a rel="nofollow" href="https://github.com/fansoro-cms/fansoro"><i class="fa fa-github"></i></a>
-					<a rel="nofollow" href="https://gitter.im/fansoro-cms/fansoro"><i class="fa fa-comments"></i></a>
-					<a rel="nofollow" href="https://www.facebook.com/FansoroCMS"><i class="fa fa-facebook"></i></a>
+					<a rel="nofollow" href="https://github.com/fansoro/fansoro"><i class="fa fa-github"></i></a>
+					<a rel="nofollow" href="https://gitter.im/fansoro/fansoro"><i class="fa fa-comments"></i></a>
+					<a rel="nofollow" href="https://www.facebook.com/Fansoro"><i class="fa fa-facebook"></i></a>
 					<a rel="nofollow" href="http://www.youtube.com/c/FansoroOrganization"><i class="fa fa-youtube-play"></i></a>
-					<a rel="nofollow" href="https://vk.com/fansoro_cms"><i class="fa fa-vk"></i></a>
+					<a rel="nofollow" href="https://vk.com/fansoro"><i class="fa fa-vk"></i></a>
                 </p>
 				<p>
 					<ul class="locales">
