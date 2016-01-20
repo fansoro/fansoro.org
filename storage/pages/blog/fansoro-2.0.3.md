@@ -1,5 +1,5 @@
 ---
-title: Fansoro 2.0.2 Release
+title: Fansoro 2.0.3 Release
 date: 2015-12-08 20:15
 template: blog_post
 author:
