@@ -27,6 +27,11 @@ YouTube Channel: http://www.youtube.com/c/FansoroOrganization
 
 ![Fansoro Logo]({site_url}/public/assets/img/fansoro-logo.png){.img-responsive}
 
+![Fansoro Logo]({site_url}/public/assets/img/fansoro-logo-white.png){.img-responsive}
+
+![Fansoro Logo]({site_url}/public/assets/img/fansoro-logo-yellow.png){.img-responsive}
+
+
 
 ### Fansoro Credits
 
