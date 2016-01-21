@@ -28,7 +28,7 @@
 		<meta property="og:site_name" content="{$config.site.title}">
 	    <meta property="og:url" content="{$url}">
 	    <meta property="og:title" content="{$title} | {$config.site.title}">
-		<meta property="og:image" content="http://fansoro.org/public/assets/img/fansoro-logo.png">
+		<meta property="og:image" content="http://fansoro.org/public/assets/img/fansoro-icon-296.png">
 
 		{* Twitter Card *}
   		<meta name="twitter:card" content="summary_large_image">
@@ -36,7 +36,7 @@
 		<meta name="twitter:site" content="@fansoro_cms">
 		<meta name="twitter:title" content="{$title} | {$config.site.title}">
 		<meta name="twitter:description" content="Fansoro is Modern Open Source Flat-File Content Management System. Content in Fansoro is just a simple files written with markdown syntax in pages folder. You simply create markdown files in the pages folder and that becomes a page.">
-		<meta name="twitter:image" content="http://fansoro.org/public/assets/img/fansoro-logo.png">
+		<meta name="twitter:image" content="http://fansoro.org/public/assets/img/fansoro-icon-296.png">
 
 	    {* Google+ Snippets *}
 		<link href="https://plus.google.com/+FansoroOrganization" rel="publisher">
