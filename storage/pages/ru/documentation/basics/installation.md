@@ -20,7 +20,7 @@ template: documentation
 Вы можете легко установить Fansoro используя Composer.  
 
 ```
-composer create-project fansoro-cms/fansoro
+composer create-project fansoro/fansoro
 ```
 
 Также вам понадобится установить библиотеки для темы Default  

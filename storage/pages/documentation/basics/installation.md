@@ -20,7 +20,7 @@ Unzip the contents to a new folder on your local computer, and upload to your we
 You can easily install Fansoro with Composer.
 
 ```
-composer create-project fansoro-cms/fansoro
+composer create-project fansoro/fansoro
 ```
 
 Also you may need to install vendor libs for Default Theme

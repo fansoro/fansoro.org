@@ -23,9 +23,9 @@ YouTube Channel: http://www.youtube.com/c/FansoroOrganization
 ![Fansoro Icon]({site_url}/public/assets/img/fansoro-icon.png){.img-responsive}
 
 ![Fansoro Logo]({site_url}/public/assets/img/fansoro-logo.png){.img-responsive}
-
+<br><br>
 ![Fansoro Logo]({site_url}/public/assets/img/fansoro-logo-white.png){.img-responsive}
-
+<br><br>
 ![Fansoro Logo]({site_url}/public/assets/img/fansoro-logo-yellow.png){.img-responsive}
 
 

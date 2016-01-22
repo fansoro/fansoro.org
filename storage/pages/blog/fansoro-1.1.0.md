@@ -48,7 +48,7 @@ I am happy to introduce Fansoro 1.1.0 with a lot of changes :)
 
 
 ### Download  
-[<i class="fa fa-download"></i> Fansoro 1.1.0](https://github.com/fansoro-cms/fansoro/releases/download/v1.1.0/fansoro-1.1.0.zip)  
+[<i class="fa fa-download"></i> Fansoro 1.1.0](https://github.com/fansoro/fansoro/releases/download/v1.1.0/fansoro-1.1.0.zip)  
 
 ### Update from Fansoro 1.0.6 to Fansoro 1.1.0  
 1. **Backup your Site First!**    
