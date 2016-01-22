@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="{$description}">
-		<meta name='yandex-verification' content='65ab8145c4e162f5' />
+		<meta name='yandex-verification' content='69cc6cd921615e6b' />
+
 		{Action::run('theme_meta')}
 		<title>{$config.site.title} | {$title}</title>
 
