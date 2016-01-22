@@ -24,7 +24,6 @@
                 <li class="dropdown{if $slug == 'documentation'} active{/if}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Support <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="http://forum.fansoro.org">Forum</a></li>
                         <li><a href="{Url::getBase()}/documentation">Documentation</a></li>
                         <li><a href="https://github.com/fansoro-cms/fansoro/issues">Bugtracker</a></li>
                     </ul>

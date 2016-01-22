@@ -12,7 +12,6 @@
 		<div class="collapse navbar-collapse">
             {set $slug = Url::getUriSegment(1)}
             <ul class="nav navbar-nav pull-right">
-                {*<li {if $slug == 'blog'} class="active" {/if}><a href="{Url::getBase()}/ru/blog">Блог</a></li>*}
                 <li class="dropdown{if $slug == 'download'} active{/if}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Скачать <b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -24,7 +23,6 @@
                 <li class="dropdown{if $slug == 'documentation'} active{/if}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Поддержка <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="http://forum.fansoro.org">Форум</a></li>
                         <li><a href="{Url::getBase()}/ru/documentation">Документация</a></li>
                         <li><a href="https://github.com/fansoro-cms/fansoro/issues">Багтрекер</a></li>
                     </ul>

@@ -131,7 +131,7 @@
 				<p>
 					<ul class="copyright">
 						<li>
-							<a href="{Url::getBase()}">Fansoro</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://awilum.github.io" class="highlight">Sergey Romanenko</a> and <a href="https://github.com/fansoro-cms/fansoro/graphs/contributors" class="highlight">Fansoro Community</a> <br>
+							<a href="{Url::getBase()}">Fansoro</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://awilum.github.io" class="highlight">Sergey Romanenko</a> and <a href="https://github.com/fansoro/fansoro/graphs/contributors" class="highlight">Fansoro Community</a> <br>
 							© 2016 <a href="{Url::getBase()}/about/license">Fansoro</a>
 						</li>
 					</ul>
