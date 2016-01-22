@@ -15,4 +15,4 @@ See [this instruction](http://fansoro.org/documentation/plugins/plugins-installa
 | flake_color | #0099FF (color of snowflake) |
 
 ## License
-See [LICENSE](https://github.com/fansoro-cms/fansoro-plugin-snow/blob/master/LICENSE)
+See [LICENSE](https://github.com/fansoro/fansoro-plugin-snow/blob/master/LICENSE)

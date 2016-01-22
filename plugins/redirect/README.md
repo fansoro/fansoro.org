@@ -11,4 +11,4 @@ redirect: some-page
 ```
 
 ## License
-See [LICENSE](https://github.com/fansoro-cms/fansoro-plugin-redirect/blob/master/LICENSE)
+See [LICENSE](https://github.com/fansoro/fansoro-plugin-redirect/blob/master/LICENSE)

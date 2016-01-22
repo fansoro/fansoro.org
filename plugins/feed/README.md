@@ -2,4 +2,4 @@
 Fansoro feed plugin provide simple RSS feed.
 
 ## License
-See [LICENSE](https://github.com/fansoro-cms/fansoro-plugin-feed/blob/master/LICENSE)
+See [LICENSE](https://github.com/fansoro/fansoro-plugin-feed/blob/master/LICENSE)
