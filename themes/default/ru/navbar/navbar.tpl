@@ -24,7 +24,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Поддержка <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="{Url::getBase()}/ru/documentation">Документация</a></li>
-                        <li><a href="https://github.com/fansoro-cms/fansoro/issues">Багтрекер</a></li>
+                        <li><a href="https://github.com/fansoro/fansoro/issues">Багтрекер</a></li>
                     </ul>
                 </li>
                 <li class="dropdown{if $slug == 'about'} active{/if}">
