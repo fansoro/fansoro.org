@@ -4,7 +4,19 @@ description: Documentation for Fansoro Developers and Fansoro Users.
 template: documentation
 ---
 
-### Update from Fansoro **2.0.1** to **Fansoro 2.0.2**{.margin-top-hard}
+### Update from **Fansoro 2.0.3** to **Fansoro 2.0.4**{.margin-top-hard}
+1. **Backup your Site First!**
+2. Download [Fansoro 2.0.4](https://github.com/fansoro/fansoro/releases/download/v2.0.4/fansoro-2.0.4.zip)
+3. Unzip the contents to a new folder on your local computer.
+4. Upload `/fansoro/`, `/vendor/` with an (s)FTP client to your host.
+
+### Update from **Fansoro 2.0.2** to **Fansoro 2.0.3**
+1. **Backup your Site First!**
+2. Download [Fansoro 2.0.3](https://github.com/fansoro/fansoro/releases/download/v2.0.3/fansoro-2.0.3.zip)
+3. Unzip the contents to a new folder on your local computer.
+4. Upload `/fansoro/`, `/vendor/`, `/.gitignore`, `/composer.json`, `/LICENSE.md`, `/index.php` with an (s)FTP client to your host.
+
+### Update from **Fansoro 2.0.1** to **Fansoro 2.0.2**
 1. **Backup your Site First!**
 2. Download [Fansoro 2.0.2](https://github.com/fansoro/fansoro/releases/download/v2.0.2/fansoro-2.0.2.zip)
 3. Unzip the contents to a new folder on your local computer.
