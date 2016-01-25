@@ -77,11 +77,11 @@
 					{if Url::getUriSegment(0) == 'ru'}
 						<h1>ПРОСТАЯ И БЫСТРАЯ</h1>
                     	<p class="lead">OPEN SOURCE CMS НА ФАЙЛАХ</p>
-                    	<a class="btn btn-lg btn-download-fansoro" href="https://github.com/fansoro/fansoro/releases/download/v{Blocks::get('version')}/fansoro-{Blocks::get('version')}.zip">Скачать Fansoro</a>
+                    	<a class="btn btn-lg btn-download-fansoro" href="https://github.com/fansoro/fansoro/releases/download/v2.0.4/fansoro-2.0.4.zip">Скачать Fansoro</a>
 					{else}
 				    	<h1>Introducing Fansoro</h1>
 						<p class="lead">Modern Open Source Flat-File Content Management System.</p>
-                    	<a class="btn btn-lg btn-download-fansoro" href="https://github.com/fansoro/fansoro/releases/download/v{Blocks::get('version')}/fansoro-{Blocks::get('version')}.zip">Download Fansoro</a>
+                    	<a class="btn btn-lg btn-download-fansoro" href="https://github.com/fansoro/fansoro/releases/download/v2.0.4/fansoro-2.0.4.zip">Download Fansoro</a>
 					{/if}
 				</div>
                 {else}
