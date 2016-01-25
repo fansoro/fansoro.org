@@ -32,7 +32,7 @@ bower install
 
 ## Using command-line
 
-If you have command-line access, you can easily install Fansoro by executing a few commands.   First, create the directory where you want to install Fansoro, if it doesn’t already exist. Enter the directory, and execute the following commands:  
+If you have command-line access, you can easily install Fansoro -{block name=version}- by executing a few commands.   First, create the directory where you want to install Fansoro, if it doesn’t already exist. Enter the directory, and execute the following commands:  
 
 ```
 wget https://github.com/fansoro/fansoro/releases/download/v{block name=version}/fansoro-{block name=version}.zip
