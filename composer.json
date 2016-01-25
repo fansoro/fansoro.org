@@ -13,7 +13,7 @@
         }
     ],
     "support": {
-      "issues": "https://github.com/fansoro-cms/fansoro/issues"
+      "issues": "https://github.com/fansoro/fansoro/issues"
     },
     "require": {
         "php": ">=5.5",
