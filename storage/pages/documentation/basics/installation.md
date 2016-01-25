@@ -35,7 +35,7 @@ bower install
 If you have command-line access, you can easily install Fansoro by executing a few commands.   First, create the directory where you want to install Fansoro, if it doesn’t already exist. Enter the directory, and execute the following commands:  
 
 ```
-wget https://github.com/fansoro/fansoro/releases/download/v2.0.4/fansoro-2.0.4.zip
-unzip fansoro-2.0.4.zip
+wget https://github.com/fansoro/fansoro/releases/download/v{block name=version}/fansoro-{block name=version}.zip
+unzip fansoro-{block name=version}.zip
 chmod -R 0777 cache/ config/ storage/ themes/ plugins/
 ```
